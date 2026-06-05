@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conference Logo Maintainer"
+  short_description: "Maintain CCF conference logo assets"
+  default_prompt: "Use $conference-logo-maintainer to update the CCF conference logo assets and refresh the maintenance checklist."
