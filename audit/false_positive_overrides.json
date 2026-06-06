@@ -60,6 +60,69 @@
       "recommended_status": "no_logo_candidate",
       "replacement_confirmation": "EU-specific logo candidate not reliably detected from official page.",
       "replacement_source_url": "https://dfrws.org/conferences/dfrws-eu-2026/"
+    },
+    {
+      "title": "ISPA",
+      "source_path": "conference/DS/ispa.yml",
+      "bad_logo_file": "ISPA.jpg",
+      "bad_reason": "Official-site candidate is cropped-ny1.jpg, a New York/header photo rather than a conference logo.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official ISPA conference logo candidate identified in this audit pass.",
+      "replacement_source_url": "http://www.cloud-conf.net/ispa2021/"
+    },
+    {
+      "title": "CODASPY",
+      "source_path": "conference/SC/codaspy.yml",
+      "bad_logo_file": "CODASPY.png",
+      "bad_reason": "Official-site candidate is Secunet Security Networks sponsor logo, not CODASPY conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official CODASPY conference logo candidate identified in this audit pass.",
+      "replacement_source_url": "https://www.codaspy.org/2026/"
+    },
+    {
+      "title": "ASIACRYPT",
+      "source_path": "conference/SC/asiacrypt.yml",
+      "bad_logo_file": "ASIACRYPT.png",
+      "bad_reason": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official ASIACRYPT-specific logo candidate identified in this audit pass.",
+      "replacement_source_url": "https://asiacrypt.iacr.org/2026/"
+    },
+    {
+      "title": "CHES",
+      "source_path": "conference/SC/ches.yml",
+      "bad_logo_file": "CHES.png",
+      "bad_reason": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official CHES-specific logo candidate identified in this audit pass.",
+      "replacement_source_url": "https://ches.iacr.org/2026/"
+    },
+    {
+      "title": "CRYPTO",
+      "source_path": "conference/SC/crypto.yml",
+      "bad_logo_file": "CRYPTO.png",
+      "bad_reason": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official CRYPTO-specific logo candidate identified in this audit pass.",
+      "replacement_source_url": "https://crypto.iacr.org/2026/"
+    },
+    {
+      "title": "FSE",
+      "source_path": "conference/SC/fse.yml",
+      "bad_logo_file": "FSE-SC.png",
+      "bad_reason": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not FSE conference-specific branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official FSE-specific logo candidate identified in this audit pass.",
+      "replacement_source_url": "https://fse.iacr.org/2026/"
+    },
+    {
+      "title": "TCC",
+      "source_path": "conference/SC/tcc.yml",
+      "bad_logo_file": "TCC.png",
+      "bad_reason": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official TCC-specific logo candidate identified in this audit pass.",
+      "replacement_source_url": "https://tcc.iacr.org/2025/"
     }
   ],
   "high_confidence_manual_review": []

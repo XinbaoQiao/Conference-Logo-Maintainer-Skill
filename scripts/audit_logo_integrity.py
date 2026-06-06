@@ -10,6 +10,7 @@ large-scale logo crawling.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 from collections import defaultdict
 from pathlib import Path
@@ -31,6 +32,32 @@ GENERIC_LOGO_STEMS = {
 }
 SAFE_SHARED_STEMS = {
     # Known umbrella/joint-event assets can be added here after manual review.
+}
+SAFE_SHARED_HASH_TITLE_SETS = {
+    frozenset({"EDBT", "ICDT"}),  # Joint EDBT/ICDT event branding.
+}
+SUSPICIOUS_SOURCE_TERMS = {
+    "avatar",
+    "background",
+    "carousel",
+    "cropped-ny",
+    "exhibitor",
+    "favicon",
+    "gallery",
+    "googleusercontent",
+    "hero",
+    "hotel",
+    "openreview",
+    "partner",
+    "photo",
+    "profile",
+    "secunet",
+    "slider",
+    "speaker",
+    "sponsor",
+    "unsplash",
+    "venue",
+    "wikimedia",
 }
 
 
@@ -115,6 +142,16 @@ def audit(manifest_path: Path, overrides_path: Path | None) -> tuple[str, int]:
                 ]
             )
 
+    active_high_review: list[dict[str, Any]] = []
+    for item in high_review:
+        entry = by_key.get(override_key(item))
+        if not entry:
+            continue
+        current_logo = str(item.get("current_logo_file") or "").strip()
+        if current_logo and str(entry.get("logo_file") or "") != current_logo:
+            continue
+        active_high_review.append(item)
+
     logo_to_entries: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for entry in entries:
         logo = str(entry.get("logo_file") or "").strip()
@@ -138,12 +175,35 @@ def audit(manifest_path: Path, overrides_path: Path | None) -> tuple[str, int]:
             ]
         )
 
+    asset_root = manifest_path.parent / "assets" / "logos"
+    hash_to_entries: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    source_url_warnings: list[list[Any]] = []
     acronym_warnings: list[list[Any]] = []
     for entry in entries:
         logo = str(entry.get("logo_file") or "").strip()
         title = str(entry.get("title") or "").strip()
         if not logo or not title:
             continue
+
+        asset_path = asset_root / logo
+        if asset_path.exists() and asset_path.is_file():
+            digest = hashlib.sha256(asset_path.read_bytes()).hexdigest()
+            hash_to_entries[digest].append(entry)
+
+        source_url = str(entry.get("source_url") or "")
+        source_url_key = source_url.lower()
+        source_hits = sorted(term for term in SUSPICIOUS_SOURCE_TERMS if term in source_url_key)
+        if source_hits:
+            source_url_warnings.append(
+                [
+                    title,
+                    entry.get("source_path"),
+                    logo,
+                    source_url,
+                    ", ".join(source_hits),
+                ]
+            )
+
         title_key = normalize(title)
         stem = logo_stem(logo)
         stem_key = normalize(stem)
@@ -173,6 +233,23 @@ def audit(manifest_path: Path, overrides_path: Path | None) -> tuple[str, int]:
                 ]
             )
 
+    duplicate_hash_warnings: list[list[Any]] = []
+    for digest, users in sorted(hash_to_entries.items()):
+        titles = sorted({str(entry.get("title") or "") for entry in users})
+        if len(titles) <= 1:
+            continue
+        if frozenset(titles) in SAFE_SHARED_HASH_TITLE_SETS:
+            continue
+        duplicate_hash_warnings.append(
+            [
+                digest[:16],
+                ", ".join(titles),
+                ", ".join(sorted({str(entry.get("logo_file") or "") for entry in users})),
+                "; ".join(sorted({str(entry.get("source_path") or "") for entry in users})),
+                "same image bytes used by multiple distinct conference titles",
+            ]
+        )
+
     lines: list[str] = []
     lines.extend(
         [
@@ -190,6 +267,18 @@ def audit(manifest_path: Path, overrides_path: Path | None) -> tuple[str, int]:
             "## Shared logo-file warnings",
             "",
             markdown_table(["Logo", "Conference titles", "Source paths", "Warning"], shared_logo_warnings),
+            "## Duplicate content-hash warnings",
+            "",
+            markdown_table(
+                ["Hash", "Conference titles", "Logo files", "Source paths", "Warning"],
+                duplicate_hash_warnings,
+            ),
+            "## Suspicious source-url warnings",
+            "",
+            markdown_table(
+                ["Conference", "Source path", "Logo", "Source URL", "Matched terms"],
+                source_url_warnings,
+            ),
             "## Acronym/generic-stem warnings",
             "",
             markdown_table(
@@ -198,7 +287,7 @@ def audit(manifest_path: Path, overrides_path: Path | None) -> tuple[str, int]:
             ),
         ]
     )
-    if high_review:
+    if active_high_review:
         lines.extend(
             [
                 "## High-confidence manual-review queue from overrides",
@@ -213,7 +302,7 @@ def audit(manifest_path: Path, overrides_path: Path | None) -> tuple[str, int]:
                             item.get("risk_reason"),
                             item.get("recommended_action"),
                         ]
-                        for item in high_review
+                        for item in active_high_review
                     ],
                 ),
             ]
