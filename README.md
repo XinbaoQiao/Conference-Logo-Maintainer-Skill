@@ -1,6 +1,6 @@
 <div align="center">
 
-# Conference Logo Maintainer Skill
+# CS Conference Logo Maintainer
 
 Maintain CCF conference logo assets with a one-shot code agent workflow.
 
@@ -24,18 +24,18 @@ Maintain CCF conference logo assets with a one-shot code agent workflow.
 
 ## English
 
-Conference Logo Maintainer Skill helps a code agent maintain CCF conference logo assets end to end.
+CS Conference Logo Maintainer helps a code agent maintain CCF conference logo assets end to end.
 
 It is designed for users who want a clean, reusable logo asset set without manually visiting hundreds of conference websites or running maintenance scripts themselves.
 
-If you do not want to maintain the assets yourself, bookmark this repository and its reports; the included GitHub Actions workflow refreshes year/city/venue-sensitive logos monthly and runs a full logo refresh once per year.
+If you do not want to maintain the assets yourself, bookmark this repository and its reports; the included GitHub Actions workflow refreshes year/city/venue-sensitive logos to a staging branch on the first day of each month, merges that branch into `main` on the 10th, and runs a full logo refresh once per year.
 
 ### Highlights
 
 | Feature | Why it helps |
 |---|---|
 | One-shot maintenance | The agent handles refresh, repair, audit, reporting, and optional downstream sync in one request. |
-| Scheduled GitHub updates | The repository can refresh focus logos on the first day of each month and run a full refresh annually. |
+| Scheduled GitHub updates | The repository refreshes focus logos to a staging branch on the first day of each month, merges them on the 10th, and runs a full refresh annually. |
 | CCF-focused coverage | The workflow targets CCF A/B/C conference records instead of arbitrary web search results. |
 | Manual correction support | Confirmed logo URLs are used directly, while conferences marked as logo-unavailable remain intentionally blank. |
 | False-positive resistance | The agent avoids speaker portraits, venue photos, sponsor marks, generic society logos, UI icons, and unrelated acronym matches. |
@@ -46,7 +46,7 @@ If you do not want to maintain the assets yourself, bookmark this repository and
 
 | You provide | The agent prepares |
 |---|---|
-| This skill repository | Updated CCF conference logo assets |
+| This repository | Updated CCF conference logo assets |
 | Optional manual correction notes | Exact-logo overrides or intentionally blank entries |
 | Optional downstream project path | Synchronized logo copy when available |
 | One maintenance request | Final summary with asset counts, skipped entries, and remaining manual checks |
@@ -65,11 +65,11 @@ If you do not want to maintain the assets yourself, bookmark this repository and
 
 ### Quick Start
 
-Install this repository as a Codex skill:
+Install this repository for Codex:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R Conference-Logo-Maintainer-Skill ~/.codex/skills/conference-logo-maintainer
+cp -R CS-Conference-Logo-Maintainer ~/.codex/skills/conference-logo-maintainer
 ```
 
 Then ask the code agent to update the conference logo assets:
@@ -87,7 +87,7 @@ Please complete the whole workflow automatically:
 - report the final asset count, skipped entries, validation result, and remaining manual-review items.
 ```
 
-The agent will use the skill instructions to complete the maintenance run and report the final result.
+The agent will use the bundled instructions to complete the maintenance run and report the final result.
 
 <a id="master-prompt"></a>
 
@@ -96,13 +96,13 @@ The agent will use the skill instructions to complete the maintenance run and re
 Copy this prompt into your code agent when you want a full one-shot maintenance run:
 
 ```text
-You are maintaining the Conference Logo Maintainer Skill.
+You are maintaining CS Conference Logo Maintainer.
 
 Goal:
 Update the CCF conference logo assets end to end and produce a final, validated asset set.
 
 Requirements:
-1. Refresh CCF A/B/C conference logo assets using the existing Conference Logo Maintainer Skill logic.
+1. Refresh CCF A/B/C conference logo assets using the existing CS Conference Logo Maintainer logic.
 2. Preserve confirmed good existing logos unless a better official source is found.
 3. Apply manual correction records:
    - Conferences absent from manual corrections must continue through the normal automated tracking flow.
@@ -151,7 +151,7 @@ This repository is MIT licensed.
 
 Review conference logo copyright, trademark, and attribution requirements before redistributing generated or downloaded logo files.
 
-<p align="right"><a href="#conference-logo-maintainer-skill">Back to top</a> · <a href="#zh-cn">中文</a></p>
+<p align="right"><a href="#cs-conference-logo-maintainer">Back to top</a> · <a href="#zh-cn">中文</a></p>
 
 ---
 
@@ -159,18 +159,18 @@ Review conference logo copyright, trademark, and attribution requirements before
 
 ## 中文
 
-Conference Logo Maintainer Skill 用于帮助 code agent 端到端维护 CCF 会议 Logo 资产。
+CS Conference Logo Maintainer 用于帮助 code agent 端到端维护 CCF 会议 Logo 资产。
 
 它适合希望获得干净、可复用会议 Logo 资产集的用户，而不是手动访问上百个会议官网、手动运行维护脚本。
 
-如果你不想自己维护这些 Logo，可以收藏本仓库和报告；仓库内置的 GitHub Actions 会每月刷新带年份、城市、地点信息的重点 Logo，并每年执行一次全量 Logo 更新。
+如果你不想自己维护这些 Logo，可以收藏本仓库和报告；仓库内置的 GitHub Actions 会在每月 1 号把带年份、城市、地点信息的重点 Logo 刷新到暂存分支，在每月 10 号自动合并到 `main`，并每年执行一次全量 Logo 更新。
 
 ### 核心特点
 
 | 特点 | 价值 |
 |---|---|
 | 一次请求完成维护 | agent 会在一次调用中完成刷新、修复、审计、报告生成和可选下游同步。 |
-| GitHub 定时更新 | 仓库可以在每月第一天刷新重点 Logo，并每年执行一次全量刷新。 |
+| GitHub 定时更新 | 仓库会在每月 1 号把重点 Logo 刷新到暂存分支，在每月 10 号合并，并每年执行一次全量刷新。 |
 | 面向 CCF 会议范围 | 工作流聚焦 CCF A/B/C 会议记录，而不是泛化网页搜索结果。 |
 | 支持手工修正 | 已确认的 Logo URL 会被优先使用；确认难以获取 Logo 的会议会被明确留空。 |
 | 降低误匹配风险 | agent 会排除演讲者头像、会场照片、赞助商标识、泛组织 Logo、页面 UI 图标和无关缩写匹配。 |
@@ -181,7 +181,7 @@ Conference Logo Maintainer Skill 用于帮助 code agent 端到端维护 CCF 会
 
 | 你提供 | agent 生成 |
 |---|---|
-| 这个 skill 仓库 | 更新后的 CCF 会议 Logo 资产 |
+| 这个仓库 | 更新后的 CCF 会议 Logo 资产 |
 | 可选的手工修正说明 | 精确 Logo 覆盖或明确留空条目 |
 | 可选的下游项目路径 | 在可用时同步 Logo 副本 |
 | 一次维护请求 | 包含资产数量、跳过条目和剩余人工检查项的最终汇报 |
@@ -198,11 +198,11 @@ Conference Logo Maintainer Skill 用于帮助 code agent 端到端维护 CCF 会
 
 ### 快速开始
 
-先把本仓库安装为 Codex skill：
+先把本仓库安装到 Codex：
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R Conference-Logo-Maintainer-Skill ~/.codex/skills/conference-logo-maintainer
+cp -R CS-Conference-Logo-Maintainer ~/.codex/skills/conference-logo-maintainer
 ```
 
 然后让 code agent 自动更新会议 Logo：
@@ -220,20 +220,20 @@ Please complete the whole workflow automatically:
 - report the final asset count, skipped entries, validation result, and remaining manual-review items.
 ```
 
-agent 会根据 skill 内部说明完成维护，并汇报最终结果。
+agent 会根据仓库内置说明完成维护，并汇报最终结果。
 
 ### Master Prompt
 
 需要完整一键维护时，可以直接复制下面的 Prompt 给 code agent：
 
 ```text
-You are maintaining the Conference Logo Maintainer Skill.
+You are maintaining CS Conference Logo Maintainer.
 
 Goal:
 Update the CCF conference logo assets end to end and produce a final, validated asset set.
 
 Requirements:
-1. Refresh CCF A/B/C conference logo assets using the existing Conference Logo Maintainer Skill logic.
+1. Refresh CCF A/B/C conference logo assets using the existing CS Conference Logo Maintainer logic.
 2. Preserve confirmed good existing logos unless a better official source is found.
 3. Apply manual correction records:
    - Conferences absent from manual corrections must continue through the normal automated tracking flow.
@@ -282,4 +282,4 @@ This repository is MIT licensed.
 
 重新分发生成或下载的会议 Logo 文件前，请检查对应会议的版权、商标和署名要求。
 
-<p align="right"><a href="#conference-logo-maintainer-skill">Back to top</a> · <a href="#english">English</a></p>
+<p align="right"><a href="#cs-conference-logo-maintainer">Back to top</a> · <a href="#english">English</a></p>

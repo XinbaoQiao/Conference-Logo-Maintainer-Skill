@@ -24,9 +24,10 @@ Use the existing crawler at `conference-logo-maintainer/scripts/fetch_ccf_logos.
 
 2. Refresh CCFDDL metadata.
    - Scheduled GitHub maintenance uses `.github/workflows/logo-maintenance.yml`:
-     - every month on day 1, run `--only-annual-update --refresh-existing` to refresh entries previously marked `needs_annual_update`;
-     - in January, run a full `--refresh-existing` pass so every logo can be reconsidered once per year;
-     - after each run, regenerate integrity and focus reports and commit changed assets/reports.
+     - every month on day 1, run `--only-annual-update --refresh-existing` and push changed assets/reports to `scheduled-logo-maintenance`;
+     - in January, use the same day-1 branch flow but run a full `--refresh-existing` pass so every logo can be reconsidered once per year;
+     - every month on day 10, merge `scheduled-logo-maintenance` into `main` and delete the staging branch;
+     - after each update run, regenerate integrity and focus reports before committing changed assets/reports.
    - Prefer the resumable cache mode:
 
 ```bash

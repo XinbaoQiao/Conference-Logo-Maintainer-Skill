@@ -3,10 +3,20 @@ name: Scheduled Logo Maintenance
 on:
   schedule:
     - cron: "0 3 1 * *"
+    - cron: "0 3 10 * *"
   workflow_dispatch:
     inputs:
+      action:
+        description: "Workflow action"
+        required: true
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - update-branch
+          - merge-branch
       scope:
-        description: "Maintenance scope"
+        description: "Maintenance scope for update-branch"
         required: true
         default: "auto"
         type: choice
@@ -22,6 +32,9 @@ concurrency:
   group: conference-logo-maintenance
   cancel-in-progress: false
 
+env:
+  UPDATE_BRANCH: scheduled-logo-maintenance
+
 jobs:
   update-logos:
     runs-on: ubuntu-latest
@@ -30,6 +43,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -40,11 +55,22 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Resolve maintenance scope
-        id: scope
+      - name: Resolve maintenance plan
+        id: plan
         shell: bash
         run: |
+          action="${{ github.event.inputs.action }}"
           scope="${{ github.event.inputs.scope }}"
+          day="$(date -u +%d)"
+
+          if [ -z "$action" ] || [ "$action" = "auto" ]; then
+            if [ "$day" = "10" ]; then
+              action="merge-branch"
+            else
+              action="update-branch"
+            fi
+          fi
+
           if [ -z "$scope" ] || [ "$scope" = "auto" ]; then
             if [ "$(date -u +%m)" = "01" ]; then
               scope="full"
@@ -52,13 +78,16 @@ jobs:
               scope="monthly-focus"
             fi
           fi
+          echo "action=$action" >> "$GITHUB_OUTPUT"
           echo "scope=$scope" >> "$GITHUB_OUTPUT"
+          echo "Resolved action: $action"
           echo "Resolved scope: $scope"
 
       - name: Run logo maintenance
+        if: steps.plan.outputs.action == 'update-branch'
         shell: bash
         run: |
-          if [ "${{ steps.scope.outputs.scope }}" = "full" ]; then
+          if [ "${{ steps.plan.outputs.scope }}" = "full" ]; then
             python scripts/fetch_ccf_logos.py \
               --refresh-existing \
               --ccfddl-cache-dir .cache/ccfddl-yaml \
@@ -72,6 +101,7 @@ jobs:
           fi
 
       - name: Regenerate reports and verify scripts
+        if: steps.plan.outputs.action == 'update-branch'
         run: |
           python -m py_compile scripts/fetch_ccf_logos.py scripts/audit_logo_integrity.py scripts/generate_logo_focus_report.py
           python scripts/audit_logo_integrity.py \
@@ -80,15 +110,33 @@ jobs:
             --report reports/logo_integrity_check_latest.md
           python scripts/generate_logo_focus_report.py
 
-      - name: Commit updated assets and reports
+      - name: Commit updated assets and reports to update branch
+        if: steps.plan.outputs.action == 'update-branch'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$UPDATE_BRANCH"
           git add assets/logos manifest.json update_list.md reports/logo_integrity_check_latest.md reports/logo_update_focus_latest.md
           if git diff --cached --quiet; then
             echo "No logo maintenance changes to commit."
+            git push origin --delete "$UPDATE_BRANCH" 2>/dev/null || true
             exit 0
           fi
-          git commit -m "chore: scheduled logo maintenance (${{ steps.scope.outputs.scope }})"
-          git push
+          git commit -m "chore: scheduled logo maintenance (${{ steps.plan.outputs.scope }})"
+          git push --force-with-lease origin "HEAD:$UPDATE_BRANCH"
+
+      - name: Merge update branch into main
+        if: steps.plan.outputs.action == 'merge-branch'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git ls-remote --exit-code --heads origin "$UPDATE_BRANCH"; then
+            echo "No $UPDATE_BRANCH branch exists; nothing to merge."
+            exit 0
+          fi
+          git fetch origin "$UPDATE_BRANCH"
+          git merge --no-edit --no-ff FETCH_HEAD
+          git push origin HEAD:main
+          git push origin --delete "$UPDATE_BRANCH"
