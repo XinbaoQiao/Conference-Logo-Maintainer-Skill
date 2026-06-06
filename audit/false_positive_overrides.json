@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-06-06",
+  "purpose": "Machine-readable overrides for confirmed or high-confidence false-positive conference-logo mappings found during repository audit.",
+  "policy": {
+    "apply_before_reuse": true,
+    "bad_mappings_should_not_be_reused": true,
+    "replacement_rule": "Use the replacement_source_url only when it is a conference-owned logo/brand asset; otherwise leave the conference as no_logo_candidate until manual collection."
+  },
+  "confirmed_bad_mappings": [
+    {
+      "title": "ICWS",
+      "source_path": "conference/SE/icws.yml",
+      "bad_logo_file": "ICWSM.jpg",
+      "bad_reason": "Cross-conference reuse: ICWS was assigned the ICWSM asset. ICWS is International Conference on Web Services; ICWSM is International Conference on Web and Social Media.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No repository-safe replacement binary committed in this pass; fetch from the ICWS official site before restoring a logo_file.",
+      "replacement_source_url": "https://services.conferences.computer.org/2026/icws-2026/"
+    },
+    {
+      "title": "AsiaCCS",
+      "source_path": "conference/SC/asiaccs.yml",
+      "bad_logo_file": "CCS.png",
+      "bad_reason": "Cross-conference reuse: AsiaCCS was assigned the ACM CCS asset. The 2027 AsiaCCS page exposes ACM/SIGSAC/social images, not a distinct conference logo asset.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "Official conference page confirmed, but no distinct AsiaCCS logo asset was confirmed; do not replace with CCS.png, ACM.png, SIGSAC.png, or social icons.",
+      "replacement_source_url": "https://asiaccs2027.cityu.edu.mo/index.html"
+    },
+    {
+      "title": "SoCC",
+      "source_path": "conference/SYSTEM/socc.yml",
+      "bad_logo_file": "Cloud.png",
+      "bad_reason": "Cross-conference reuse: ACM SoCC was assigned Cloud.png, which belongs to the IEEE CLOUD entry because the description contains 'cloud computing'.",
+      "recommended_status": "replace_with_official_brand",
+      "replacement_confirmation": "Official SoCC 2026 page exposes a brand image at /assets/img/logo.png; binary replacement should use that asset.",
+      "replacement_source_url": "https://acmsocc.org/2026/assets/img/logo.png"
+    },
+    {
+      "title": "ICIC",
+      "source_path": "conference/AI/icic.yml",
+      "bad_logo_file": "ICICS.png",
+      "bad_reason": "Cross-conference reuse: ICIC was assigned the ICICS asset. The acronyms differ by one trailing S and represent different conferences/domains.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "ICIC official page timed out during this pass; do not reuse ICICS.png.",
+      "replacement_source_url": "https://www.ic-icc.cn/2026/"
+    }
+  ],
+  "high_confidence_manual_review": [
+    {
+      "title": "DFRWS",
+      "source_path": "conference/SC/dfrws.yml",
+      "current_logo_file": "DFRWS APAC.jpg",
+      "risk_reason": "Region-specific asset reused for another DFRWS edition: DFRWS EU 2026 currently maps to DFRWS APAC 2025. This may be acceptable only if the file is a generic DFRWS mark rather than an APAC-specific logo.",
+      "recommended_action": "Visually inspect and either rename to a generic DFRWS asset or mark no_logo_candidate for the EU edition."
+    }
+  ]
+}
