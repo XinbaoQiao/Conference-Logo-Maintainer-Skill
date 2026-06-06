@@ -846,7 +846,12 @@ def markdown_table(headers: list[str], rows: list[list[Any]], limit: int | None 
 def write_update_list(
     output_dir: Path, entries: list[dict[str, Any]], update_list_name: str = "update_list.md"
 ) -> None:
-    annual = [item for item in entries if item.get("needs_annual_update")]
+    annual = [
+        item
+        for item in entries
+        if item.get("needs_annual_update")
+        and item.get("status") in {"downloaded", "reused_existing", "existing_target"}
+    ]
     missing = [
         item
         for item in entries

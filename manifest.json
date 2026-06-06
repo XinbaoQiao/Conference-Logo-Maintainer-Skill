@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T15:02:48+00:00",
+  "generated_at": "2026-06-06T12:50:03+00:00",
   "started_at": "2026-06-05T14:58:57+00:00",
   "data_source": {
     "ccfddl_tree": "https://api.github.com/repos/ccfddl/ccf-deadlines/git/trees/main?recursive=1",
@@ -262,10 +262,9 @@
       "sub": "AI",
       "dblp": "conll",
       "source_path": "conference/AI/conll.yml",
-      "status": "reused_existing",
-      "logo_file": "CoNLL.jpg",
-      "source_kind": "local_existing",
-      "sha256": "9121cf86a5fef1e867dce090b9a42b241aeec3de4cb9783b9c2161ec68bd4dc3",
+      "status": "no_logo_candidate",
+      "logo_file": null,
+      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "conll26",
       "conference_date": "July 3 - 4, 2026",
@@ -274,7 +273,11 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false
+      "needs_annual_update": false,
+      "source_url": null,
+      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
+      "error": "Awaiting manual logo curation/official asset source update.",
+      "replaced_logo_file": "CoNLL.jpg"
     },
     {
       "title": "CVPR",
@@ -725,10 +728,10 @@
       "sub": "AI",
       "dblp": "ijcnn",
       "source_path": "conference/AI/ijcnn.yml",
-      "status": "reused_existing",
-      "logo_file": "IJCNN.jpg",
-      "source_kind": "local_existing",
-      "sha256": "8877619ea488ceb7e04220f42114cdc84014a8033bb192da85f2b3fb9b5160ca",
+      "status": "downloaded",
+      "logo_file": "IJCNN.webp",
+      "source_kind": "official_site_candidate",
+      "sha256": "dcc90197223f29734da7e34e68799af60225adb111dd1c5464a30bdb35e8d239",
       "conference_year": 2026,
       "conference_id": "ijcnn2026",
       "conference_date": "June 21 - 26, 2026",
@@ -738,7 +741,12 @@
         2026
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026"
+      "annual_update_reason": "source contains latest conference year 2026",
+      "source_url": "https://confcats-siteplex.s3.amazonaws.com/ijcnn/glide-cache/containers/logos/ijcnn27-logo-hr_color-simple.webp/e36784d58dd02682aca1842b8374b346/ijcnn27-logo-hr_color-simple.webp",
+      "mime": "image/webp",
+      "width": 1024,
+      "height": 341,
+      "asset_years": []
     },
     {
       "title": "IROS",
@@ -1858,10 +1866,9 @@
       "sub": "CT",
       "dblp": "sat",
       "source_path": "conference/CT/sat.yml",
-      "status": "reused_existing",
-      "logo_file": "SAT.jpg",
-      "source_kind": "local_existing",
-      "sha256": "5c4d3b2afa8f8752f2c687ff531d6a813444ee0541a2f78ad8f062520227b397",
+      "status": "no_logo_candidate",
+      "logo_file": null,
+      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "sat26",
       "conference_date": "July 20 - July 23, 2026",
@@ -1870,7 +1877,11 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false
+      "needs_annual_update": false,
+      "source_url": null,
+      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
+      "error": "Awaiting manual logo curation/official asset source update.",
+      "replaced_logo_file": "SAT.jpg"
     },
     {
       "title": "SETTA",
@@ -3617,10 +3628,10 @@
       "sub": "DS",
       "dblp": "cloud",
       "source_path": "conference/DS/socc.yml",
-      "status": "reused_existing",
-      "logo_file": "Cloud.png",
-      "source_kind": "local_existing",
-      "sha256": "10665067b08282cc9e701734a447db97b3048e7aa795ac2ce730b4cd407e4113",
+      "status": "downloaded",
+      "logo_file": "SoCC.png",
+      "source_kind": "official_site_candidate",
+      "sha256": "dda674e7de73190053051896bfd1ff63286026e0575118775c8421d5b0cf5c3c",
       "conference_year": 2026,
       "conference_id": "socc26",
       "conference_date": "November 18-20, 2026",
@@ -3630,7 +3641,14 @@
         2026
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026"
+      "annual_update_reason": "source contains latest conference year 2026",
+      "source_url": "https://acmsocc.org/2026/assets/img/socc-logo.png",
+      "mime": "image/png",
+      "width": 180,
+      "height": 180,
+      "asset_years": [
+        2026
+      ]
     },
     {
       "title": "SPAA",
@@ -4244,10 +4262,9 @@
       "sub": "MX",
       "dblp": "icic",
       "source_path": "conference/MX/icic.yml",
-      "status": "reused_existing",
-      "logo_file": "ICICS.png",
-      "source_kind": "local_existing",
-      "sha256": "77a62089beb41e77fc380471abcedbacc41020342788fa3122fdc2ad8ecd4151",
+      "status": "no_logo_candidate",
+      "logo_file": null,
+      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icic26",
       "conference_date": "July 22-26, 2026",
@@ -4257,7 +4274,11 @@
         2026
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026"
+      "annual_update_reason": "source contains latest conference year 2026",
+      "source_url": null,
+      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
+      "error": "Awaiting manual logo curation/official asset source update.",
+      "replaced_logo_file": "ICICS.png"
     },
     {
       "title": "ISBRA",
@@ -5204,10 +5225,9 @@
       "sub": "SC",
       "dblp": "ccs",
       "source_path": "conference/SC/asiaccs.yml",
-      "status": "reused_existing",
-      "logo_file": "CCS.png",
-      "source_kind": "local_existing",
-      "sha256": "a2b379ccdf9a2868df8494de08afe939b4794792a172c6139db26fa0a8ef12b5",
+      "status": "no_logo_candidate",
+      "logo_file": null,
+      "source_kind": "manual_review",
       "conference_year": 2027,
       "conference_id": "asiaccs27",
       "conference_date": "July 12-16, 2027",
@@ -5217,7 +5237,11 @@
         2027
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2027"
+      "annual_update_reason": "source contains latest conference year 2027",
+      "source_url": null,
+      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
+      "error": "Awaiting manual logo curation/official asset source update.",
+      "replaced_logo_file": "CCS.png"
     },
     {
       "title": "ASIACRYPT",
@@ -5257,11 +5281,10 @@
       "sub": "SC",
       "dblp": "blocksys",
       "source_path": "conference/SC/blocksys.yml",
-      "status": "reused_existing",
-      "logo_file": "BlockSys.jpg",
-      "source_kind": "official_site_candidate",
-      "sha256": "ee5c2a4b1c64e7b90ff8c23f75a519d740184a859d7545b68c69e162c78322e1",
-      "source_url": "https://blocksys.info/2026/wp-content/uploads/2019/11/2.jpg",
+      "status": "no_logo_candidate",
+      "logo_file": null,
+      "source_kind": "manual_review",
+      "source_url": null,
       "width": 296,
       "height": 247,
       "mime": "image/jpeg",
@@ -5282,7 +5305,10 @@
         2026
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026"
+      "annual_update_reason": "source contains latest conference year 2026",
+      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
+      "error": "Awaiting manual logo curation/official asset source update.",
+      "replaced_logo_file": "BlockSys.jpg"
     },
     {
       "title": "CCS",
@@ -5502,10 +5528,9 @@
       "sub": "SC",
       "dblp": "dfrws",
       "source_path": "conference/SC/dfrws.yml",
-      "status": "reused_existing",
-      "logo_file": "DFRWS APAC.jpg",
-      "source_kind": "local_existing",
-      "sha256": "4f8e20ed4a38d48e9c3cf593eaf3343e424d85a710fdf53ac36067c7bdfbd894",
+      "status": "no_logo_candidate",
+      "logo_file": null,
+      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "dfrws26",
       "conference_date": "March 24-27, 2026",
@@ -5515,7 +5540,11 @@
         2026
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026"
+      "annual_update_reason": "source contains latest conference year 2026",
+      "source_url": null,
+      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
+      "error": "Awaiting manual logo curation/official asset source update.",
+      "replaced_logo_file": "DFRWS APAC.jpg"
     },
     {
       "title": "DIMVA",
@@ -6366,14 +6395,14 @@
       "sub": "SE",
       "dblp": "cp",
       "source_path": "conference/SE/cp.yml",
-      "status": "reused_existing",
-      "logo_file": "CP.jpg",
+      "status": "downloaded",
+      "logo_file": "CP.png",
       "source_kind": "official_site_candidate",
-      "sha256": "491528633e1faaef5316d1b5aa00a7c28459b1edc96b87d436d29456529b720a",
-      "source_url": "https://cp2026.a4cp.org/images/lisbon/diego-garcia-CVZ0y7APRtU-unsplash.jpg",
-      "width": 5942,
-      "height": 3820,
-      "mime": "image/jpeg",
+      "sha256": "17f72c5e912b2ecae0d477f8c3ae1cbb9075a5a46d539c42546d9b7bd40f4529",
+      "source_url": "https://cp2026.a4cp.org/images/logos/cp2026_belem_logo_300x300.png",
+      "width": 300,
+      "height": 300,
+      "mime": "image/png",
       "score": 80,
       "asset_years": [
         2026
@@ -6834,10 +6863,10 @@
       "sub": "SE",
       "dblp": "icws",
       "source_path": "conference/SE/icws.yml",
-      "status": "reused_existing",
-      "logo_file": "ICWSM.jpg",
-      "source_kind": "local_existing",
-      "sha256": "930802d7021e2f398e8db35da47e7e0f5c5e82d0ddcfc808153951fe66f8c64d",
+      "status": "downloaded",
+      "logo_file": "ICWS.png",
+      "source_kind": "official_site_candidate",
+      "sha256": "1b724035e7b49500af8e931443e643371114dc0189dde0c4379a3eebcc8ed88e",
       "conference_year": 2026,
       "conference_id": "icws26",
       "conference_date": "July 13-18, 2026",
@@ -6847,7 +6876,15 @@
         2026
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026"
+      "annual_update_reason": "source contains latest conference year 2026",
+      "source_url": "https://services.conferences.computer.org/2025/wp-content/uploads/sites/3/2024/10/logo-icws-new.png",
+      "mime": "image/png",
+      "width": 1130,
+      "height": 1130,
+      "asset_years": [
+        2024,
+        2025
+      ]
     },
     {
       "title": "Internetware",
