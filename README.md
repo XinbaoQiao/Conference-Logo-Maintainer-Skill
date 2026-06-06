@@ -6,13 +6,13 @@ The maintained image assets live in `assets/logos`. A copy can be synced to `../
 
 ## Current Snapshot
 
-Generated on 2026-06-05.
+Generated on 2026-06-06.
 
 - CCFDDL entries processed: 314 CCF A/B/C conference records.
-- Local image files: 269 images plus 1 logo PDF asset.
-- Manifest status summary: `reused_existing=263`, `downloaded=4`, `existing_target=1`, `no_logo_candidate=32`, `page_error=14`.
+- Local image files: 261 image files; no PDF logo assets.
+- Manifest status summary: `reused_existing=253`, `downloaded=8`, `existing_target=1`, `no_logo_candidate=38`, `page_error=14`.
 - Annual review entries: 259.
-- Manual-check entries: 46.
+- Manual-check entries: 52.
 
 The high `reused_existing` count is expected: after the first crawl, reruns reuse local files instead of overwriting manually collected or previously downloaded assets.
 

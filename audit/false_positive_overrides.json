@@ -62,13 +62,5 @@
       "replacement_source_url": "https://dfrws.org/conferences/dfrws-eu-2026/"
     }
   ],
-  "high_confidence_manual_review": [
-    {
-      "title": "DFRWS",
-      "source_path": "conference/SC/dfrws.yml",
-      "current_logo_file": "DFRWS APAC.jpg",
-      "risk_reason": "Needs visual confirmation whether APAC image is generic or region-specific.",
-      "recommended_action": "Retain no_logo_candidate unless official generic DFRWS logo becomes available."
-    }
-  ]
+  "high_confidence_manual_review": []
 }
