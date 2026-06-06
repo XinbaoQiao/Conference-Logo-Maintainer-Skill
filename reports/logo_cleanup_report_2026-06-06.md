@@ -35,6 +35,7 @@
 | CRYPTO | CRYPTO.png | 同一 IACR 组织 wordmark 被复用于多个会议，非 CRYPTO 专属 Logo。 | no_logo_candidate |
 | FSE (SC) | FSE-SC.png | 同一 IACR 组织 wordmark 被复用于多个会议，非 FSE 专属 Logo。 | no_logo_candidate |
 | TCC | TCC.png | 同一 IACR 组织 wordmark 被复用于多个会议，非 TCC 专属 Logo。 | no_logo_candidate |
+| PODC | PODC.jpg | 残留图片带 Nikon 相机 EXIF，官方页面未确认会议主 Logo，判定为照片/横幅误收集。 | no_logo_candidate |
 
 ## 本轮清理后完整性复核
 
@@ -44,7 +45,7 @@
 - `Duplicate content-hash warnings`: `_None._`
 - `Suspicious source-url warnings`: `_None._`
 - `Acronym/generic-stem warnings`: 仍剩 `Cloud`（由 `Cloud` 独占）。
-- 追加语义可疑项扫描后，已移除 ISPA 页面头图、CODASPY 赞助商 logo、5 个 IACR 组织 wordmark 复用。
+- 追加语义可疑项扫描后，已移除 ISPA 页面头图、CODASPY 赞助商 logo、5 个 IACR 组织 wordmark 复用，并移除 PODC 相机照片型资产。
 
 ## 仍需手工复核/告警（爬虫优化）
 

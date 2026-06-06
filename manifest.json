@@ -3490,10 +3490,9 @@
       "sub": "DS",
       "dblp": "podc",
       "source_path": "conference/DS/podc.yml",
-      "status": "reused_existing",
-      "logo_file": "PODC.jpg",
-      "source_kind": "local_existing",
-      "sha256": "5554e6241f8e845c100027723883a9d350aa04c3a7acf45babc029e0b2744d29",
+      "status": "no_logo_candidate",
+      "logo_file": null,
+      "source_kind": "manual_review",
       "conference_year": 2024,
       "conference_id": "podc24",
       "conference_date": "June 17-21, 2024",
@@ -3503,7 +3502,11 @@
         2024
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2024"
+      "annual_update_reason": "source contains latest conference year 2024",
+      "source_url": null,
+      "manual_cleanup_note": "No reliable official PODC conference logo candidate identified from the official PODC 2024 page during this audit pass.",
+      "error": "Awaiting manual logo curation/official asset source update.",
+      "replaced_logo_file": "PODC.jpg"
     },
     {
       "title": "PPoPP",

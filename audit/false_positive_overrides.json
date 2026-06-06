@@ -123,6 +123,15 @@
       "recommended_status": "no_logo_candidate",
       "replacement_confirmation": "No reliable official TCC-specific logo candidate identified in this audit pass.",
       "replacement_source_url": "https://tcc.iacr.org/2025/"
+    },
+    {
+      "title": "PODC",
+      "source_path": "conference/DS/podc.yml",
+      "bad_logo_file": "PODC.jpg",
+      "bad_reason": "Remaining asset carries Nikon camera EXIF and appears to be a photo/header image rather than PODC conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official PODC conference logo candidate identified from the official PODC 2024 page during this audit pass.",
+      "replacement_source_url": "https://www.podc.org/podc2024/"
     }
   ],
   "high_confidence_manual_review": []

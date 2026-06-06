@@ -1,6 +1,6 @@
 # CCF Conference Logo Update List
 
-Generated at: 2026-06-06T13:34:34+00:00
+Generated at: 2026-06-06T13:50:25+00:00
 
 Data source: CCFDDL conference YAML from https://github.com/ccfddl/ccf-deadlines
 
@@ -117,7 +117,6 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | PACT | B | 2025 | PACT.png | source contains latest conference year 2025 | https://pact2025.github.io/ |
 | PG | B | 2026 | PG.jpg | source contains latest conference year 2026 | https://pacificgraphics2026.github.io/ |
 | PKC | B | 2026 | PKC.jpg | source contains latest conference year 2026 | https://pkc.iacr.org/2026/ |
-| PODC | B | 2024 | PODC.jpg | source contains latest conference year 2024 | https://www.podc.org/podc2024 |
 | PPSN | B | 2026 | PPSN.png | source contains latest conference year 2026 | https://ppsn2026.disi.unitn.it/ |
 | RAID | B | 2026 | RAID.webp | source contains latest conference year 2026 | https://raid2026.org |
 | RE | B | 2026 | RE.jpg | source contains latest conference year 2026 | https://conf.researchr.org/home/RE-2026 |
@@ -251,6 +250,7 @@ These entries did not produce a high-confidence logo candidate automatically.
 | InterSpeech | B | 2026 | no_logo_candidate | rejected https://interspeech2026.org/_next/static/chunks/webpack-4d3a773ae3ceb930.js?dpl=dpl_66yQARHn2xpXeXrqJ686m9QKCiw6 | https://interspeech2026.org/ |
 | MSST | B | 2024 | page_error | HTTP Error 404: Not Found | https://storageconference.us/index.html |
 | MobiSys | B | 2026 | no_logo_candidate | https://commons.wikimedia.org/wiki/File:Sleeping_Beauty_Castle_(28926763390).jpg: <urlopen error _ssl.c:1015: The handshake operation timed out> | https://www.sigmobile.org/mobisys/2026/ |
+| PODC | B | 2024 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.podc.org/podc2024 |
 | PerCom | B | 2026 | page_error | HTTP Error 403: Forbidden | https://percom.org/ |
 | SANER | B | 2027 | no_logo_candidate | No usable logo-like image candidates. | https://conf.researchr.org/home/saner-2027 |
 | SAT | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://satisfiability.org/SAT26/ |
