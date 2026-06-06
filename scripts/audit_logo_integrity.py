@@ -59,6 +59,9 @@ SUSPICIOUS_SOURCE_TERMS = {
     "venue",
     "wikimedia",
 }
+SAFE_SOURCE_URL_KEYS = {
+    ("conference/HI/assets.yml", "ASSETS", "https://assets25.sigaccess.org/favicon.svg"),
+}
 
 
 def normalize(value: str | None) -> str:
@@ -192,7 +195,12 @@ def audit(manifest_path: Path, overrides_path: Path | None) -> tuple[str, int]:
 
         source_url = str(entry.get("source_url") or "")
         source_url_key = source_url.lower()
-        source_hits = sorted(term for term in SUSPICIOUS_SOURCE_TERMS if term in source_url_key)
+        safe_source_key = (str(entry.get("source_path") or ""), title, source_url)
+        source_hits = (
+            []
+            if safe_source_key in SAFE_SOURCE_URL_KEYS
+            else sorted(term for term in SUSPICIOUS_SOURCE_TERMS if term in source_url_key)
+        )
         if source_hits:
             source_url_warnings.append(
                 [

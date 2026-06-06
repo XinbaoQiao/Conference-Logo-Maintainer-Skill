@@ -132,6 +132,465 @@
       "recommended_status": "no_logo_candidate",
       "replacement_confirmation": "No reliable official PODC conference logo candidate identified from the official PODC 2024 page during this audit pass.",
       "replacement_source_url": "https://www.podc.org/podc2024/"
+    },
+    {
+      "title": "ASSETS",
+      "source_path": "conference/HI/assets.yml",
+      "bad_logo_file": "ASSETS.png",
+      "bad_reason": "Speaker portrait from ASSETS page, not a conference logo.",
+      "recommended_status": "downloaded",
+      "replacement_confirmation": "Replaced with official ASSETS conference-site favicon.",
+      "replacement_source_url": "https://assets25.sigaccess.org/favicon.svg"
+    },
+    {
+      "title": "ADMA",
+      "source_path": "conference/DB/adma.yml",
+      "bad_logo_file": "ADMA.jpg",
+      "bad_reason": "Official asset is a city night photo, not ADMA conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "AFT",
+      "source_path": "conference/MX/aft.yml",
+      "bad_logo_file": "AFT.jpg",
+      "bad_reason": "Official asset is a London/Big Ben photo, not AFT conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "CAV",
+      "source_path": "conference/CT/cav.yml",
+      "bad_logo_file": "CAV.jpg",
+      "bad_reason": "Official asset is a city landmark photo, not CAV conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "CLUSTER",
+      "source_path": "conference/DS/cluster.yml",
+      "bad_logo_file": "CLUSTER.jpg",
+      "bad_reason": "Image is the IEEE organization logo, not CLUSTER conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "COCOON",
+      "source_path": "conference/CT/cocoon.yml",
+      "bad_logo_file": "COCOON.jpg",
+      "bad_reason": "Official asset is a Singapore skyline photo, not COCOON conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "CSFW",
+      "source_path": "conference/SC/csfw.yml",
+      "bad_logo_file": "CSFW.png",
+      "bad_reason": "Image is the IEEE Computer Society organization logo, not CSFW conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "DFRWS APAC",
+      "source_path": "conference/SC/dfrws-apac.yml",
+      "bad_logo_file": "DFRWS APAC.jpg",
+      "bad_reason": "Image is a city/sunset photo, not DFRWS APAC conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "EASE",
+      "source_path": "conference/SE/ease.yml",
+      "bad_logo_file": "EASE.jpg",
+      "bad_reason": "Official candidate is a TCS sponsor logo, not EASE conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "EuroVis",
+      "source_path": "conference/CG/eurovis.yml",
+      "bad_logo_file": "EuroVis.jpg",
+      "bad_reason": "Image is a map/screenshot, not EuroVis conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "FC",
+      "source_path": "conference/SC/fc.yml",
+      "bad_logo_file": "FC.png",
+      "bad_reason": "Image is an IFCA/Foundation organization mark, not FC conference-specific branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "FG",
+      "source_path": "conference/AI/fg.yml",
+      "bad_logo_file": "FG.webp",
+      "bad_reason": "Image is the IEEE Computer Society organization logo, not FG conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "FPGA",
+      "source_path": "conference/DS/fpga.yml",
+      "bad_logo_file": "FPGA.jpg",
+      "bad_reason": "Image is an award/group photo, not FPGA conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "GLSVLSI",
+      "source_path": "conference/DS/GLSVLSI.yml",
+      "bad_logo_file": "GLSVLSI.jpg",
+      "bad_reason": "Image is a venue photo collage, not GLSVLSI conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "HotOS",
+      "source_path": "conference/SE/hotos.yml",
+      "bad_logo_file": "HotOS.png",
+      "bad_reason": "Image is the ACM organization logo, not HotOS conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "HPDC",
+      "source_path": "conference/DS/hpdc.yml",
+      "bad_logo_file": "HPDC.jpg",
+      "bad_reason": "Image is a campus photo, not HPDC conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "HSCC",
+      "source_path": "conference/CT/hscc.yml",
+      "bad_logo_file": "HSCC.png",
+      "bad_reason": "Image is Vanderbilt University branding, not HSCC conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ICA3PP",
+      "source_path": "conference/DS/ica3pp.yml",
+      "bad_logo_file": "ICA3PP.jpg",
+      "bad_reason": "Image is a skyline photo, not ICA3PP conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ICDCS",
+      "source_path": "conference/DS/icdcs.yml",
+      "bad_logo_file": "ICDCS.jpg",
+      "bad_reason": "Image is a palace/landmark photo, not ICDCS conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ICFP",
+      "source_path": "conference/SE/icfp.yml",
+      "bad_logo_file": "ICFP.jpg",
+      "bad_reason": "Image is a city photo, not ICFP conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ICMR",
+      "source_path": "conference/CG/icmr.yml",
+      "bad_logo_file": "ICMR.png",
+      "bad_reason": "Image is an ACM organization mark, not ICMR conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ICPP",
+      "source_path": "conference/DS/icpp.yml",
+      "bad_logo_file": "ICPP.webp",
+      "bad_reason": "Image is a Singapore city photo, not ICPP conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ICSME",
+      "source_path": "conference/SE/icsme.yml",
+      "bad_logo_file": "ICSME.jpg",
+      "bad_reason": "Image is a landmark photo, not ICSME conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ICWS",
+      "source_path": "conference/SE/icws.yml",
+      "bad_logo_file": "ICWS.png",
+      "bad_reason": "Image is an IEEE SERVICES umbrella mark, not ICWS-specific conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ICWSM",
+      "source_path": "conference/HI/icwsm.yml",
+      "bad_logo_file": "ICWSM.jpg",
+      "bad_reason": "Image is a city sunset photo, not ICWSM conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "IJCB",
+      "source_path": "conference/AI/ijcb.yml",
+      "bad_logo_file": "IJCB.jpg",
+      "bad_reason": "Image is a Rome landmark photo, not IJCB conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "INSCRYPT",
+      "source_path": "conference/SC/inscrypt.yml",
+      "bad_logo_file": "INSCRYPT.jpg",
+      "bad_reason": "Image is a Hong Kong skyline photo, not INSCRYPT conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "Internetware",
+      "source_path": "conference/SE/internetware.yml",
+      "bad_logo_file": "Internetware.png",
+      "bad_reason": "Image is a coast/city photo, not Internetware conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ISSTA",
+      "source_path": "conference/SE/issta.yml",
+      "bad_logo_file": "ISSTA.jpg",
+      "bad_reason": "Image is an AWS sponsor logo, not ISSTA conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "IWQoS",
+      "source_path": "conference/NW/iwqos.yml",
+      "bad_logo_file": "IWQoS.webp",
+      "bad_reason": "Image is a stock security/technology illustration, not IWQoS conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "LCN",
+      "source_path": "conference/NW/lcn.yml",
+      "bad_logo_file": "LCN.jpg",
+      "bad_reason": "Image is a campus/building photo, not LCN conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "LCTES",
+      "source_path": "conference/SE/lctes.yml",
+      "bad_logo_file": "LCTES.jpg",
+      "bad_reason": "Image is a city canal photo, not LCTES conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "MSWiM",
+      "source_path": "conference/NW/mswim.yml",
+      "bad_logo_file": "MSWiM.webp",
+      "bad_reason": "Image is a bridge/night photo, not MSWiM conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "OOPSLA",
+      "source_path": "conference/SE/oopsla.yml",
+      "bad_logo_file": "OOPSLA.jpg",
+      "bad_reason": "Image is a city skyline photo, not OOPSLA conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "POPL",
+      "source_path": "conference/SE/popl.yml",
+      "bad_logo_file": "POPL.png",
+      "bad_reason": "Image is the ACM SIGPLAN organization logo, not POPL conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "PPoPP",
+      "source_path": "conference/DS/ppopp.yml",
+      "bad_logo_file": "PPoPP.png",
+      "bad_reason": "Image is a schedule screenshot, not PPoPP conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "RTAS",
+      "source_path": "conference/DS/rtas.yml",
+      "bad_logo_file": "RTAS.png",
+      "bad_reason": "Image is the IEEE Computer Society organization logo, not RTAS conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "RTSS",
+      "source_path": "conference/MX/rtss.yml",
+      "bad_logo_file": "RTSS.png",
+      "bad_reason": "Image is a city night photo, not RTSS conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "SACMAT",
+      "source_path": "conference/SC/sacmat.yml",
+      "bad_logo_file": "SACMAT.jpg",
+      "bad_reason": "Image is a LinkedIn icon, not SACMAT conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "SAS",
+      "source_path": "conference/SE/sas.yml",
+      "bad_logo_file": "SAS.jpg",
+      "bad_reason": "Image is a Singapore night photo, not SAS conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "SLT",
+      "source_path": "conference/CG/slt.yml",
+      "bad_logo_file": "SLT.png",
+      "bad_reason": "Image is the IEEE Signal Processing Society logo, not SLT conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "SPAA",
+      "source_path": "conference/DS/spaa.yml",
+      "bad_logo_file": "SPAA.jpg",
+      "bad_reason": "Image is a building/campus photo, not SPAA conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "TrustCom",
+      "source_path": "conference/SC/trustcom.yml",
+      "bad_logo_file": "TrustCom.jpg",
+      "bad_reason": "Image is a QR-code/ticket screenshot, not TrustCom conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "VEE",
+      "source_path": "conference/DS/vee.yml",
+      "bad_logo_file": "VEE.png",
+      "bad_reason": "Image is a Huawei vendor/sponsor logo, not VEE conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ATVA",
+      "source_path": "conference/SE/atva.yml",
+      "bad_logo_file": "ATVA.jpg",
+      "bad_reason": "Image is IIT Bombay institutional branding, not ATVA conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "APLAS",
+      "source_path": "conference/SE/aplas.yml",
+      "bad_logo_file": "APLAS.png",
+      "bad_reason": "Image is the Microsoft corporate logo, not APLAS conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ASE",
+      "source_path": "conference/SE/ase.yml",
+      "bad_logo_file": "ASE.png",
+      "bad_reason": "Image is a Munich city/venue photo without ASE conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "CVM",
+      "source_path": "conference/CG/cvm.yml",
+      "bad_logo_file": "CVM.png",
+      "bad_reason": "Image is a Computational Visual Media publisher/IEEE Xplore mark, not CVM conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "ISAAC",
+      "source_path": "conference/CT/isaac.yml",
+      "bad_logo_file": "ISAAC.jpg",
+      "bad_reason": "Image is a decorative landscape background without ISAAC conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "PG",
+      "source_path": "conference/CG/pg.yml",
+      "bad_logo_file": "PG.jpg",
+      "bad_reason": "Image is a graphics-themed city/renderer hero image without PG conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
+    },
+    {
+      "title": "SSE",
+      "source_path": "conference/SE/sse.yml",
+      "bad_logo_file": "SSE.png",
+      "bad_reason": "Image is University of Helsinki institutional branding, not SSE conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
+      "replacement_source_url": null
     }
   ],
   "high_confidence_manual_review": []
