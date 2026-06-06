@@ -4,7 +4,7 @@ Generated from `manifest.json` after applying manual overrides and false-positiv
 
 ## Year / City / Venue Sensitive Logos
 
-These active logo records contain year markers and/or conference-place metadata. Prioritize them in incremental annual refreshes.
+These active logo records contain year markers and/or conference-place metadata. Prioritize them in monthly incremental refreshes.
 
 | Conference | CCF | Year | Place | Logo | Reason | Source |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -215,29 +215,41 @@ These assets may disappear on white backgrounds. Render them on dark backgrounds
 
 | Conference | CCF | Logo | Signal | Source |
 | --- | --- | --- | --- | --- |
-| AAAI | A | AAAI.png | white_ratio=1.00, visible_area=0.33 | https://aaai.org/conference/aaai/aaai-27/ |
-| ASPLOS | A | ASPLOS.png | white_ratio=0.76, visible_area=0.29 | https://www.asplos-conference.org/asplos2027/cfp/ |
-| CHI | A | CHI.svg | svg-white-hints=4, dark-hints=0 | https://chi2027.acm.org/ |
+| AAAI | A | AAAI.png | white_ratio=1.00, visible_area=0.28 | https://aaai.org/conference/aaai/aaai-27/ |
+| ASPLOS | A | ASPLOS.png | white_ratio=0.76, visible_area=0.26 | https://www.asplos-conference.org/asplos2027/cfp/ |
+| CHI | A | CHI.svg | svg-white-hints=14, dark-hints=0 | https://chi2027.acm.org/ |
 | CVPR | A | CVPR.svg | svg-white-hints=36, dark-hints=0 | https://cvpr.thecvf.com/Conferences/2026 |
-| FAST | A | FAST.png | white_ratio=1.00, visible_area=0.33 | https://www.usenix.org/conference/fast27 |
+| FAST | A | FAST.png | white_ratio=1.00, visible_area=0.32 | https://www.usenix.org/conference/fast27 |
+| FM | A | FM.svg | svg-white-hints=1, dark-hints=0 | https://conf.researchr.org/getImage/fm-2026/orig/FM2026-logo.svg |
+| ICLR | A | ICLR.svg | svg-white-hints=2, dark-hints=0 | https://iclr.cc/static/core/img/ICLR-logo.svg |
+| ICML | A | ICML-logo.svg | svg-white-hints=2, dark-hints=0 | https://icml.cc/Conferences/2026 |
 | IEEE VIS | A | IEEE VIS.svg | svg-white-hints=2, dark-hints=0 | https://ieeevis.org/year/2026/assets/vis2026_logo.svg |
-| INFOCOM | A | INFOCOM.png | white_ratio=1.00, visible_area=0.32 | https://infocom2026.ieee-infocom.org/ |
-| ISCA | A | ISCA.svg | svg-white-hints=14, dark-hints=1 | https://iscaconf.org/isca2026/images/isca2026logo.svg |
+| INFOCOM | A | INFOCOM.png | white_ratio=1.00, visible_area=0.33 | https://infocom2026.ieee-infocom.org/ |
+| ISCA | A | ISCA.svg | svg-white-hints=28, dark-hints=2 | https://iscaconf.org/isca2026/images/isca2026logo.svg |
 | NDSS | A | NDSS.svg | svg-white-hints=13, dark-hints=0 | https://www.ndss-symposium.org/ndss2027/ |
 | NSDI | A | NSDI.png | white_ratio=0.97, visible_area=0.34 | https://www.usenix.org/conference/nsdi27 |
+| NeurIPS | A | NeurIPS.svg | svg-white-hints=2, dark-hints=0 | https://neurips.cc/Conferences/2026 |
+| PLDI | A | PLDI.svg | svg-white-hints=1, dark-hints=0 | https://pldi26.sigplan.org/ |
+| SC | A | SC.svg | svg-white-hints=1, dark-hints=0 | https://sc26.supercomputing.org/ |
 | COLT | B | COLT.svg | svg-white-hints=2, dark-hints=0 | https://learningtheory.org/colt2026/ |
-| ECSCW | B | ECSCW.png | white_ratio=1.00, visible_area=0.30 | https://ecscw.eusset.eu/2026 |
-| PPSN | B | PPSN.png | white_ratio=1.00, visible_area=0.35 | https://ppsn2026.disi.unitn.it/ |
-| RECOMB | B | RECOMB.svg | svg-white-hints=885, dark-hints=0 | https://recomb.org/recomb2026/ |
-| SECON | B | SECON.webp | white_ratio=1.00, visible_area=0.37 | https://secon2026.ieee-secon.org/important-dates |
-| Cloud | C | Cloud.png | white_ratio=1.00, visible_area=0.27 | https://services.conferences.computer.org/2026/cloud/ |
-| GLOBECOM | C | GLOBECOM.webp | white_ratio=1.00, visible_area=0.28 | https://globecom2026.ieee-globecom.org/ |
-| HotSec | C | HotSec.png | white_ratio=1.00, visible_area=0.24 | https://www.usenix.org/conferences/byname/158 |
+| DASFAA | B | DASFAA.svg | svg-white-hints=3, dark-hints=0 | https://dasfaa2026.github.io/ |
+| ECSCW | B | ECSCW.png | white_ratio=1.00, visible_area=0.27 | https://ecscw.eusset.eu/2026 |
+| Eurographics | B | Eurographics.svg | svg-white-hints=23, dark-hints=16 | https://eg2026.github.io/ |
+| MICCAI | B | MICCAI.svg | svg-white-hints=1, dark-hints=0 | https://conferences.miccai.org/2026/en/IMPORTANT-DATES.html |
+| MoDELS | B | MoDELS.svg | svg-white-hints=6, dark-hints=0 | https://conf.researchr.org/home/models-2022 |
+| PPSN | B | PPSN.png | white_ratio=1.00, visible_area=0.32 | https://ppsn2026.disi.unitn.it/ |
+| RECOMB | B | RECOMB.svg | svg-white-hints=1814, dark-hints=0 | https://recomb.org/recomb2026/ |
+| SECON | B | SECON.webp | white_ratio=1.00, visible_area=0.38 | https://secon2026.ieee-secon.org/important-dates |
+| CT-RSA | C | CT-RSA.svg | svg-white-hints=1, dark-hints=0 | https://conference.wsu.edu/ct-rsa-2026/ |
+| Cloud | C | Cloud.png | white_ratio=1.00, visible_area=0.25 | https://services.conferences.computer.org/2026/cloud/ |
+| GLOBECOM | C | GLOBECOM.webp | white_ratio=1.00, visible_area=0.29 | https://globecom2026.ieee-globecom.org/ |
+| HotSec | C | HotSec.png | white_ratio=1.00, visible_area=0.23 | https://www.usenix.org/conferences/byname/158 |
 | ICST | C | ICST.svg | svg-white-hints=4, dark-hints=0 | https://conf.researchr.org/home/icst-2026 |
 | IEEE CEC | C | IEEE CEC.svg | svg-white-hints=3, dark-hints=0 | https://attend.ieee.org/wcci-2026/ieee-cec-2025/ |
-| MMM | C | MMM.png | white_ratio=0.83, visible_area=0.29 | https://www.mmm2027.net/ |
+| ISC | C | ISC.svg | svg-white-hints=2, dark-hints=0 | https://isc2026.github.io/ |
+| MMM | C | MMM.png | white_ratio=0.91, visible_area=0.27 | https://www.mmm2027.net/ |
 | SMI | C | SMI.png | white_ratio=1.00, visible_area=0.21 | https://smiconf.github.io/2025/ |
-| SYSTOR | C | SYSTOR.png | white_ratio=1.00, visible_area=0.31 | https://www.systor.org/2025/ |
-| WASA | C | WASA.png | white_ratio=1.00, visible_area=0.40 | http://wasa-conference.org/WASA2026/img/logo/logo.png |
-| WCNC | C | WCNC.webp | white_ratio=1.00, visible_area=0.48 | https://wcnc2026.ieee-wcnc.org/group/21 |
-| WiSec | C | WiSec.svg | svg-white-hints=2, dark-hints=0 | https://wisec26.events.cispa.de/ |
+| SYSTOR | C | SYSTOR.png | white_ratio=1.00, visible_area=0.29 | https://www.systor.org/2025/ |
+| WASA | C | WASA.png | white_ratio=1.00, visible_area=0.39 | http://wasa-conference.org/WASA2026/img/logo/logo.png |
+| WCNC | C | WCNC.webp | white_ratio=1.00, visible_area=0.49 | https://wcnc2026.ieee-wcnc.org/group/21 |
+| WiSec | C | WiSec.svg | svg-white-hints=4, dark-hints=0 | https://wisec26.events.cispa.de/ |

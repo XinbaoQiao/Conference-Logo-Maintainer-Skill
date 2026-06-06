@@ -1,0 +1,94 @@
+name: Scheduled Logo Maintenance
+
+on:
+  schedule:
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Maintenance scope"
+        required: true
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - monthly-focus
+          - full
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conference-logo-maintenance
+  cancel-in-progress: false
+
+jobs:
+  update-logos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Resolve maintenance scope
+        id: scope
+        shell: bash
+        run: |
+          scope="${{ github.event.inputs.scope }}"
+          if [ -z "$scope" ] || [ "$scope" = "auto" ]; then
+            if [ "$(date -u +%m)" = "01" ]; then
+              scope="full"
+            else
+              scope="monthly-focus"
+            fi
+          fi
+          echo "scope=$scope" >> "$GITHUB_OUTPUT"
+          echo "Resolved scope: $scope"
+
+      - name: Run logo maintenance
+        shell: bash
+        run: |
+          if [ "${{ steps.scope.outputs.scope }}" = "full" ]; then
+            python scripts/fetch_ccf_logos.py \
+              --refresh-existing \
+              --ccfddl-cache-dir .cache/ccfddl-yaml \
+              --timeout 10 --sleep 0.02 --candidate-limit 8
+          else
+            python scripts/fetch_ccf_logos.py \
+              --only-annual-update \
+              --refresh-existing \
+              --ccfddl-cache-dir .cache/ccfddl-yaml \
+              --timeout 10 --sleep 0.02 --candidate-limit 8
+          fi
+
+      - name: Regenerate reports and verify scripts
+        run: |
+          python -m py_compile scripts/fetch_ccf_logos.py scripts/audit_logo_integrity.py scripts/generate_logo_focus_report.py
+          python scripts/audit_logo_integrity.py \
+            --manifest manifest.json \
+            --overrides audit/false_positive_overrides.json \
+            --report reports/logo_integrity_check_latest.md
+          python scripts/generate_logo_focus_report.py
+
+      - name: Commit updated assets and reports
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/logos manifest.json update_list.md reports/logo_integrity_check_latest.md reports/logo_update_focus_latest.md
+          if git diff --cached --quiet; then
+            echo "No logo maintenance changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: scheduled logo maintenance (${{ steps.scope.outputs.scope }})"
+          git push

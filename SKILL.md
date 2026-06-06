@@ -23,6 +23,10 @@ Use the existing crawler at `conference-logo-maintainer/scripts/fetch_ccf_logos.
      - `manual_skip` entries stay blank and must not be crawled.
 
 2. Refresh CCFDDL metadata.
+   - Scheduled GitHub maintenance uses `.github/workflows/logo-maintenance.yml`:
+     - every month on day 1, run `--only-annual-update --refresh-existing` to refresh entries previously marked `needs_annual_update`;
+     - in January, run a full `--refresh-existing` pass so every logo can be reconsidered once per year;
+     - after each run, regenerate integrity and focus reports and commit changed assets/reports.
    - Prefer the resumable cache mode:
 
 ```bash

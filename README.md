@@ -28,11 +28,14 @@ Conference Logo Maintainer Skill helps a code agent maintain CCF conference logo
 
 It is designed for users who want a clean, reusable logo asset set without manually visiting hundreds of conference websites or running maintenance scripts themselves.
 
+If you do not want to maintain the assets yourself, bookmark this repository and its reports; the included GitHub Actions workflow refreshes year/city/venue-sensitive logos monthly and runs a full logo refresh once per year.
+
 ### Highlights
 
 | Feature | Why it helps |
 |---|---|
 | One-shot maintenance | The agent handles refresh, repair, audit, reporting, and optional downstream sync in one request. |
+| Scheduled GitHub updates | The repository can refresh focus logos on the first day of each month and run a full refresh annually. |
 | CCF-focused coverage | The workflow targets CCF A/B/C conference records instead of arbitrary web search results. |
 | Manual correction support | Confirmed logo URLs are used directly, while conferences marked as logo-unavailable remain intentionally blank. |
 | False-positive resistance | The agent avoids speaker portraits, venue photos, sponsor marks, generic society logos, UI icons, and unrelated acronym matches. |
@@ -160,11 +163,14 @@ Conference Logo Maintainer Skill 用于帮助 code agent 端到端维护 CCF 会
 
 它适合希望获得干净、可复用会议 Logo 资产集的用户，而不是手动访问上百个会议官网、手动运行维护脚本。
 
+如果你不想自己维护这些 Logo，可以收藏本仓库和报告；仓库内置的 GitHub Actions 会每月刷新带年份、城市、地点信息的重点 Logo，并每年执行一次全量 Logo 更新。
+
 ### 核心特点
 
 | 特点 | 价值 |
 |---|---|
 | 一次请求完成维护 | agent 会在一次调用中完成刷新、修复、审计、报告生成和可选下游同步。 |
+| GitHub 定时更新 | 仓库可以在每月第一天刷新重点 Logo，并每年执行一次全量刷新。 |
 | 面向 CCF 会议范围 | 工作流聚焦 CCF A/B/C 会议记录，而不是泛化网页搜索结果。 |
 | 支持手工修正 | 已确认的 Logo URL 会被优先使用；确认难以获取 Logo 的会议会被明确留空。 |
 | 降低误匹配风险 | agent 会排除演讲者头像、会场照片、赞助商标识、泛组织 Logo、页面 UI 图标和无关缩写匹配。 |

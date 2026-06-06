@@ -596,8 +596,8 @@ def apply_manual_override(
         )
         return entry
 
-    logo_url = str(override.get("logo_url") or "").strip()
-    if not logo_url:
+    logo_urls = manual_logo_urls_for_record(record, override)
+    if not logo_urls:
         entry.update(
             {
                 "status": "metadata_error",
@@ -607,18 +607,28 @@ def apply_manual_override(
         )
         return entry
 
-    try:
-        payload, content_type = fetcher.read_url(logo_url, max_bytes=8_000_000)
-        metadata = validate_image(payload, logo_url, content_type)
-        if not metadata:
-            raise ValueError("manual logo URL did not return a valid logo image")
-    except Exception as exc:
+    fetch_errors: list[str] = []
+    payload: bytes | None = None
+    content_type: str | None = None
+    metadata: dict[str, Any] | None = None
+    logo_url = ""
+    for candidate_url in logo_urls:
+        try:
+            payload, content_type = fetcher.read_url(candidate_url, max_bytes=8_000_000)
+            metadata = validate_image(payload, candidate_url, content_type)
+            if not metadata:
+                raise ValueError("manual logo URL did not return a valid logo image")
+            logo_url = candidate_url
+            break
+        except Exception as exc:
+            fetch_errors.append(f"{candidate_url}: {exc}")
+    if payload is None or metadata is None or not logo_url:
         entry.update(
             {
                 "status": "page_error",
                 "source_kind": "manual_exact_logo",
-                "source_url": logo_url,
-                "error": str(exc),
+                "source_url": logo_urls[0],
+                "error": "; ".join(fetch_errors),
             }
         )
         return entry
@@ -647,6 +657,37 @@ def apply_manual_override(
     if override.get("annual_url_template"):
         entry["annual_url_template"] = override.get("annual_url_template")
     return entry
+
+
+def render_annual_url_template(template: str, record: dict[str, Any]) -> str | None:
+    latest = latest_conference_instance(record) or {}
+    year_value = latest.get("year")
+    try:
+        year = int(year_value)
+    except Exception:
+        return None
+    replacements = {
+        "year": str(year),
+        "yy": f"{year % 100:02d}",
+        "upload_year": str(year - 1),
+    }
+    try:
+        return template.format(**replacements)
+    except KeyError:
+        return None
+
+
+def manual_logo_urls_for_record(record: dict[str, Any], override: dict[str, Any]) -> list[str]:
+    urls: list[str] = []
+    template = str(override.get("annual_url_template") or "").strip()
+    if template:
+        rendered = render_annual_url_template(template, record)
+        if rendered:
+            urls.append(rendered)
+    fallback = str(override.get("logo_url") or "").strip()
+    if fallback and fallback not in urls:
+        urls.append(fallback)
+    return urls
 
 
 def find_existing_logo(
@@ -990,6 +1031,10 @@ def fetch_logo_for_conference(
 
 
 def annual_update_reason(item: dict[str, Any]) -> str | None:
+    if item.get("status") not in {"downloaded", "existing_target", "reused_existing"}:
+        return None
+    if not item.get("logo_file"):
+        return None
     year = item.get("conference_year")
     try:
         year_int = int(year)
@@ -1010,6 +1055,8 @@ def annual_update_reason(item: dict[str, Any]) -> str | None:
         link = str(item.get("official_link") or "")
         if re.search(r"(?:19|20)\d\d", link):
             return "existing local asset reused while latest official link is year-specific"
+    if item.get("logo_file") and item.get("conference_place"):
+        return "conference place/year metadata present"
     return None
 
 
@@ -1220,13 +1267,32 @@ def process_conferences(args: argparse.Namespace) -> int:
     for record in conferences:
         title_key = normalize_key(str(record.get("title") or ""))
         record["duplicate_title"] = bool(title_key and title_counts.get(title_key, 0) > 1)
+    existing = existing_logo_index(output_dir)
+    previous_manifest = previous_manifest_index(metadata_dir)
+    previous_entries = previous_manifest_entry_index(metadata_dir)
+    selected_keys: set[tuple[str, str]] | None = None
+    if args.only_annual_update:
+        selected_keys = {
+            key
+            for key, entry in previous_entries.items()
+            if entry.get("needs_annual_update") and entry.get("logo_file")
+        }
+        if not selected_keys:
+            print("No previous annual-update targets found; nothing to refresh.")
+            entries = list(previous_entries.values())
+            write_manifest(metadata_dir, entries, started_at, args.manifest_name)
+            write_update_list(metadata_dir, entries, args.update_list_name)
+            return 0
+        conferences = [
+            record
+            for record in conferences
+            if (str(record.get("source_path") or ""), str(record.get("title") or "").strip())
+            in selected_keys
+        ]
     if args.offset or args.limit:
         start = max(args.offset, 0)
         end = start + args.limit if args.limit else None
         conferences = conferences[start:end]
-    existing = existing_logo_index(output_dir)
-    previous_manifest = previous_manifest_index(metadata_dir)
-    previous_entries = previous_manifest_entry_index(metadata_dir)
     previous_logo_counts: dict[str, int] = {}
     for previous_entry in previous_entries.values():
         logo = str(previous_entry.get("logo_file") or "").strip()
@@ -1345,6 +1411,19 @@ def process_conferences(args: argparse.Namespace) -> int:
             }
         entries.append(entry)
 
+    if args.only_annual_update:
+        merged_entries_by_key = dict(previous_entries)
+        for entry in entries:
+            key = (str(entry.get("source_path") or ""), str(entry.get("title") or ""))
+            if key[0] or key[1]:
+                merged_entries_by_key[key] = entry
+        ordered_entries: list[dict[str, Any]] = []
+        for key in previous_entries:
+            if key in merged_entries_by_key:
+                ordered_entries.append(merged_entries_by_key.pop(key))
+        ordered_entries.extend(merged_entries_by_key.values())
+        entries = ordered_entries
+
     write_manifest(metadata_dir, entries, started_at, args.manifest_name)
     write_update_list(metadata_dir, entries, args.update_list_name)
     summary: dict[str, int] = {}
@@ -1373,6 +1452,11 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         "--refresh-existing",
         action="store_true",
         help="crawl even when a matching local logo already exists",
+    )
+    parser.add_argument(
+        "--only-annual-update",
+        action="store_true",
+        help="refresh only previous manifest entries marked needs_annual_update, then merge with unchanged entries",
     )
     parser.add_argument("--overwrite", action="store_true", help="overwrite target logo files")
     parser.add_argument("--limit", type=int, default=0, help="debug limit for number of conferences")
