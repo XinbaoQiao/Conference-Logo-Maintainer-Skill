@@ -1,0 +1,118 @@
+{
+  "generated_from": "../CorrectedLOGO.md",
+  "policy": {
+    "missing_from_markdown": "Use the normal CCFDDL crawler and keep tracking future annual logo changes.",
+    "exact_logo": "Download this manually confirmed logo URL before local reuse or automatic crawling.",
+    "manual_skip": "Leave the logo blank and do not crawl; the Markdown supplied only a meeting URL."
+  },
+  "entries": [
+    {
+      "title": "ACM MM",
+      "source_path": "conference/CG/mm.yml",
+      "action": "exact_logo",
+      "logo_url": "https://acmmm.org/images/logos/mm26.png",
+      "annual_url_template": "https://acmmm.org/images/logos/mm{yy}.png",
+      "logo_file": "ACM MM.png",
+      "note": "CorrectedLOGO.md confirms ACM MM 2026 logo."
+    },
+    {
+      "title": "APSEC",
+      "source_path": "conference/SE/apsec.yml",
+      "action": "manual_skip",
+      "official_url": "https://conf.researchr.org/home/apsec-2026",
+      "note": "CorrectedLOGO.md provides only the conference URL; leave blank and skip crawling."
+    },
+    {
+      "title": "ASSETS",
+      "source_path": "conference/HI/assets.yml",
+      "action": "exact_logo",
+      "logo_url": "https://assets25.sigaccess.org/imgs/logo_horizontal-light.svg",
+      "annual_url_template": "https://assets{yy}.sigaccess.org/imgs/logo_horizontal-light.svg",
+      "logo_file": "ASSETS.svg",
+      "note": "CorrectedLOGO.md replaces favicon with the horizontal ASSETS site logo."
+    },
+    {
+      "title": "CogSci",
+      "source_path": "conference/MX/cogsci.yml",
+      "action": "exact_logo",
+      "logo_url": "https://cognitivesciencesociety.org/wp-content/uploads/2025/09/cogsci2026_logo-main_color-scaled-1.png",
+      "annual_url_template": "https://cognitivesciencesociety.org/wp-content/uploads/{upload_year}/09/cogsci{year}_logo-main_color-scaled-1.png",
+      "logo_file": "CogSci.png",
+      "note": "CorrectedLOGO.md confirms CogSci 2026 logo."
+    },
+    {
+      "title": "ICFEM",
+      "source_path": "conference/SE/icfem.yml",
+      "action": "manual_skip",
+      "official_url": "https://www.conferenceeye.cn/detail/c5a69aa2f77416d0e283125e72e99644",
+      "note": "CorrectedLOGO.md provides only a conference detail URL; leave blank and skip crawling."
+    },
+    {
+      "title": "ICLR",
+      "source_path": "conference/AI/iclr.yml",
+      "action": "exact_logo",
+      "logo_url": "https://iclr.cc/static/core/img/ICLR-logo.svg",
+      "logo_file": "ICLR.svg",
+      "note": "CorrectedLOGO.md confirms stable ICLR logo."
+    },
+    {
+      "title": "IEEE VIS",
+      "source_path": "conference/CG/vis.yml",
+      "action": "exact_logo",
+      "logo_url": "https://ieeevis.org/year/2026/assets/vis2026_logo.svg",
+      "annual_url_template": "https://ieeevis.org/year/{year}/assets/vis{year}_logo.svg",
+      "logo_file": "IEEE VIS.svg",
+      "note": "CorrectedLOGO.md confirms IEEE VIS 2026 logo."
+    },
+    {
+      "title": "LICS",
+      "source_path": "conference/CT/lics.yml",
+      "action": "exact_logo",
+      "logo_url": "https://lics.siglog.org/licslogo.png",
+      "logo_file": "LICS.png",
+      "note": "CorrectedLOGO.md confirms stable LICS logo."
+    },
+    {
+      "title": "RV",
+      "source_path": "conference/SE/rv.yml",
+      "action": "manual_skip",
+      "official_url": "https://rv25.isec.tugraz.at/",
+      "note": "CorrectedLOGO.md provides only the conference URL; leave blank and skip crawling."
+    },
+    {
+      "title": "WASA",
+      "source_path": "conference/NW/wasa.yml",
+      "action": "exact_logo",
+      "logo_url": "http://wasa-conference.org/WASA2026/img/logo/logo.png",
+      "annual_url_template": "http://wasa-conference.org/WASA{year}/img/logo/logo.png",
+      "logo_file": "WASA.png",
+      "note": "CorrectedLOGO.md confirms WASA 2026 logo."
+    },
+    {
+      "title": "WSDM",
+      "source_path": "conference/DB/wsdm.yml",
+      "action": "exact_logo",
+      "logo_url": "https://www.wsdm-conference.org/2024/wp-content/uploads/2023/06/cropped-wsdm_logo-1.png",
+      "logo_file": "WSDM.png",
+      "note": "CorrectedLOGO.md confirms WSDM logo."
+    }
+  ],
+  "ignored_markdown_items": [
+    {
+      "value": "<local Typora image path omitted>",
+      "reason": "Local Typora path is not a reproducible source URL."
+    },
+    {
+      "value": "https://www.computer.org/_next/image?url=https%3A%2F%2Fmain-cdn.computer.org%2Fwp-content%2Fuploads%2F2025%2F10%2FIEEE-CS_LogoTM-orange.jpg&w=384&q=75",
+      "reason": "Generic IEEE Computer Society mark, not mapped to a specific CCF conference."
+    },
+    {
+      "value": "https://dv8u54qddgb7y.cloudfront.net/society/conference/images/kiisc/top_logo.png",
+      "reason": "No matching CCFDDL conference entry was identified."
+    },
+    {
+      "value": "<local Typora image path omitted>",
+      "reason": "Local Typora path is not a reproducible source URL."
+    }
+  ]
+}

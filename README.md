@@ -9,10 +9,11 @@ The maintained image assets live in `assets/logos`. A copy can be synced to `../
 Generated on 2026-06-06.
 
 - CCFDDL entries processed: 314 CCF A/B/C conference records.
-- Local image files: 203 image files; no PDF logo assets.
-- Manifest status summary: `reused_existing=197, downloaded=7, no_logo_candidate=96, page_error=14`.
-- Annual review entries: 171.
-- Manual-check entries: 110.
+- Local image files: 199 image files; no PDF logo assets.
+- Manifest status summary: `reused_existing=191, downloaded=9, no_logo_candidate=101, page_error=13`.
+- Annual review entries: 167.
+- Manual-check entries: 114.
+- Refresh focus report: `reports/logo_update_focus_latest.md` tracks year/place-sensitive logos and white-logo watchlist.
 
 The high `reused_existing` count is expected: after the first crawl, reruns reuse local files instead of overwriting manually collected or previously downloaded assets.
 
@@ -21,6 +22,8 @@ The high `reused_existing` count is expected: after the first crawl, reruns reus
 - `scripts/fetch_ccf_logos.py`: reusable crawler and manifest generator.
 - `manifest.json`: machine-readable manifest with CCFDDL source path, official link, conference year, local file, status, hash, and annual-update flags.
 - `update_list.md`: human maintenance checklist, split into annual-review, missing/manual-check, and stable entries.
+- `audit/manual_logo_overrides.json`: manually confirmed exact-logo URLs and manual-skip entries derived from corrected Markdown input.
+- `reports/logo_update_focus_latest.md`: year/place-sensitive refresh targets and white-logo visual QA watchlist.
 - `assets/logos/*`: maintained local logo assets.
 - `../Better-Poster-Skill/assets/logos/*`: poster-skill copy of the same assets.
 

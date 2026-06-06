@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-06T14:23:55+00:00",
-  "started_at": "2026-06-05T14:58:57+00:00",
+  "generated_at": "2026-06-06T16:07:56+00:00",
+  "started_at": "2026-06-06T16:02:39+00:00",
   "data_source": {
     "ccfddl_tree": "https://api.github.com/repos/ccfddl/ccf-deadlines/git/trees/main?recursive=1",
     "ccfddl_raw_base": "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/"
   },
   "summary": {
-    "reused_existing": 197,
-    "no_logo_candidate": 96,
-    "downloaded": 7,
-    "page_error": 14
+    "reused_existing": 191,
+    "no_logo_candidate": 101,
+    "downloaded": 9,
+    "page_error": 13
   },
   "entries": [
     {
@@ -261,9 +261,6 @@
       "sub": "AI",
       "dblp": "conll",
       "source_path": "conference/AI/conll.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "conll26",
       "conference_date": "July 3 - 4, 2026",
@@ -272,11 +269,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CoNLL.jpg"
+      "error": "No official logo candidate found; current asset is conference portrait photo metadata.",
+      "manual_cleanup_note": "No reliable replacement source identified during this audit pass.",
+      "replaced_logo_file": "CoNLL.jpg",
+      "needs_annual_update": false
     },
     {
       "title": "CVPR",
@@ -394,9 +393,6 @@
       "sub": "AI",
       "dblp": "fg",
       "source_path": "conference/AI/fg.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "fg26",
       "conference_date": "May 25-29, 2026",
@@ -405,12 +401,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "FG.webp"
+      "error": "Image is the IEEE Computer Society organization logo, not FG conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "FG.webp",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "GECCO",
@@ -550,10 +548,6 @@
       "sub": "AI",
       "dblp": "iclr",
       "source_path": "conference/AI/iclr.yml",
-      "status": "reused_existing",
-      "logo_file": "iclr.svg",
-      "source_kind": "local_existing",
-      "sha256": "33f6c1d071f97d479c26ef52db09bc832f143a80f38db818fff108564f0c0640",
       "conference_year": 2026,
       "conference_id": "iclr26",
       "conference_date": "May 01-05, 2026",
@@ -562,6 +556,17 @@
       "observed_years": [
         2026
       ],
+      "manual_override_action": "exact_logo",
+      "manual_override_note": "CorrectedLOGO.md confirms stable ICLR logo.",
+      "status": "downloaded",
+      "logo_file": "ICLR.svg",
+      "sha256": "4f13044841d3450c51ea4200da1e0414d3dc22a61902775263e7fc3f21cdcca5",
+      "source_url": "https://iclr.cc/static/core/img/ICLR-logo.svg",
+      "source_kind": "manual_exact_logo",
+      "width": 281,
+      "height": 84,
+      "mime": "image/svg+xml",
+      "asset_years": [],
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
     },
@@ -708,9 +713,6 @@
       "sub": "AI",
       "dblp": "icb",
       "source_path": "conference/AI/ijcb.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "ijcb2026",
       "conference_date": "September 1-4, 2026",
@@ -719,12 +721,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "IJCB.jpg"
+      "error": "Image is a Rome landmark photo, not IJCB conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "IJCB.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "IJCNN",
@@ -733,10 +737,15 @@
       "sub": "AI",
       "dblp": "ijcnn",
       "source_path": "conference/AI/ijcnn.yml",
-      "status": "downloaded",
+      "status": "reused_existing",
       "logo_file": "IJCNN.webp",
       "source_kind": "official_site_candidate",
       "sha256": "dcc90197223f29734da7e34e68799af60225adb111dd1c5464a30bdb35e8d239",
+      "source_url": "https://confcats-siteplex.s3.amazonaws.com/ijcnn/glide-cache/containers/logos/ijcnn27-logo-hr_color-simple.webp/e36784d58dd02682aca1842b8374b346/ijcnn27-logo-hr_color-simple.webp",
+      "width": 1024,
+      "height": 341,
+      "mime": "image/webp",
+      "asset_years": [],
       "conference_year": 2026,
       "conference_id": "ijcnn2026",
       "conference_date": "June 21 - 26, 2026",
@@ -746,12 +755,7 @@
         2026
       ],
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
-      "source_url": "https://confcats-siteplex.s3.amazonaws.com/ijcnn/glide-cache/containers/logos/ijcnn27-logo-hr_color-simple.webp/e36784d58dd02682aca1842b8374b346/ijcnn27-logo-hr_color-simple.webp",
-      "mime": "image/webp",
-      "width": 1024,
-      "height": 341,
-      "asset_years": []
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "IROS",
@@ -1068,9 +1072,6 @@
       "sub": "CG",
       "dblp": "cvm",
       "source_path": "conference/CG/cvm.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "cvm26",
       "conference_date": "April 10-12, 2026",
@@ -1079,12 +1080,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit; previous image was a false positive.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CVM.png"
+      "error": "Image is a Computational Visual Media publisher/IEEE Xplore mark, not CVM conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "CVM.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "Eurographics",
@@ -1137,9 +1140,6 @@
       "sub": "CG",
       "dblp": "vissym",
       "source_path": "conference/CG/eurovis.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "eurovis2026",
       "conference_date": "June 8-12, 2026",
@@ -1148,11 +1148,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "EuroVis.jpg"
+      "error": "Image is a map/screenshot, not EuroVis conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "EuroVis.jpg",
+      "needs_annual_update": false
     },
     {
       "title": "GMP",
@@ -1249,9 +1251,6 @@
       "sub": "CG",
       "dblp": "mir",
       "source_path": "conference/CG/icmr.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icmr26",
       "conference_date": "June 16-19, 2026",
@@ -1260,12 +1259,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICMR.png"
+      "error": "Image is an ACM organization mark, not ICMR conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ICMR.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "InterSpeech",
@@ -1346,10 +1347,6 @@
       "sub": "CG",
       "dblp": "mm",
       "source_path": "conference/CG/mm.yml",
-      "status": "reused_existing",
-      "logo_file": "ACM MM.svg",
-      "source_kind": "local_existing",
-      "sha256": "d6a157151bc757fbc1381f1884a8a08f42bc43434b621de5ad0c9537b51d5827",
       "conference_year": 2026,
       "conference_id": "mm26",
       "conference_date": "November 10-14, 2026",
@@ -1358,6 +1355,18 @@
       "observed_years": [
         2026
       ],
+      "manual_override_action": "exact_logo",
+      "manual_override_note": "CorrectedLOGO.md confirms ACM MM 2026 logo.",
+      "status": "downloaded",
+      "logo_file": "ACM MM.png",
+      "sha256": "7d58b71090ad9e21abcda49a884ed64bce764080bcfcf8a6f48c022feef2ecab",
+      "source_url": "https://acmmm.org/images/logos/mm26.png",
+      "source_kind": "manual_exact_logo",
+      "width": 700,
+      "height": 200,
+      "mime": "image/png",
+      "asset_years": [],
+      "annual_url_template": "https://acmmm.org/images/logos/mm{yy}.png",
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
     },
@@ -1433,9 +1442,6 @@
       "sub": "CG",
       "dblp": "pg",
       "source_path": "conference/CG/pg.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "pg26",
       "conference_date": "October 6-9, 2026",
@@ -1444,12 +1450,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit; previous image was a false positive.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "PG.jpg"
+      "error": "Image is a graphics-themed city/renderer hero image without PG conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "PG.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "PRCV",
@@ -1532,9 +1540,6 @@
       "sub": "CG",
       "dblp": "slt",
       "source_path": "conference/CG/slt.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "slt26",
       "conference_date": "December 13-16, 2026",
@@ -1543,12 +1548,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "SLT.png"
+      "error": "Image is the IEEE Signal Processing Society logo, not SLT conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "SLT.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "SMI",
@@ -1601,10 +1608,6 @@
       "sub": "CG",
       "dblp": "visualization",
       "source_path": "conference/CG/vis.yml",
-      "status": "reused_existing",
-      "logo_file": "IEEE VIS.svg",
-      "source_kind": "local_existing",
-      "sha256": "37837fd15deaf194152273fd5d9e96b1a8678db7b294dd11a3b76cb6e96ed966",
       "conference_year": 2026,
       "conference_id": "vis26",
       "conference_date": "November 9-13, 2026",
@@ -1613,6 +1616,20 @@
       "observed_years": [
         2026
       ],
+      "manual_override_action": "exact_logo",
+      "manual_override_note": "CorrectedLOGO.md confirms IEEE VIS 2026 logo.",
+      "status": "downloaded",
+      "logo_file": "IEEE VIS.svg",
+      "sha256": "71d9fa2e91e34b91abd4dd5f7dcdaea7d79979a9e37cdb76054c83bd09a9991a",
+      "source_url": "https://ieeevis.org/year/2026/assets/vis2026_logo.svg",
+      "source_kind": "manual_exact_logo",
+      "width": 497,
+      "height": 113,
+      "mime": "image/svg+xml",
+      "asset_years": [
+        2026
+      ],
+      "annual_url_template": "https://ieeevis.org/year/{year}/assets/vis{year}_logo.svg",
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
     },
@@ -1666,9 +1683,6 @@
       "sub": "CT",
       "dblp": "cav",
       "source_path": "conference/CT/cav.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "cav26",
       "conference_date": "July 26-29, 2026",
@@ -1677,12 +1691,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CAV.jpg"
+      "error": "Official asset is a city landmark photo, not CAV conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "CAV.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "COCOON",
@@ -1691,9 +1707,6 @@
       "sub": "CT",
       "dblp": "cocoon",
       "source_path": "conference/CT/cocoon.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "cocoon26",
       "conference_date": "July 23-25, 2026",
@@ -1702,12 +1715,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "COCOON.jpg"
+      "error": "Official asset is a Singapore skyline photo, not COCOON conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "COCOON.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "CONCUR",
@@ -1781,9 +1796,6 @@
       "sub": "CT",
       "dblp": "hybrid",
       "source_path": "conference/CT/hscc.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "hscc26",
       "conference_date": "May 11-14, 2026",
@@ -1792,12 +1804,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "HSCC.png"
+      "error": "Image is Vanderbilt University branding, not HSCC conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "HSCC.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ICALP",
@@ -1852,9 +1866,6 @@
       "sub": "CT",
       "dblp": "isaac",
       "source_path": "conference/CT/isaac.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "isaac26",
       "conference_date": "December 6-9, 2026",
@@ -1863,12 +1874,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit; previous image was a false positive.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ISAAC.jpg"
+      "error": "Image is a decorative landscape background without ISAAC conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ISAAC.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "LICS",
@@ -1877,10 +1890,6 @@
       "sub": "CT",
       "dblp": "lics",
       "source_path": "conference/CT/lics.yml",
-      "status": "reused_existing",
-      "logo_file": "LICS.jpg",
-      "source_kind": "local_existing",
-      "sha256": "377175a0b3569c62ff3e49fb11578af9a921dfee44ad3a2597d81abe506a8b0d",
       "conference_year": 2026,
       "conference_id": "lics26",
       "conference_date": "July 20-23, 2026",
@@ -1889,6 +1898,17 @@
       "observed_years": [
         2026
       ],
+      "manual_override_action": "exact_logo",
+      "manual_override_note": "CorrectedLOGO.md confirms stable LICS logo.",
+      "status": "downloaded",
+      "logo_file": "LICS.png",
+      "sha256": "c32d1687891b15b72c7fb56d7e4874f17d408afe5e78bab4b4564e8d22ac77f2",
+      "source_url": "https://lics.siglog.org/licslogo.png",
+      "source_kind": "manual_exact_logo",
+      "width": 886,
+      "height": 580,
+      "mime": "image/png",
+      "asset_years": [],
       "needs_annual_update": false
     },
     {
@@ -1898,9 +1918,6 @@
       "sub": "CT",
       "dblp": "sat",
       "source_path": "conference/CT/sat.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "sat26",
       "conference_date": "July 20 - July 23, 2026",
@@ -1909,11 +1926,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "SAT.jpg"
+      "error": "Current asset is unrelated venue image; candidate only exposes AI Journal logo.",
+      "manual_cleanup_note": "No official SAT conference logo candidate detected.",
+      "replaced_logo_file": "SAT.jpg",
+      "manual_official_url": "https://satisfiability.org/SAT26/",
+      "needs_annual_update": false
     },
     {
       "title": "SETTA",
@@ -1936,10 +1956,10 @@
         2033
       ],
       "status": "no_logo_candidate",
-      "error": "rejected https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico; https://lh3.googleusercontent.com/sitesv/AA5AbUALMIPZEogzCjuwQqt2XI3ODrSTmh3Ldl2b3ZPMYz2xuMiHP5qJM7GF6bowCP_it13WaLW0FQolFcNXnOfg3Ai_fN7wFODxW8YS935nWElTZDnwJcL48hIQW9rXF2POTE4ANTUHc-Vn7Pc6oSmxeeTD30LPwyeeRQCWG5JPyxATxy-Mwlb_70XKmp3tOh4=w16383: <urlopen error [Errno 101] Network is unreachable>",
+      "error": "https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUB_8zG0FS7gYdbqFhkSewl-mYN6MM6obAcniFfrR473zlQhtahuXyJs0XY_b8Yy2GTOAgZ2WBZ8Nf3_8E-9BYBUgEm9H-8miPx9Fg7BZvav5COTwoXCDWcNLw18HSolyFsD7Rmh83-cGQkJTJ7ReTapF3YbifSOLfn56byBH7TLwDFh7EnkKLGUVdAa2bM=w16383: <urlopen error _ssl.c:1015: The handshake operation timed out>",
       "candidate_urls": [
         "https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico",
-        "https://lh3.googleusercontent.com/sitesv/AA5AbUALMIPZEogzCjuwQqt2XI3ODrSTmh3Ldl2b3ZPMYz2xuMiHP5qJM7GF6bowCP_it13WaLW0FQolFcNXnOfg3Ai_fN7wFODxW8YS935nWElTZDnwJcL48hIQW9rXF2POTE4ANTUHc-Vn7Pc6oSmxeeTD30LPwyeeRQCWG5JPyxATxy-Mwlb_70XKmp3tOh4=w16383"
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUB_8zG0FS7gYdbqFhkSewl-mYN6MM6obAcniFfrR473zlQhtahuXyJs0XY_b8Yy2GTOAgZ2WBZ8Nf3_8E-9BYBUgEm9H-8miPx9Fg7BZvav5COTwoXCDWcNLw18HSolyFsD7Rmh83-cGQkJTJ7ReTapF3YbifSOLfn56byBH7TLwDFh7EnkKLGUVdAa2bM=w16383"
       ],
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2025"
@@ -2019,9 +2039,6 @@
       "sub": "DB",
       "dblp": "adma",
       "source_path": "conference/DB/adma.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "adma26",
       "conference_date": "November 1 - 3, 2026",
@@ -2030,12 +2047,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ADMA.jpg"
+      "error": "Official asset is a city night photo, not ADMA conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ADMA.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "APWeb-WAIM",
@@ -2464,10 +2483,6 @@
       "sub": "DB",
       "dblp": "wsdm",
       "source_path": "conference/DB/wsdm.yml",
-      "status": "reused_existing",
-      "logo_file": "WSDM.jpg",
-      "source_kind": "local_existing",
-      "sha256": "ab572b43ef335ba6abf184cf5a6c332ff060abd00541441ab4e31e0e2df25871",
       "conference_year": 2027,
       "conference_id": "wsdm27",
       "conference_date": "February 15 - 19, 2027",
@@ -2475,6 +2490,20 @@
       "official_link": "https://wsdm-conference.org/2027/",
       "observed_years": [
         2027
+      ],
+      "manual_override_action": "exact_logo",
+      "manual_override_note": "CorrectedLOGO.md confirms WSDM logo.",
+      "status": "downloaded",
+      "logo_file": "WSDM.png",
+      "sha256": "8a0aa7bd8423cd42aab8d69c5b71bde55085aa89be010726e6a4cb7ec5ee932c",
+      "source_url": "https://www.wsdm-conference.org/2024/wp-content/uploads/2023/06/cropped-wsdm_logo-1.png",
+      "source_kind": "manual_exact_logo",
+      "width": 200,
+      "height": 75,
+      "mime": "image/png",
+      "asset_years": [
+        2023,
+        2024
       ],
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2027"
@@ -2486,9 +2515,6 @@
       "sub": "DS",
       "dblp": "glvlsi",
       "source_path": "conference/DS/GLSVLSI.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "glsvlsi2026",
       "conference_date": "June 22-24, 2026",
@@ -2497,11 +2523,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "GLSVLSI.jpg"
+      "error": "Image is a venue photo collage, not GLSVLSI conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "GLSVLSI.jpg",
+      "needs_annual_update": false
     },
     {
       "title": "APPT",
@@ -2745,9 +2773,6 @@
       "sub": "DS",
       "dblp": "cluster",
       "source_path": "conference/DS/cluster.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "cluster26",
       "conference_date": "September 22-25, 2026",
@@ -2756,12 +2781,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CLUSTER.jpg"
+      "error": "Image is the IEEE organization logo, not CLUSTER conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "CLUSTER.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "DAC",
@@ -2943,9 +2970,6 @@
       "sub": "DS",
       "dblp": "fpga",
       "source_path": "conference/DS/fpga.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "fpga2026",
       "conference_date": "February 22 - February 24, 2026",
@@ -2954,11 +2978,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "FPGA.jpg"
+      "error": "Image is an award/group photo, not FPGA conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "FPGA.jpg",
+      "needs_annual_update": false
     },
     {
       "title": "FPT",
@@ -3079,9 +3105,6 @@
       "sub": "DS",
       "dblp": "hpdc",
       "source_path": "conference/DS/hpdc.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "hpdc2026",
       "conference_date": "July 13-16, 2026",
@@ -3090,12 +3113,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "HPDC.jpg"
+      "error": "Image is a campus photo, not HPDC conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "HPDC.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ICA3PP",
@@ -3104,9 +3129,6 @@
       "sub": "DS",
       "dblp": "ica3pp",
       "source_path": "conference/DS/ica3pp.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2025,
       "conference_id": "ica3pp",
       "conference_date": "October 30- November 2, 2025",
@@ -3115,12 +3137,14 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICA3PP.jpg"
+      "error": "Image is a skyline photo, not ICA3PP conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ICA3PP.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "ICCAD",
@@ -3173,9 +3197,6 @@
       "sub": "DS",
       "dblp": "icdcs",
       "source_path": "conference/DS/icdcs.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icdcs26",
       "conference_date": "June 22-25, 2026",
@@ -3184,12 +3205,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICDCS.jpg"
+      "error": "Image is a palace/landmark photo, not ICDCS conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ICDCS.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ICPADS",
@@ -3217,9 +3240,6 @@
       "sub": "DS",
       "dblp": "icpp",
       "source_path": "conference/DS/icpp.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icpp26",
       "conference_date": "September 28-October 1, 2026",
@@ -3228,12 +3248,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICPP.webp"
+      "error": "Image is a Singapore city photo, not ICPP conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ICPP.webp",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ICS",
@@ -3374,10 +3396,6 @@
       "sub": "DS",
       "dblp": "ispa",
       "source_path": "conference/DS/ispa.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
-      "source_url": null,
       "conference_year": 2021,
       "conference_id": "ispa21",
       "conference_date": "September 30-October 3, 2021",
@@ -3386,11 +3404,15 @@
       "observed_years": [
         2021
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2021",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
+      "source_url": null,
+      "error": "Official-site candidate is cropped-ny1.jpg, a New York/header photo rather than a conference logo.",
       "manual_cleanup_note": "No reliable official ISPA conference logo candidate identified in this audit pass.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ISPA.jpg"
+      "replaced_logo_file": "ISPA.jpg",
+      "manual_official_url": "http://www.cloud-conf.net/ispa2021/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2021"
     },
     {
       "title": "ITC-Asia",
@@ -3546,9 +3568,6 @@
       "sub": "DS",
       "dblp": "podc",
       "source_path": "conference/DS/podc.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2024,
       "conference_id": "podc24",
       "conference_date": "June 17-21, 2024",
@@ -3557,12 +3576,15 @@
       "observed_years": [
         2024
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2024",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
+      "error": "Remaining asset carries Nikon camera EXIF and appears to be a photo/header image rather than PODC conference branding.",
       "manual_cleanup_note": "No reliable official PODC conference logo candidate identified from the official PODC 2024 page during this audit pass.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "PODC.jpg"
+      "replaced_logo_file": "PODC.jpg",
+      "manual_official_url": "https://www.podc.org/podc2024/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2024"
     },
     {
       "title": "PPoPP",
@@ -3571,9 +3593,6 @@
       "sub": "DS",
       "dblp": "ppopp",
       "source_path": "conference/DS/ppopp.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "ppopp26",
       "conference_date": "Jan 31-Feb 4, 2026",
@@ -3582,11 +3601,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "PPoPP.png"
+      "error": "Image is a schedule screenshot, not PPoPP conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "PPoPP.png",
+      "needs_annual_update": false
     },
     {
       "title": "RTAS",
@@ -3595,9 +3616,6 @@
       "sub": "DS",
       "dblp": "rtas",
       "source_path": "conference/DS/rtas.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "rtas2026",
       "conference_date": "May 12-14, 2026",
@@ -3606,12 +3624,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "RTAS.png"
+      "error": "Image is the IEEE Computer Society organization logo, not RTAS conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "RTAS.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "SC",
@@ -3685,10 +3705,6 @@
       "sub": "DS",
       "dblp": "cloud",
       "source_path": "conference/DS/socc.yml",
-      "status": "downloaded",
-      "logo_file": "SoCC.png",
-      "source_kind": "official_site_candidate",
-      "sha256": "dda674e7de73190053051896bfd1ff63286026e0575118775c8421d5b0cf5c3c",
       "conference_year": 2026,
       "conference_id": "socc26",
       "conference_date": "November 18-20, 2026",
@@ -3697,15 +3713,15 @@
       "observed_years": [
         2026
       ],
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
+      "source_url": null,
+      "error": "Cross-conference acronym/theme reuse; Cloud.png is the IEEE CLOUD conference logo, not SoCC conference branding.",
+      "manual_cleanup_note": "No reliable official SoCC conference-specific replacement found during this audit pass.",
+      "replaced_logo_file": "Cloud.png",
+      "manual_official_url": "https://acmsocc.org/2026/",
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
-      "source_url": "https://acmsocc.org/2026/assets/img/socc-logo.png",
-      "mime": "image/png",
-      "width": 180,
-      "height": 180,
-      "asset_years": [
-        2026
-      ]
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "SPAA",
@@ -3714,9 +3730,6 @@
       "sub": "DS",
       "dblp": "spaa",
       "source_path": "conference/DS/spaa.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "spaa26",
       "conference_date": "July 6 - July 10, 2026",
@@ -3725,11 +3738,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "SPAA.jpg"
+      "error": "Image is a building/campus photo, not SPAA conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "SPAA.jpg",
+      "needs_annual_update": false
     },
     {
       "title": "SYSTOR",
@@ -3760,9 +3775,6 @@
       "sub": "DS",
       "dblp": "vee",
       "source_path": "conference/DS/vee.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2022,
       "conference_id": "vee2022",
       "conference_date": "Feb 28-March 4, 2022",
@@ -3771,12 +3783,14 @@
       "observed_years": [
         2022
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2022",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "VEE.png"
+      "error": "Image is a Huawei vendor/sponsor logo, not VEE conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "VEE.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2022"
     },
     {
       "title": "ASSETS",
@@ -3785,10 +3799,6 @@
       "sub": "HI",
       "dblp": "assets",
       "source_path": "conference/HI/assets.yml",
-      "status": "downloaded",
-      "logo_file": "ASSETS.svg",
-      "source_kind": "official_site_icon",
-      "sha256": "0d3297b4befe6319b2a9e452de2c358c5b20ffa24b95e3e29b58a76cb673b4ef",
       "conference_year": 2025,
       "conference_id": "assets25",
       "conference_date": "Oct 26 - 29, 2025",
@@ -3797,17 +3807,19 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": false,
-      "source_url": "https://assets25.sigaccess.org/favicon.svg",
-      "width": 748,
-      "height": 748,
+      "manual_override_action": "exact_logo",
+      "manual_override_note": "CorrectedLOGO.md replaces favicon with the horizontal ASSETS site logo.",
+      "status": "downloaded",
+      "logo_file": "ASSETS.svg",
+      "sha256": "699f61bc3459adce15233a68950fccd837d0698cde0c1b46c310b6f8fbea9956",
+      "source_url": "https://assets25.sigaccess.org/imgs/logo_horizontal-light.svg",
+      "source_kind": "manual_exact_logo",
+      "width": 400,
+      "height": 57,
       "mime": "image/svg+xml",
-      "asset_years": [
-        2025
-      ],
-      "annual_update_reason": "source contains latest conference year 2025",
-      "manual_cleanup_note": "Replaced speaker portrait with official ASSETS conference-site favicon.",
-      "replaced_logo_file": "ASSETS.png"
+      "asset_years": [],
+      "annual_url_template": "https://assets{yy}.sigaccess.org/imgs/logo_horizontal-light.svg",
+      "needs_annual_update": false
     },
     {
       "title": "CHI",
@@ -3999,9 +4011,6 @@
       "sub": "HI",
       "dblp": "icwsm",
       "source_path": "conference/HI/icwsm.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icwsm2026",
       "conference_date": "May 27-29, 2026",
@@ -4010,12 +4019,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICWSM.jpg"
+      "error": "Image is a city sunset photo, not ICWSM conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ICWSM.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ISS",
@@ -4175,9 +4186,6 @@
       "sub": "MX",
       "dblp": "aft",
       "source_path": "conference/MX/aft.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "aft26",
       "conference_date": "October 6-9, 2026",
@@ -4186,11 +4194,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "AFT.jpg"
+      "error": "Official asset is a London/Big Ben photo, not AFT conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "AFT.jpg",
+      "needs_annual_update": false
     },
     {
       "title": "APBC",
@@ -4212,13 +4222,13 @@
         2033
       ],
       "status": "no_logo_candidate",
-      "error": "https://lh3.googleusercontent.com/sitesv/AA5AbUBc2aHvdPEGNIztvqc0B2WGLds8LysrNKYjJaPVvFUfBREFmdXT5NUQo2fPiCqkKDmygA5C0eW1Z1mul8GIERJWTuNgl9pOBvqpClsrLkSPFvCbfqyae19s957VJtL6RVwKohXPvWxTlrhkcVCAeqiDn1tNtSTADKQJuMJ12UKJCvLKV7AVdwq-RKFtSyGFTpbwMGwhWMo1nH9hFfNFMuDVLG6mD5ZdzrH3M2LUgOk=w1280: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUA3tPUfnCauJF5yxYBYYTht-0PhwqvHVnsoVBO1rxUe-6bDREyPCT0zIQ2XALAjF7NFxQqnmf72nwpTBaSyH4_e1ZbpQQQ3-KKJIhKUEvq8vrdKcJMK90HqblGmMdv570x1KS6EG5nFKMS5M6aUVqY0s0ZZuCK_YV0fm-sQhn43ixEbbxYZlYi2tamwqIu-MlsVH62PUrgtUALtEY-k2FzNQKn-UVE2YydimYaRW6Q=w1280: <urlopen error [Errno 101] Network is unreachable>; https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUC6NdeXxYgLdiN-bz-u6E2a4sonGP9MDxP5YRfdaz7bZ9GHb_8hCOR_SrOGNJvO6eJCCqlWoBtkTEZkmQAp7JKCz6VHjx4W8naPO8AwtJEw20BS3eFPezSxfFToTuHicivKw5Geh4eJC8CahkXAWAbITngiQSoVmi_f7mJ8lopTrJsWS3l4j_JmDNZ_SSg=w16383: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUBd-pASLfMuXAYuz8wVmq9VX2CJKED1xtc2f2uFyIPpeS6jOesexGOk0fmBtRIJsEggN8k8YdFvfYlGt_3jb-9oHGCBtmu2ZgTGmqW-o-WrjBYfuGabY2Mbgr4lyIfj6JAGvMrM6sueCb8KcHQDW0uHGyMzo9XbbWN_7KBnE7CQ8ASTkUKHHp4CwRYwsYU=w16383: <urlopen error [Errno 101] Network is unreachable>",
+      "error": "https://lh3.googleusercontent.com/sitesv/AA5AbUDCPcKIMiJsmMjRPZOgTPCPbFHcfwNFGGA_4v35Foe1GR-9gqM5By6drvzcuxw1T352hMI-l5nuxhif4ssQ_fmpnBUIvu1cQ104rBi2kpRgyKbkW58G2VS8LcfPgDhUASXQT9aEdGJZCDACu2I1PLnp0JreT9wmN1hWbYFPpaHVenMfEGsJCxc60LHGJGcGQCwERh1HR3DcaMKBkp16lHcupMd13q7cWE4JhdHtgQc=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUCpqyh_M_7FZ0nL0wugVgsHB-f8uzpHTqb4qUEKOyXGxXW8yY4AKBSL1VUY0F_RHmAGXkQb2Je7tbwmeLLHtggsxKJMwNbTFYZ4G1CMYBfl7_ZCyhQVsyYk3KBgtC8k6suReTFATtIX1BHeAm_dA4rrgI04-u_gZ8GRgLUZ1eaI2dxr0fiTjhLu9O-fOr5dCJcdRxDFQnjr9mRJD3jyIQDlZ6GiRIbvuCNwHWoNSU4=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUCfbk4v1y1zbAiVgn0N9ly0mVGErv_BekP-vyxeJHsJJnnZD1nUjdHzOHi30D9ej7xiiYpbawle9NNagW6I-BiVIp0xJqYHYuAFB2OaoBl-0EBfbcqEHFIWizRZTQT2f8v_TOqb73kz87-ibb1k1GPtUkNcbYDoVzP3UjI-dWRIBbt9M00kVmjVe7mvGgk=w16383: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUB1B6PyycLV8Gi8WfxD7Jd0RewpD5Q3_8VxM3tZPhzS5gYGFfy_FHoCCQ1LrU6Y6-ZQJsPS-YJSvTeqOE_C5FYAiDwZYOSkcsd3w6BM21kwWP7I4z9NeeNxMtSCBZLOF1kCnCkXiq6gGpLHU7hIRcWj_NBZwEXMqg93nDGZOhn5u6ik0SbiHxrlIEI9dg8=w16383: <urlopen error _ssl.c:1015: The handshake operation timed out>",
       "candidate_urls": [
-        "https://lh3.googleusercontent.com/sitesv/AA5AbUBc2aHvdPEGNIztvqc0B2WGLds8LysrNKYjJaPVvFUfBREFmdXT5NUQo2fPiCqkKDmygA5C0eW1Z1mul8GIERJWTuNgl9pOBvqpClsrLkSPFvCbfqyae19s957VJtL6RVwKohXPvWxTlrhkcVCAeqiDn1tNtSTADKQJuMJ12UKJCvLKV7AVdwq-RKFtSyGFTpbwMGwhWMo1nH9hFfNFMuDVLG6mD5ZdzrH3M2LUgOk=w1280",
-        "https://lh3.googleusercontent.com/sitesv/AA5AbUA3tPUfnCauJF5yxYBYYTht-0PhwqvHVnsoVBO1rxUe-6bDREyPCT0zIQ2XALAjF7NFxQqnmf72nwpTBaSyH4_e1ZbpQQQ3-KKJIhKUEvq8vrdKcJMK90HqblGmMdv570x1KS6EG5nFKMS5M6aUVqY0s0ZZuCK_YV0fm-sQhn43ixEbbxYZlYi2tamwqIu-MlsVH62PUrgtUALtEY-k2FzNQKn-UVE2YydimYaRW6Q=w1280",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUDCPcKIMiJsmMjRPZOgTPCPbFHcfwNFGGA_4v35Foe1GR-9gqM5By6drvzcuxw1T352hMI-l5nuxhif4ssQ_fmpnBUIvu1cQ104rBi2kpRgyKbkW58G2VS8LcfPgDhUASXQT9aEdGJZCDACu2I1PLnp0JreT9wmN1hWbYFPpaHVenMfEGsJCxc60LHGJGcGQCwERh1HR3DcaMKBkp16lHcupMd13q7cWE4JhdHtgQc=w1280",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUCpqyh_M_7FZ0nL0wugVgsHB-f8uzpHTqb4qUEKOyXGxXW8yY4AKBSL1VUY0F_RHmAGXkQb2Je7tbwmeLLHtggsxKJMwNbTFYZ4G1CMYBfl7_ZCyhQVsyYk3KBgtC8k6suReTFATtIX1BHeAm_dA4rrgI04-u_gZ8GRgLUZ1eaI2dxr0fiTjhLu9O-fOr5dCJcdRxDFQnjr9mRJD3jyIQDlZ6GiRIbvuCNwHWoNSU4=w1280",
         "https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico",
-        "https://lh3.googleusercontent.com/sitesv/AA5AbUC6NdeXxYgLdiN-bz-u6E2a4sonGP9MDxP5YRfdaz7bZ9GHb_8hCOR_SrOGNJvO6eJCCqlWoBtkTEZkmQAp7JKCz6VHjx4W8naPO8AwtJEw20BS3eFPezSxfFToTuHicivKw5Geh4eJC8CahkXAWAbITngiQSoVmi_f7mJ8lopTrJsWS3l4j_JmDNZ_SSg=w16383",
-        "https://lh3.googleusercontent.com/sitesv/AA5AbUBd-pASLfMuXAYuz8wVmq9VX2CJKED1xtc2f2uFyIPpeS6jOesexGOk0fmBtRIJsEggN8k8YdFvfYlGt_3jb-9oHGCBtmu2ZgTGmqW-o-WrjBYfuGabY2Mbgr4lyIfj6JAGvMrM6sueCb8KcHQDW0uHGyMzo9XbbWN_7KBnE7CQ8ASTkUKHHp4CwRYwsYU=w16383"
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUCfbk4v1y1zbAiVgn0N9ly0mVGErv_BekP-vyxeJHsJJnnZD1nUjdHzOHi30D9ej7xiiYpbawle9NNagW6I-BiVIp0xJqYHYuAFB2OaoBl-0EBfbcqEHFIWizRZTQT2f8v_TOqb73kz87-ibb1k1GPtUkNcbYDoVzP3UjI-dWRIBbt9M00kVmjVe7mvGgk=w16383",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUB1B6PyycLV8Gi8WfxD7Jd0RewpD5Q3_8VxM3tZPhzS5gYGFfy_FHoCCQ1LrU6Y6-ZQJsPS-YJSvTeqOE_C5FYAiDwZYOSkcsd3w6BM21kwWP7I4z9NeeNxMtSCBZLOF1kCnCkXiq6gGpLHU7hIRcWj_NBZwEXMqg93nDGZOhn5u6ik0SbiHxrlIEI9dg8=w16383"
       ],
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
@@ -4298,10 +4308,6 @@
       "sub": "MX",
       "dblp": "cogsci",
       "source_path": "conference/MX/cogsci.yml",
-      "status": "reused_existing",
-      "logo_file": "CogSci.svg",
-      "source_kind": "local_existing",
-      "sha256": "262229346b95d13582a858d626dc34c298e7d0888688d149345983964ad58fb4",
       "conference_year": 2026,
       "conference_id": "cogsci26",
       "conference_date": "July 22-25, 2026",
@@ -4310,6 +4316,21 @@
       "observed_years": [
         2026
       ],
+      "manual_override_action": "exact_logo",
+      "manual_override_note": "CorrectedLOGO.md confirms CogSci 2026 logo.",
+      "status": "downloaded",
+      "logo_file": "CogSci.png",
+      "sha256": "93c334175c66e03e3cc2e0912a79cd28d7d26c01c2583113db78848103d1f17e",
+      "source_url": "https://cognitivesciencesociety.org/wp-content/uploads/2025/09/cogsci2026_logo-main_color-scaled-1.png",
+      "source_kind": "manual_exact_logo",
+      "width": 2560,
+      "height": 1331,
+      "mime": "image/png",
+      "asset_years": [
+        2025,
+        2026
+      ],
+      "annual_url_template": "https://cognitivesciencesociety.org/wp-content/uploads/{upload_year}/09/cogsci{year}_logo-main_color-scaled-1.png",
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
     },
@@ -4341,9 +4362,6 @@
       "sub": "MX",
       "dblp": "icic",
       "source_path": "conference/MX/icic.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icic26",
       "conference_date": "July 22-26, 2026",
@@ -4352,12 +4370,15 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICICS.png"
+      "error": "Cross-conference acronym reuse (ICIC vs ICICS) and no clean official logo candidate.",
+      "manual_cleanup_note": "Official page assets contain only non-logo/profile-like imagery.",
+      "replaced_logo_file": "ICICS.png",
+      "manual_official_url": "https://www.ic-icc.cn/2026/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ISBRA",
@@ -4366,28 +4387,27 @@
       "sub": "MX",
       "dblp": "isbra",
       "source_path": "conference/MX/isbra.yml",
-      "conference_year": 2025,
-      "conference_id": "isbra25",
-      "conference_date": "August 3-5, 2025",
-      "conference_place": "Helsinki, Finland",
-      "official_link": "https://www.helsinki.fi/en/conferences/isbra2025",
-      "page_title": "ISBRA2025 | University of Helsinki",
-      "candidate_count": 22,
-      "ranked_candidate_count": 6,
-      "observed_years": [
-        2025,
-        2026
-      ],
-      "status": "downloaded",
+      "status": "reused_existing",
       "logo_file": "ISBRA.png",
+      "source_kind": "official_site_candidate",
       "sha256": "cec4c1c36ff5fb3adc3ee2f65b33b815c92cdf65af8caf9c61585b32051c6155",
       "source_url": "https://www.helsinki.fi/assets/drupal/styles/og_images/s3/media-image/isbra2025_liftup.png?itok=UbItK-dx",
-      "source_kind": "official_site_candidate",
       "width": 1200,
       "height": 630,
       "mime": "image/png",
       "score": 160,
       "asset_years": [
+        2025
+      ],
+      "page_title": "ISBRA2025 | University of Helsinki",
+      "candidate_count": 22,
+      "ranked_candidate_count": 6,
+      "conference_year": 2025,
+      "conference_id": "isbra25",
+      "conference_date": "August 3-5, 2025",
+      "conference_place": "Helsinki, Finland",
+      "official_link": "https://www.helsinki.fi/en/conferences/isbra2025",
+      "observed_years": [
         2025
       ],
       "needs_annual_update": true,
@@ -4444,9 +4464,6 @@
       "sub": "MX",
       "dblp": "rtss",
       "source_path": "conference/MX/rtss.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "rtss26",
       "conference_date": "December 9-11, 2026",
@@ -4455,12 +4472,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "RTSS.png"
+      "error": "Image is a city night photo, not RTSS conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "RTSS.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "SIGSPATIAL",
@@ -4498,7 +4517,7 @@
       "official_link": "https://www.ieeesmc2026.org/",
       "page_title": "IEEE SMC 2026",
       "candidate_count": 56,
-      "ranked_candidate_count": 6,
+      "ranked_candidate_count": 8,
       "observed_years": [
         2026
       ],
@@ -4510,7 +4529,9 @@
         "https://img-for-hk.wds168.cn/comdata/110644/202510/20251002160802135b58.jpg",
         "https://img-for-hk.wds168.cn/comdata/110644/202509/20250930191559ff4bdf.jpg",
         "https://img-for-hk.wds168.cn/comdata/110644/202508/20250829145251e1d4f7.jpg",
-        "https://img-for-hk.wds168.cn/comdata/110644/202512/20251204144619892c09.png"
+        "https://img-for-hk.wds168.cn/comdata/110644/202512/20251204144619892c09.png",
+        "https://img-for-hk.wds168.cn/comdata/110644/202509/2025090809382277bf08.png",
+        "https://img-for-hk.wds168.cn/comdata/110644/202509/2025090809382217a16c.png"
       ],
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
@@ -4830,9 +4851,6 @@
       "sub": "NW",
       "dblp": "iwqos",
       "source_path": "conference/NW/iwqos.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "iwqos26",
       "conference_date": "29 June - 2 July, 2026",
@@ -4841,12 +4859,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "IWQoS.webp"
+      "error": "Image is a stock security/technology illustration, not IWQoS conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "IWQoS.webp",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "LCN",
@@ -4855,9 +4875,6 @@
       "sub": "NW",
       "dblp": "lcn",
       "source_path": "conference/NW/lcn.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "lcn26",
       "conference_date": "October 7-9, 2026",
@@ -4866,11 +4883,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "LCN.jpg"
+      "error": "Image is a campus/building photo, not LCN conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "LCN.jpg",
+      "needs_annual_update": false
     },
     {
       "title": "MobiCom",
@@ -4982,9 +5001,6 @@
       "sub": "NW",
       "dblp": "mswim",
       "source_path": "conference/NW/mswim.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "mswim26",
       "conference_date": "October 26-30, 2026",
@@ -4993,12 +5009,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "MSWiM.webp"
+      "error": "Image is a bridge/night photo, not MSWiM conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "MSWiM.webp",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "Networking",
@@ -5143,10 +5161,6 @@
       "sub": "NW",
       "dblp": "wasa",
       "source_path": "conference/NW/wasa.yml",
-      "status": "reused_existing",
-      "logo_file": "WASA.svg",
-      "source_kind": "local_existing",
-      "sha256": "6a9736e5736531843983af01a89a3e88ba1ba2dca7aee3bcab94b7398d1b600e",
       "conference_year": 2026,
       "conference_id": "wasa26",
       "conference_date": "July 6-9, 2026",
@@ -5155,6 +5169,20 @@
       "observed_years": [
         2026
       ],
+      "manual_override_action": "exact_logo",
+      "manual_override_note": "CorrectedLOGO.md confirms WASA 2026 logo.",
+      "status": "downloaded",
+      "logo_file": "WASA.png",
+      "sha256": "921bff4c3109b4d5302300b032879aa0780089d295c6467e73054c510314af89",
+      "source_url": "http://wasa-conference.org/WASA2026/img/logo/logo.png",
+      "source_kind": "manual_exact_logo",
+      "width": 652,
+      "height": 173,
+      "mime": "image/png",
+      "asset_years": [
+        2026
+      ],
+      "annual_url_template": "http://wasa-conference.org/WASA{year}/img/logo/logo.png",
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
     },
@@ -5286,27 +5314,27 @@
       "sub": "SC",
       "dblp": "acsac",
       "source_path": "conference/SC/acsac.yml",
-      "conference_year": 2026,
-      "conference_id": "acsac26",
-      "conference_date": "December 7-11, 2026",
-      "conference_place": "Los Angeles, California, USA",
-      "official_link": "https://www.acsac.org/",
-      "page_title": "IEEE Annual Computer Security Applications Conference (ACSAC)",
-      "candidate_count": 17,
-      "ranked_candidate_count": 6,
-      "observed_years": [
-        2026
-      ],
-      "status": "downloaded",
+      "status": "reused_existing",
       "logo_file": "ACSAC.png",
+      "source_kind": "official_site_candidate",
       "sha256": "7ca470db4953f1aa189d9df0c5d27a24d88ae676286754910209bc558a60295d",
       "source_url": "https://www.acsac.org/images/acsac-192.png",
-      "source_kind": "official_site_candidate",
       "width": 192,
       "height": 192,
       "mime": "image/png",
       "score": 114,
       "asset_years": [],
+      "page_title": "IEEE Annual Computer Security Applications Conference (ACSAC)",
+      "candidate_count": 17,
+      "ranked_candidate_count": 6,
+      "conference_year": 2026,
+      "conference_id": "acsac26",
+      "conference_date": "December 7-11, 2026",
+      "conference_place": "Los Angeles, California, USA",
+      "official_link": "https://www.acsac.org/",
+      "observed_years": [
+        2026
+      ],
       "needs_annual_update": false
     },
     {
@@ -5316,9 +5344,6 @@
       "sub": "SC",
       "dblp": "ccs",
       "source_path": "conference/SC/asiaccs.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2027,
       "conference_id": "asiaccs27",
       "conference_date": "July 12-16, 2027",
@@ -5327,12 +5352,15 @@
       "observed_years": [
         2027
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2027",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CCS.png"
+      "error": "No distinct AsiaCCS logo asset was confirmed; existing file is ACM CCS logo or related asset.",
+      "manual_cleanup_note": "Page exposes ACM/SIGSAC social/organization logos only.",
+      "replaced_logo_file": "CCS.png",
+      "manual_official_url": "https://asiaccs2027.cityu.edu.mo/index.html",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2027"
     },
     {
       "title": "ASIACRYPT",
@@ -5341,10 +5369,6 @@
       "sub": "SC",
       "dblp": "asiacrypt",
       "source_path": "conference/SC/asiacrypt.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
-      "source_url": null,
       "conference_year": 2026,
       "conference_id": "asiacrypt26",
       "conference_date": "December 7-11, 2026",
@@ -5353,11 +5377,15 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
+      "source_url": null,
+      "error": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding.",
       "manual_cleanup_note": "No reliable official ASIACRYPT-specific logo candidate identified in this audit pass.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ASIACRYPT.png"
+      "replaced_logo_file": "ASIACRYPT.png",
+      "manual_official_url": "https://asiacrypt.iacr.org/2026/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "BlockSys",
@@ -5366,21 +5394,6 @@
       "sub": "SC",
       "dblp": "blocksys",
       "source_path": "conference/SC/blocksys.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
-      "source_url": null,
-      "width": 296,
-      "height": 247,
-      "mime": "image/jpeg",
-      "score": 38,
-      "asset_years": [
-        2019,
-        2026
-      ],
-      "page_title": "BlockSys'2026 – International Conference on Blockchain, Artificial Intelligence, and Trustworthy Systems",
-      "candidate_count": 2,
-      "ranked_candidate_count": 2,
       "conference_year": 2026,
       "conference_id": "blocksys2026",
       "conference_date": "July 29-31, 2026",
@@ -5389,11 +5402,15 @@
       "observed_years": [
         2026
       ],
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
+      "source_url": null,
+      "error": "Highest-confidence candidate was an unrelated CCIS logo asset; no conference-specific logo confirmed.",
+      "manual_cleanup_note": "No confirmed official replacement logo found from 2026 official page.",
+      "replaced_logo_file": "BlockSys.jpg",
+      "manual_official_url": "https://blocksys.info/2026/",
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
-      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "BlockSys.jpg"
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "CCS",
@@ -5424,10 +5441,6 @@
       "sub": "SC",
       "dblp": "ches",
       "source_path": "conference/SC/ches.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
-      "source_url": null,
       "conference_year": 2026,
       "conference_id": "ches26",
       "conference_date": "October 11-15, 2026",
@@ -5436,11 +5449,15 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
+      "source_url": null,
+      "error": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding.",
       "manual_cleanup_note": "No reliable official CHES-specific logo candidate identified in this audit pass.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CHES.png"
+      "replaced_logo_file": "CHES.png",
+      "manual_official_url": "https://ches.iacr.org/2026/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "CODASPY",
@@ -5449,10 +5466,6 @@
       "sub": "SC",
       "dblp": "codaspy",
       "source_path": "conference/SC/codaspy.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
-      "source_url": null,
       "conference_year": 2026,
       "conference_id": "codaspy2026",
       "conference_date": "June 23-25, 2026",
@@ -5461,11 +5474,15 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
+      "source_url": null,
+      "error": "Official-site candidate is Secunet Security Networks sponsor logo, not CODASPY conference branding.",
       "manual_cleanup_note": "No reliable official CODASPY conference logo candidate identified in this audit pass.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CODASPY.png"
+      "replaced_logo_file": "CODASPY.png",
+      "manual_official_url": "https://www.codaspy.org/2026/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "CRYPTO",
@@ -5474,9 +5491,6 @@
       "sub": "SC",
       "dblp": "crypto",
       "source_path": "conference/SC/crypto.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "crypto26",
       "conference_date": "August 17-20, 2026",
@@ -5485,12 +5499,15 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
+      "error": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding.",
       "manual_cleanup_note": "No reliable official CRYPTO-specific logo candidate identified in this audit pass.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CRYPTO.png"
+      "replaced_logo_file": "CRYPTO.png",
+      "manual_official_url": "https://crypto.iacr.org/2026/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "CSCloud",
@@ -5535,9 +5552,6 @@
       "sub": "SC",
       "dblp": "csfw",
       "source_path": "conference/SC/csfw.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "csfw26",
       "conference_date": "July 26-29, 2026",
@@ -5546,12 +5560,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "CSFW.png"
+      "error": "Image is the IEEE Computer Society organization logo, not CSFW conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "CSFW.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "CT-RSA",
@@ -5582,9 +5598,6 @@
       "sub": "SC",
       "dblp": "di",
       "source_path": "conference/SC/dfrws-apac.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2025,
       "conference_id": "dfrws-apac25",
       "conference_date": "November 10-12, 2025",
@@ -5593,12 +5606,14 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "DFRWS APAC.jpg"
+      "error": "Image is a city/sunset photo, not DFRWS APAC conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "DFRWS APAC.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "DFRWS",
@@ -5607,9 +5622,6 @@
       "sub": "SC",
       "dblp": "dfrws",
       "source_path": "conference/SC/dfrws.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "dfrws26",
       "conference_date": "March 24-27, 2026",
@@ -5618,12 +5630,15 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No clean official conference logo confirmed from current official page.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "DFRWS APAC.jpg"
+      "error": "Potentially region-specific APAC asset reused for DFRWS EU 2026.",
+      "manual_cleanup_note": "EU-specific logo candidate not reliably detected from official page.",
+      "replaced_logo_file": "DFRWS APAC.jpg",
+      "manual_official_url": "https://dfrws.org/conferences/dfrws-eu-2026/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "DIMVA",
@@ -5681,10 +5696,24 @@
       "conference_date": "September 14-18, 2026",
       "conference_place": "Rome, Italy",
       "official_link": "https://sites.google.com/di.uniroma1.it/esorics2026/home",
-      "status": "page_error",
-      "error": "<urlopen error [Errno 101] Network is unreachable>",
+      "page_title": "31st European Symposium on Research in Computer Security",
+      "candidate_count": 14,
+      "ranked_candidate_count": 8,
       "observed_years": [
-        2026
+        2026,
+        2033
+      ],
+      "status": "no_logo_candidate",
+      "error": "https://lh3.googleusercontent.com/sitesv/AA5AbUBKw0gRE2oDp85vWESOnMWscsQzcAfNRHoGwTKJEZguCfDt6Vt8ip3L9ZlqhXxThBP8o1pITf8hK9XEV8wOHWEu1LBk9vq9F-t8qI4R5UokqaXN6XU_aPMXQ4t6j3nVrd5UwcARMI9TWv81D_ZVw0Ym_60qBCfiA3k3F5FfscwD8G3_v2-6dnU6RCDiUslXWPVQUzeVNOQ6N0nxIcAhccSBCRdzjwxEc9hQjENT=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUBHDmFhHVyjvxzajCGDz3pJOFjtsTjWafm24LvE6-q5B9kNOWW_-IXHdKICKo0WhNaWdyKzJiL6EQqOUTIdLS5rKMyP9lgYU9UPFsZ5SNCgutnbbJZl47j46uQ00p0IUMlzEzeJH_Zl15ITpSbGicIMK4TpyO1GEkLgfQtbVEckcQQ_AX1Mju69DXydhTNYntkieF2c1ZiTpPyCq_IYyvMX5uAbt2SUEA_Pegu-NMQ=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUATzFXl-CUt3P_WUzDC-j6iLmqTdbMbzrKg5_xnIxX6SfwcpY-X2tF8XF6XRqLTHB-ONvnCC5LnU7VQ5rdgodeKOeXj6CSVSCwL1StFzYGlp-lvzSazB5QWdOyE95B3iNIAl1WVqdZbAO7GS84yaJXVoMsRjy4EMxx19Z68nu6XNcRRIWYo9t66aBp9CBNeMGZbzQyezq4bfSrVRH8O5sQ1WYigbGFFV1WuSAHnCHc=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUDBmnEhM4qn6thjEYNL5dVDREqz6fIviUo82QgQL1EB0GTTwS71gsC8Q0TRvSGL6WvmABTtYopHlYwdQhoWYQfHLdNZtci2MXfQ1S860_r-RkxXK5_dody7ZJYsIJULpSagt_8f6WLY_VeD-_blzIiIeMbY2NJUGpSSnCKXss7-v_yIiuKNala1yuVGmVhX2BKul7pVKHSbYtTtct7hesHgIZY_LpXx-OM-Qt8GscM=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUDX1dNy_AML7fTegB2i2735ZBCzQDAFUuf26MYHEVqsJDVb63pmv43ZFopqpimfo_QlzjeAviuInbzjfaJ4rUhQT0KP0eNAvZP_vFsyU7PsvxQSysMoRQo6FULI-anjJOcb8G25ZNWckwhWmCNfAr5Cdkm9KAbzKZk8y1swbivXxDpdmTaiZqQEKDvACqUG7xoBW4FepVP5B45FXw04OADxGpPT__qtYMkBqNIb=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>",
+      "candidate_urls": [
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUBKw0gRE2oDp85vWESOnMWscsQzcAfNRHoGwTKJEZguCfDt6Vt8ip3L9ZlqhXxThBP8o1pITf8hK9XEV8wOHWEu1LBk9vq9F-t8qI4R5UokqaXN6XU_aPMXQ4t6j3nVrd5UwcARMI9TWv81D_ZVw0Ym_60qBCfiA3k3F5FfscwD8G3_v2-6dnU6RCDiUslXWPVQUzeVNOQ6N0nxIcAhccSBCRdzjwxEc9hQjENT=w1280",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUBHDmFhHVyjvxzajCGDz3pJOFjtsTjWafm24LvE6-q5B9kNOWW_-IXHdKICKo0WhNaWdyKzJiL6EQqOUTIdLS5rKMyP9lgYU9UPFsZ5SNCgutnbbJZl47j46uQ00p0IUMlzEzeJH_Zl15ITpSbGicIMK4TpyO1GEkLgfQtbVEckcQQ_AX1Mju69DXydhTNYntkieF2c1ZiTpPyCq_IYyvMX5uAbt2SUEA_Pegu-NMQ=w1280",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUATzFXl-CUt3P_WUzDC-j6iLmqTdbMbzrKg5_xnIxX6SfwcpY-X2tF8XF6XRqLTHB-ONvnCC5LnU7VQ5rdgodeKOeXj6CSVSCwL1StFzYGlp-lvzSazB5QWdOyE95B3iNIAl1WVqdZbAO7GS84yaJXVoMsRjy4EMxx19Z68nu6XNcRRIWYo9t66aBp9CBNeMGZbzQyezq4bfSrVRH8O5sQ1WYigbGFFV1WuSAHnCHc=w1280",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUDBmnEhM4qn6thjEYNL5dVDREqz6fIviUo82QgQL1EB0GTTwS71gsC8Q0TRvSGL6WvmABTtYopHlYwdQhoWYQfHLdNZtci2MXfQ1S860_r-RkxXK5_dody7ZJYsIJULpSagt_8f6WLY_VeD-_blzIiIeMbY2NJUGpSSnCKXss7-v_yIiuKNala1yuVGmVhX2BKul7pVKHSbYtTtct7hesHgIZY_LpXx-OM-Qt8GscM=w1280",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUDX1dNy_AML7fTegB2i2735ZBCzQDAFUuf26MYHEVqsJDVb63pmv43ZFopqpimfo_QlzjeAviuInbzjfaJ4rUhQT0KP0eNAvZP_vFsyU7PsvxQSysMoRQo6FULI-anjJOcb8G25ZNWckwhWmCNfAr5Cdkm9KAbzKZk8y1swbivXxDpdmTaiZqQEKDvACqUG7xoBW4FepVP5B45FXw04OADxGpPT__qtYMkBqNIb=w1280",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUBgl5ulJuz6Ny5XyxA9N4wvQNyw2iUSq4YFROQ3h_fuSNcNB-b1N8lb4SNSRiqKIMvGXTOySd2bCzqgKH1m6kRYdV0pz8Lsmo7DI841XbH7rPFwB-S-h-BR_bkbIYcdu-Jpe7M4jUsHqQlXjDsqEgbY_M9TsqJtJGW7Qq4n8sBvqh4CraUeOQsrBYCEdT4yLi5jH1nLZGQ9Vg-aE1mH4u-0EI99R5VhIGhxpe0o=w1280",
+        "https://lh3.googleusercontent.com/sitesv/AA5AbUATwNVbT7MU-2KjWy8ZQEJvQpQSUIG6iVFi2D-keZzLhYPAdVv0tupfXPD5BC3bSx8N6sO6_9rAGb0G_JfAOJNIieH1LU9wWJDG1CRvQQLttxs5nMFwaBHqzLJlzRbLHKJGy2dygMWS5DDy9YxzH3k45907hmysbBAXUux2E_W_QSnF00FgRGB3Xl5Gz4Rc3IWFretlV_f7A38x_tYA5HKGHzZTmnFEX12jsUdnyNg=w1280",
+        "https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico"
       ],
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
@@ -5740,9 +5769,6 @@
       "sub": "SC",
       "dblp": "fc",
       "source_path": "conference/SC/fc.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "fc26",
       "conference_date": "March 2-6, 2026",
@@ -5751,11 +5777,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "FC.png"
+      "error": "Image is an IFCA/Foundation organization mark, not FC conference-specific branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "FC.png",
+      "needs_annual_update": false
     },
     {
       "title": "FSE",
@@ -5770,19 +5798,17 @@
       "conference_place": "Singapore, Singapore",
       "official_link": "https://fse.iacr.org/2026/",
       "observed_years": [
-        2000,
-        2025,
         2026
       ],
       "status": "no_logo_candidate",
-      "logo_file": null,
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "source_kind": "manual_review",
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "error": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not FSE conference-specific branding.",
       "manual_cleanup_note": "No reliable official FSE-specific logo candidate identified in this audit pass.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "FSE-SC.png"
+      "replaced_logo_file": "FSE-SC.png",
+      "manual_official_url": "https://fse.iacr.org/2026/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "HotSec",
@@ -5895,9 +5921,6 @@
       "sub": "SC",
       "dblp": "cisc",
       "source_path": "conference/SC/inscrypt.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "inscrypt26",
       "conference_date": "Nov 07-09, 2026",
@@ -5906,12 +5929,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "INSCRYPT.jpg"
+      "error": "Image is a Hong Kong skyline photo, not INSCRYPT conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "INSCRYPT.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ISC",
@@ -6094,9 +6119,6 @@
       "sub": "SC",
       "dblp": "sacmat",
       "source_path": "conference/SC/sacmat.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "sacmat26",
       "conference_date": "July 8-10, 2026",
@@ -6105,12 +6127,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "SACMAT.jpg"
+      "error": "Image is a LinkedIn icon, not SACMAT conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "SACMAT.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "SEC",
@@ -6226,9 +6250,6 @@
       "sub": "SC",
       "dblp": "tcc",
       "source_path": "conference/SC/tcc.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2025,
       "conference_id": "tcc25",
       "conference_date": "December 1-5, 2025",
@@ -6237,12 +6258,15 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
+      "error": "Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding.",
       "manual_cleanup_note": "No reliable official TCC-specific logo candidate identified in this audit pass.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "TCC.png"
+      "replaced_logo_file": "TCC.png",
+      "manual_official_url": "https://tcc.iacr.org/2025/",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "TrustCom",
@@ -6251,9 +6275,6 @@
       "sub": "SC",
       "dblp": "trustcom",
       "source_path": "conference/SC/trustcom.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2025,
       "conference_id": "trustcom25",
       "conference_date": "November 14 - 17, 2025",
@@ -6262,12 +6283,14 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "TrustCom.jpg"
+      "error": "Image is a QR-code/ticket screenshot, not TrustCom conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "TrustCom.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "USENIX Security",
@@ -6318,9 +6341,6 @@
       "sub": "SE",
       "dblp": "aplas",
       "source_path": "conference/SE/aplas.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2025,
       "conference_id": "aplas25",
       "conference_date": "October 27-30, 2025",
@@ -6329,12 +6349,14 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit; previous image was a false positive.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "APLAS.png"
+      "error": "Image is the Microsoft corporate logo, not APLAS conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "APLAS.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "APSEC",
@@ -6343,10 +6365,6 @@
       "sub": "SE",
       "dblp": "apsec",
       "source_path": "conference/SE/apsec.yml",
-      "status": "reused_existing",
-      "logo_file": "APSEC.png",
-      "source_kind": "local_existing",
-      "sha256": "bd40c96a95fcc6e79df49dcf466dfc8794ec95e289e6b5af10a4e5ab680d7a9a",
       "conference_year": 2025,
       "conference_id": "apsec25",
       "conference_date": "December 2-5, 2025",
@@ -6355,6 +6373,13 @@
       "observed_years": [
         2025
       ],
+      "manual_override_action": "manual_skip",
+      "manual_override_note": "CorrectedLOGO.md provides only the conference URL; leave blank and skip crawling.",
+      "status": "no_logo_candidate",
+      "source_kind": "manual_skip",
+      "source_url": null,
+      "error": "Manual correction provides only a conference URL; skip crawling and leave logo blank.",
+      "manual_official_url": "https://conf.researchr.org/home/apsec-2026",
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2025"
     },
@@ -6365,9 +6390,6 @@
       "sub": "SE",
       "dblp": "kbse",
       "source_path": "conference/SE/ase.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "ase26",
       "conference_date": "October 12 - 16, 2026",
@@ -6376,12 +6398,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit; previous image was a false positive.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ASE.png"
+      "error": "Image is a Munich city/venue photo without ASE conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ASE.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ATVA",
@@ -6390,10 +6414,6 @@
       "sub": "SE",
       "dblp": "atva",
       "source_path": "conference/SE/atva.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
-      "source_url": null,
       "conference_year": 2025,
       "conference_id": "atva25",
       "conference_date": "October 27-31, 2025",
@@ -6402,11 +6422,14 @@
       "observed_years": [
         2025
       ],
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
+      "source_url": null,
+      "error": "Image is IIT Bombay institutional branding, not ATVA conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ATVA.jpg",
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit; previous image was IIT Bombay institutional branding.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ATVA.jpg"
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "CAiSE",
@@ -6483,7 +6506,7 @@
       "sub": "SE",
       "dblp": "cp",
       "source_path": "conference/SE/cp.yml",
-      "status": "downloaded",
+      "status": "reused_existing",
       "logo_file": "CP.png",
       "source_kind": "official_site_candidate",
       "sha256": "17f72c5e912b2ecae0d477f8c3ae1cbb9075a5a46d539c42546d9b7bd40f4529",
@@ -6522,31 +6545,16 @@
       "conference_place": "Glasgow, United Kingdom",
       "official_link": "https://conf.researchr.org/home/ease-2026",
       "observed_years": [
-        2012,
-        2013,
-        2014,
-        2015,
-        2016,
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
         2026
       ],
       "status": "no_logo_candidate",
-      "logo_file": null,
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "source_kind": "manual_review",
+      "error": "Official candidate is a TCS sponsor logo, not EASE conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "EASE.jpg",
       "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "EASE.jpg"
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ECOOP",
@@ -6588,33 +6596,27 @@
       "sub": "SE",
       "dblp": "esem",
       "source_path": "conference/SE/esem.yml",
-      "conference_year": 2026,
-      "conference_id": "esem26",
-      "conference_date": "October 4 - 9, 2026",
-      "conference_place": "München, Germany",
-      "official_link": "https://conf.researchr.org/home/eseiw-2026",
-      "page_title": "ESEIW 2026",
-      "candidate_count": 8,
-      "ranked_candidate_count": 1,
-      "observed_years": [
-        2018,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "status": "downloaded",
+      "status": "reused_existing",
       "logo_file": "ESEM.jpg",
+      "source_kind": "official_site_candidate",
       "sha256": "9312eba5c43f914ff23a13c939da361be7ffcd2db0eb811d07fc2e16584dc750",
       "source_url": "https://conf.researchr.org/getImage/eseiw-2026/orig/ESEIW-2026-logo.jpg",
-      "source_kind": "official_site_candidate",
       "width": 1940,
       "height": 1039,
       "mime": "image/jpeg;charset=UTF-8",
       "score": 65,
       "asset_years": [
+        2026
+      ],
+      "page_title": "ESEIW 2026",
+      "candidate_count": 8,
+      "ranked_candidate_count": 1,
+      "conference_year": 2026,
+      "conference_id": "esem26",
+      "conference_date": "October 4 - 9, 2026",
+      "conference_place": "München, Germany",
+      "official_link": "https://conf.researchr.org/home/eseiw-2026",
+      "observed_years": [
         2026
       ],
       "needs_annual_update": true,
@@ -6723,9 +6725,6 @@
       "sub": "SE",
       "dblp": "hotos",
       "source_path": "conference/SE/hotos.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2025,
       "conference_id": "hotos25",
       "conference_date": "May 14-16, 2025",
@@ -6734,12 +6733,14 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "HotOS.png"
+      "error": "Image is the ACM organization logo, not HotOS conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "HotOS.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "ICECCS",
@@ -6773,10 +6774,6 @@
       "sub": "SE",
       "dblp": "icfem",
       "source_path": "conference/SE/icfem.yml",
-      "status": "reused_existing",
-      "logo_file": "ICFEM.jpg",
-      "source_kind": "local_existing",
-      "sha256": "c4793ef858894bdfd28d1e8f63e5b3e34e6a2825506b4b7f941d09bcd8482998",
       "conference_year": 2025,
       "conference_id": "icfem25",
       "conference_date": "November 10 - 13, 2025",
@@ -6785,6 +6782,13 @@
       "observed_years": [
         2025
       ],
+      "manual_override_action": "manual_skip",
+      "manual_override_note": "CorrectedLOGO.md provides only a conference detail URL; leave blank and skip crawling.",
+      "status": "no_logo_candidate",
+      "source_kind": "manual_skip",
+      "source_url": null,
+      "error": "Manual correction provides only a conference URL; skip crawling and leave logo blank.",
+      "manual_official_url": "https://www.conferenceeye.cn/detail/c5a69aa2f77416d0e283125e72e99644",
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2025"
     },
@@ -6795,9 +6799,6 @@
       "sub": "SE",
       "dblp": "icfp",
       "source_path": "conference/SE/icfp.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icfp26",
       "conference_date": "August 24 - 29, 2026",
@@ -6806,11 +6807,13 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICFP.jpg"
+      "error": "Image is a city photo, not ICFP conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ICFP.jpg",
+      "needs_annual_update": false
     },
     {
       "title": "ICPC",
@@ -6885,9 +6888,6 @@
       "sub": "SE",
       "dblp": "icsm",
       "source_path": "conference/SE/icsme.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icsme26",
       "conference_date": "September 14-18, 2026",
@@ -6896,12 +6896,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICSME.jpg"
+      "error": "Image is a landmark photo, not ICSME conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ICSME.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ICSOC",
@@ -6952,9 +6954,6 @@
       "sub": "SE",
       "dblp": "icws",
       "source_path": "conference/SE/icws.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "icws26",
       "conference_date": "July 13-18, 2026",
@@ -6963,12 +6962,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ICWS.png"
+      "error": "Image is an IEEE SERVICES umbrella mark, not ICWS-specific conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ICWS.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "Internetware",
@@ -6977,9 +6978,6 @@
       "sub": "SE",
       "dblp": "internetware",
       "source_path": "conference/SE/internetware.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "internetware26",
       "conference_date": "July 18-20, 2026",
@@ -6988,12 +6986,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "Internetware.png"
+      "error": "Image is a coast/city photo, not Internetware conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "Internetware.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "ISPASS",
@@ -7002,16 +7002,27 @@
       "sub": "SE",
       "dblp": "ispass",
       "source_path": "conference/SE/ispass.yml",
-      "status": "reused_existing",
-      "logo_file": "ISPASS.png",
-      "source_kind": "local_existing",
-      "sha256": "ba8047ed9a19d3977f0f133934bc54ae9b6b7d2f916c0913556169405d5f1be8",
       "conference_year": 2026,
       "conference_id": "ispass26",
       "conference_date": "April 26-28, 2026",
       "conference_place": "Seoul, South Korea",
       "official_link": "https://ispass.org/ispass2026/",
+      "page_title": "ISPASS-2026 Home",
+      "candidate_count": 1,
+      "ranked_candidate_count": 1,
       "observed_years": [
+        2026
+      ],
+      "status": "downloaded",
+      "logo_file": "ISPASS.png",
+      "sha256": "ba8047ed9a19d3977f0f133934bc54ae9b6b7d2f916c0913556169405d5f1be8",
+      "source_url": "http://ispass.org/ispass2026/logos/resize_ispass2.png",
+      "source_kind": "official_site_candidate",
+      "width": 400,
+      "height": 220,
+      "mime": "image/png",
+      "score": 127,
+      "asset_years": [
         2026
       ],
       "needs_annual_update": true,
@@ -7046,9 +7057,6 @@
       "sub": "SE",
       "dblp": "issta",
       "source_path": "conference/SE/issta.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "issta26",
       "conference_date": "October 3-9, 2026",
@@ -7057,12 +7065,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "ISSTA.jpg"
+      "error": "Image is an AWS sponsor logo, not ISSTA conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "ISSTA.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "LCTES",
@@ -7071,9 +7081,6 @@
       "sub": "SE",
       "dblp": "lctrts",
       "source_path": "conference/SE/lctes.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2024,
       "conference_id": "lctes24",
       "conference_date": "June 24, 2024",
@@ -7082,12 +7089,14 @@
       "observed_years": [
         2024
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2024",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "LCTES.jpg"
+      "error": "Image is a city canal photo, not LCTES conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "LCTES.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2024"
     },
     {
       "title": "Middleware",
@@ -7173,9 +7182,6 @@
       "sub": "SE",
       "dblp": "oopsla",
       "source_path": "conference/SE/oopsla.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2026,
       "conference_id": "oopsla26",
       "conference_date": "October 3-9, 2026",
@@ -7184,12 +7190,14 @@
       "observed_years": [
         2026
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2026",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "OOPSLA.jpg"
+      "error": "Image is a city skyline photo, not OOPSLA conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "OOPSLA.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2026"
     },
     {
       "title": "OSDI",
@@ -7240,9 +7248,6 @@
       "sub": "SE",
       "dblp": "popl",
       "source_path": "conference/SE/popl.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2027,
       "conference_id": "popl27",
       "conference_date": "January 10-16, 2027",
@@ -7251,11 +7256,13 @@
       "observed_years": [
         2027
       ],
-      "needs_annual_update": false,
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "POPL.png"
+      "error": "Image is the ACM SIGPLAN organization logo, not POPL conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "POPL.png",
+      "needs_annual_update": false
     },
     {
       "title": "QRS",
@@ -7329,10 +7336,6 @@
       "sub": "SE",
       "dblp": "rv",
       "source_path": "conference/SE/rv.yml",
-      "status": "reused_existing",
-      "logo_file": "RV.svg",
-      "source_kind": "local_existing",
-      "sha256": "345df0a7ba9fd5e1043de6156f7cca9d6615a3a80d7f6343909a8bb677cb4845",
       "conference_year": 2026,
       "conference_id": "rv26",
       "conference_date": "October 6-9, 2026",
@@ -7341,6 +7344,13 @@
       "observed_years": [
         2026
       ],
+      "manual_override_action": "manual_skip",
+      "manual_override_note": "CorrectedLOGO.md provides only the conference URL; leave blank and skip crawling.",
+      "status": "no_logo_candidate",
+      "source_kind": "manual_skip",
+      "source_url": null,
+      "error": "Manual correction provides only a conference URL; skip crawling and leave logo blank.",
+      "manual_official_url": "https://rv25.isec.tugraz.at/",
       "needs_annual_update": true,
       "annual_update_reason": "source contains latest conference year 2026"
     },
@@ -7380,9 +7390,6 @@
       "sub": "SE",
       "dblp": "sas",
       "source_path": "conference/SE/sas.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2025,
       "conference_id": "sas25",
       "conference_date": "October 12-18, 2025",
@@ -7391,12 +7398,14 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "SAS.jpg"
+      "error": "Image is a Singapore night photo, not SAS conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "SAS.jpg",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "SCAM",
@@ -7432,7 +7441,7 @@
       "conference_date": "Oct 1 - Oct 10, 2025",
       "conference_place": "Toronto, Canada & Virtual",
       "official_link": "https://ksiresearch.org/seke/seke26.html",
-      "page_title": "",
+      "page_title": "International Conference on Software Engineering and Knowledge Engineering",
       "candidate_count": 0,
       "ranked_candidate_count": 0,
       "observed_years": [
@@ -7472,9 +7481,6 @@
       "sub": "SE",
       "dblp": "IEEEscc",
       "source_path": "conference/SE/sse.yml",
-      "status": "no_logo_candidate",
-      "logo_file": null,
-      "source_kind": "manual_review",
       "conference_year": 2025,
       "conference_id": "sse25",
       "conference_date": "July 7-12, 2025",
@@ -7483,12 +7489,14 @@
       "observed_years": [
         2025
       ],
-      "needs_annual_update": true,
-      "annual_update_reason": "source contains latest conference year 2025",
+      "status": "no_logo_candidate",
+      "source_kind": "confirmed_false_positive_skip",
       "source_url": null,
-      "manual_cleanup_note": "No reliable official conference-specific logo candidate identified during visual audit; previous image was a false positive.",
-      "error": "Awaiting manual logo curation/official asset source update.",
-      "replaced_logo_file": "SSE.png"
+      "error": "Image is University of Helsinki institutional branding, not SSE conference branding.",
+      "manual_cleanup_note": "No reliable official conference-specific replacement found during visual audit.",
+      "replaced_logo_file": "SSE.png",
+      "needs_annual_update": true,
+      "annual_update_reason": "source contains latest conference year 2025"
     },
     {
       "title": "TASE",

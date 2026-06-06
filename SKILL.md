@@ -17,6 +17,10 @@ Use the existing crawler at `conference-logo-maintainer/scripts/fetch_ccf_logos.
    - Keep existing hand-collected logo files unless they are clearly false positives.
    - Treat `conference-logo-maintainer/assets/logos` as the maintained source copy.
    - Do not use proxies for CCFDDL, GitHub, or conference-site downloads unless direct access has failed and the user explicitly approves a proxy path.
+   - Before crawling, read `conference-logo-maintainer/audit/manual_logo_overrides.json`:
+     - conferences absent from the override file continue through the normal CCFDDL crawler;
+     - `exact_logo` entries use the configured logo URL/template before local reuse or crawling;
+     - `manual_skip` entries stay blank and must not be crawled.
 
 2. Refresh CCFDDL metadata.
    - Prefer the resumable cache mode:
@@ -53,9 +57,13 @@ python conference-logo-maintainer/scripts/fetch_ccf_logos.py \
 3. Audit results before reporting completion.
    - Verify `conference-logo-maintainer/manifest.json` has 314 CCF A/B/C entries unless CCFDDL changed.
    - Verify every raster in `conference-logo-maintainer/assets/logos` opens with Pillow and every SVG contains `<svg>`.
+   - Apply `audit/false_positive_overrides.json` as a hard skip list, not only as a post-run report; confirmed bad mappings should not be downloaded again.
    - Search `source_url` for obvious false-positive terms: `sponsor`, `partner`, `exhibitor`, `slider`, `carousel`, `hero`, `background`, `venue`, `card`, `close.svg`.
-   - Visually inspect any suspicious large raster or webpage screenshot.
-   - Remove confirmed false positives and rerun the affected batch.
+   - Visually inspect a contact sheet of all large, extreme-aspect, transparent, or source-suspicious assets before syncing to Better-Poster-Skill.
+   - Re-render white/transparent logos on a dark background before deleting them; several valid logos are invisible on white.
+   - Remove confirmed false positives and regenerate the manifest, update list, README snapshot, and false-positive overrides together.
+   - Regenerate `reports/logo_update_focus_latest.md` after each real refresh. Use its year/place-sensitive table as the next incremental-refresh priority list, and use its white-logo watchlist during visual QA.
+   - After sync, compare file names and sha256 hashes between the maintainer and Better-Poster-Skill logo directories; `missing`, `extra`, and `mismatch` must be empty.
 
 4. Maintain documents.
    - Keep `conference-logo-maintainer/update_list.md` generated from the manifest.
@@ -75,3 +83,22 @@ When finishing a maintenance run, report:
 - Manifest status summary.
 - Number of annual-review and missing/manual-check entries.
 - Validation commands run.
+
+## False-Positive Traps
+
+Do not trust a file just because it exists, opens, or has the right acronym in the file name. During visual audit, reject:
+
+- speaker/headshot images and profile photos;
+- city, venue, campus, skyline, scenery, or generic hero/background images without conference branding;
+- sponsor, publisher, company, university, society, or umbrella-organization marks when they are not the conference's own mark;
+- schedule screenshots, ticket/QR images, maps, social icons, and page UI icons;
+- conference-series or organization-wide logos reused across distinct conferences unless the manifest explicitly records that reuse as intentional.
+
+Known patterns from the cleanup:
+
+- `ASSETS.png` was a speaker portrait; replace with the reviewed official site icon only when the exception is recorded in the audit script.
+- White transparent logos such as AAAI, ECSCW, GLOBECOM, INFOCOM, PPSN, and WCNC look blank on white contact sheets; check them on a dark background.
+- EDBT and ICDT intentionally share one joint-event logo, so active logo entries can exceed unique files by one.
+- PDFs and other non-image leftovers in `assets/logos` should not survive the final Better-Poster-Skill sync.
+- Never use broad acronym prefix matching for local reuse. Examples that must stay separated: `ISPA` vs `ISPASS`, `ICIC` vs `ICICS`, `AsiaCCS` vs `CCS`, and `SoCC` vs `Cloud`.
+- When deleting a false-positive reused file, first check whether another manifest entry still correctly references that same file; do not delete shared files blindly.

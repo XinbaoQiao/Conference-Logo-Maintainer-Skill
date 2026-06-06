@@ -431,6 +431,224 @@ def previous_manifest_index(output_dir: Path) -> dict[tuple[str, str], dict[str,
     return indexed
 
 
+def previous_manifest_entry_index(output_dir: Path) -> dict[tuple[str, str], dict[str, Any]]:
+    manifest_path = output_dir / "manifest.json"
+    if not manifest_path.exists():
+        return {}
+    try:
+        payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    indexed: dict[tuple[str, str], dict[str, Any]] = {}
+    for entry in payload.get("entries", []):
+        if not isinstance(entry, dict):
+            continue
+        key = (str(entry.get("source_path") or ""), str(entry.get("title") or ""))
+        if key[0] or key[1]:
+            indexed[key] = entry
+    return indexed
+
+
+def load_manual_overrides(path_value: str) -> dict[tuple[str, str], dict[str, Any]]:
+    if not path_value:
+        return {}
+    path = Path(path_value).expanduser().resolve()
+    if not path.exists():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    indexed: dict[tuple[str, str], dict[str, Any]] = {}
+    for item in payload.get("entries", []):
+        if not isinstance(item, dict):
+            continue
+        key = (str(item.get("source_path") or ""), str(item.get("title") or ""))
+        if key[0] and key[1]:
+            indexed[key] = item
+    return indexed
+
+
+def load_false_positive_skips(path_value: str) -> dict[tuple[str, str], dict[str, Any]]:
+    if not path_value:
+        return {}
+    path = Path(path_value).expanduser().resolve()
+    if not path.exists():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    indexed: dict[tuple[str, str], dict[str, Any]] = {}
+    for item in payload.get("confirmed_bad_mappings", []):
+        if not isinstance(item, dict):
+            continue
+        if item.get("recommended_status") != "no_logo_candidate":
+            continue
+        key = (str(item.get("source_path") or ""), str(item.get("title") or ""))
+        if key[0] and key[1]:
+            indexed[key] = item
+    return indexed
+
+
+def base_entry_for_record(record: dict[str, Any]) -> dict[str, Any]:
+    title = str(record.get("title") or "").strip()
+    latest = latest_conference_instance(record)
+    entry: dict[str, Any] = {
+        "title": title,
+        "description": record.get("description"),
+        "ccf_rank": record.get("ccf_rank"),
+        "sub": record.get("sub"),
+        "dblp": record.get("dblp"),
+        "source_path": record.get("source_path"),
+    }
+    if latest:
+        entry.update(
+            {
+                "conference_year": latest.get("year"),
+                "conference_id": latest.get("id"),
+                "conference_date": latest.get("date"),
+                "conference_place": latest.get("place"),
+                "official_link": latest.get("link"),
+                "observed_years": collect_years(
+                    str(latest.get("link") or ""), str(latest.get("year") or "")
+                ),
+            }
+        )
+    return entry
+
+
+def apply_false_positive_skip(
+    *,
+    record: dict[str, Any],
+    false_positive: dict[str, Any],
+    previous_entry: dict[str, Any] | None,
+    output_dir: Path,
+    protected_logos: set[str] | None = None,
+) -> dict[str, Any]:
+    entry = base_entry_for_record(record)
+    cleanup_previous_logo(
+        output_dir, previous_entry, keep_logo=None, protected_logos=protected_logos
+    )
+    entry.update(
+        {
+            "status": "no_logo_candidate",
+            "source_kind": "confirmed_false_positive_skip",
+            "source_url": None,
+            "error": false_positive.get("bad_reason")
+            or "Confirmed false-positive mapping; skip crawling and leave logo blank.",
+            "manual_cleanup_note": false_positive.get("replacement_confirmation"),
+            "replaced_logo_file": false_positive.get("bad_logo_file"),
+        }
+    )
+    if false_positive.get("replacement_source_url"):
+        entry["manual_official_url"] = false_positive.get("replacement_source_url")
+    return entry
+
+
+def cleanup_previous_logo(
+    output_dir: Path,
+    previous_entry: dict[str, Any] | None,
+    keep_logo: str | None,
+    protected_logos: set[str] | None = None,
+) -> None:
+    old_logo = str((previous_entry or {}).get("logo_file") or "").strip()
+    if not old_logo or old_logo == keep_logo:
+        return
+    if old_logo in (protected_logos or set()):
+        return
+    old_path = output_dir / old_logo
+    if old_path.exists() and old_path.is_file():
+        old_path.unlink()
+
+
+def apply_manual_override(
+    fetcher: Fetcher,
+    *,
+    record: dict[str, Any],
+    override: dict[str, Any],
+    previous_entry: dict[str, Any] | None,
+    output_dir: Path,
+    protected_logos: set[str] | None = None,
+) -> dict[str, Any]:
+    entry = base_entry_for_record(record)
+    action = str(override.get("action") or "").strip()
+    entry["manual_override_action"] = action
+    entry["manual_override_note"] = override.get("note")
+
+    if action == "manual_skip":
+        cleanup_previous_logo(
+            output_dir, previous_entry, keep_logo=None, protected_logos=protected_logos
+        )
+        entry.update(
+            {
+                "status": "no_logo_candidate",
+                "source_kind": "manual_skip",
+                "source_url": None,
+                "error": "Manual correction provides only a conference URL; skip crawling and leave logo blank.",
+            }
+        )
+        if override.get("official_url"):
+            entry["manual_official_url"] = override.get("official_url")
+        return entry
+
+    if action != "exact_logo":
+        entry.update(
+            {
+                "status": "metadata_error",
+                "source_kind": "manual_override",
+                "error": f"Unsupported manual override action: {action}",
+            }
+        )
+        return entry
+
+    logo_url = str(override.get("logo_url") or "").strip()
+    if not logo_url:
+        entry.update(
+            {
+                "status": "metadata_error",
+                "source_kind": "manual_exact_logo",
+                "error": "Manual exact-logo override is missing logo_url.",
+            }
+        )
+        return entry
+
+    try:
+        payload, content_type = fetcher.read_url(logo_url, max_bytes=8_000_000)
+        metadata = validate_image(payload, logo_url, content_type)
+        if not metadata:
+            raise ValueError("manual logo URL did not return a valid logo image")
+    except Exception as exc:
+        entry.update(
+            {
+                "status": "page_error",
+                "source_kind": "manual_exact_logo",
+                "source_url": logo_url,
+                "error": str(exc),
+            }
+        )
+        return entry
+
+    filename = str(override.get("logo_file") or "").strip()
+    if not filename:
+        filename = f"{safe_stem(str(entry.get('title') or 'conference'))}{metadata['extension']}"
+    target = output_dir / filename
+    target.write_bytes(payload)
+    cleanup_previous_logo(
+        output_dir, previous_entry, keep_logo=target.name, protected_logos=protected_logos
+    )
+    entry.update(
+        {
+            "status": "downloaded",
+            "logo_file": target.name,
+            "sha256": sha256_bytes(payload),
+            "source_url": logo_url,
+            "source_kind": "manual_exact_logo",
+            "width": metadata.get("width"),
+            "height": metadata.get("height"),
+            "mime": metadata.get("mime"),
+            "asset_years": collect_years(logo_url, target.name),
+        }
+    )
+    if override.get("annual_url_template"):
+        entry["annual_url_template"] = override.get("annual_url_template")
+    return entry
+
+
 def find_existing_logo(
     indexed: list[dict[str, Any]], title: str, aliases: list[str]
 ) -> Path | None:
@@ -445,7 +663,6 @@ def find_existing_logo(
             and (
                 stem_key == title_key
                 or stem_key == f"{title_key}logo"
-                or (len(title_key) >= 4 and stem_key.startswith(title_key))
             )
         )
         alias_hit = any(
@@ -1009,11 +1226,55 @@ def process_conferences(args: argparse.Namespace) -> int:
         conferences = conferences[start:end]
     existing = existing_logo_index(output_dir)
     previous_manifest = previous_manifest_index(metadata_dir)
+    previous_entries = previous_manifest_entry_index(metadata_dir)
+    previous_logo_counts: dict[str, int] = {}
+    for previous_entry in previous_entries.values():
+        logo = str(previous_entry.get("logo_file") or "").strip()
+        if logo:
+            previous_logo_counts[logo] = previous_logo_counts.get(logo, 0) + 1
+    protected_logos = {
+        logo for logo, count in previous_logo_counts.items() if count > 1
+    }
+    manual_overrides = load_manual_overrides(args.manual_overrides)
+    false_positive_skips = load_false_positive_skips(args.false_positive_overrides)
     entries: list[dict[str, Any]] = []
     for index, record in enumerate(conferences, start=1):
         title = str(record.get("title") or "").strip()
         latest = latest_conference_instance(record)
         aliases = aliases_for(record)
+        entry_key = (str(record.get("source_path") or ""), title)
+        manual_override = manual_overrides.get(entry_key)
+        if manual_override:
+            entry = apply_manual_override(
+                fetcher,
+                record=record,
+                override=manual_override,
+                previous_entry=previous_entries.get(entry_key),
+                output_dir=output_dir,
+                protected_logos=protected_logos,
+            )
+            entries.append(entry)
+            if args.verbose:
+                print(
+                    f"[{index}/{len(conferences)}] manual {title}: "
+                    f"{manual_override.get('action')}"
+                )
+            continue
+
+        false_positive_skip = false_positive_skips.get(entry_key)
+        if false_positive_skip:
+            entry = apply_false_positive_skip(
+                record=record,
+                false_positive=false_positive_skip,
+                previous_entry=previous_entries.get(entry_key),
+                output_dir=output_dir,
+                protected_logos=protected_logos,
+            )
+            entries.append(entry)
+            if args.verbose:
+                print(f"[{index}/{len(conferences)}] skip false-positive {title}")
+            continue
+
         existing_path = find_existing_logo(existing, title, aliases)
         if existing_path and not args.refresh_existing:
             existing_digest = sha256_bytes(existing_path.read_bytes())
@@ -1128,6 +1389,16 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     )
     parser.add_argument("--manifest-name", default="manifest.json", help="manifest file name")
     parser.add_argument("--update-list-name", default="update_list.md", help="update list file name")
+    parser.add_argument(
+        "--manual-overrides",
+        default=str(default_metadata_output / "audit" / "manual_logo_overrides.json"),
+        help="JSON file with exact-logo and manual-skip corrections",
+    )
+    parser.add_argument(
+        "--false-positive-overrides",
+        default=str(default_metadata_output / "audit" / "false_positive_overrides.json"),
+        help="JSON file with confirmed false-positive logo mappings to skip",
+    )
     parser.add_argument(
         "--merge-manifest-glob",
         default="",

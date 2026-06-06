@@ -591,6 +591,15 @@
       "recommended_status": "no_logo_candidate",
       "replacement_confirmation": "No reliable official conference-specific replacement found during visual audit.",
       "replacement_source_url": null
+    },
+    {
+      "title": "SoCC",
+      "source_path": "conference/DS/socc.yml",
+      "bad_logo_file": "Cloud.png",
+      "bad_reason": "Cross-conference acronym/theme reuse; Cloud.png is the IEEE CLOUD conference logo, not SoCC conference branding.",
+      "recommended_status": "no_logo_candidate",
+      "replacement_confirmation": "No reliable official SoCC conference-specific replacement found during this audit pass.",
+      "replacement_source_url": "https://acmsocc.org/2026/"
     }
   ],
   "high_confidence_manual_review": []

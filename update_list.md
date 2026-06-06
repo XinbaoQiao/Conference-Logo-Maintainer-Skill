@@ -1,6 +1,6 @@
 # CCF Conference Logo Update List
 
-Generated at: 2026-06-06T14:23:55+00:00
+Generated at: 2026-06-06T16:07:56+00:00
 
 Data source: CCFDDL conference YAML from https://github.com/ccfddl/ccf-deadlines
 
@@ -11,7 +11,7 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | Conference | CCF | Year | Logo | Reason | Official link |
 | --- | --- | --- | --- | --- | --- |
 | ACL | A | 2026 | ACL.svg | source contains latest conference year 2026 | https://2026.aclweb.org/ |
-| ACM MM | A | 2026 | ACM MM.svg | source contains latest conference year 2026 | https://2026.acmmm.org/ |
+| ACM MM | A | 2026 | ACM MM.png | source contains latest conference year 2026 | https://2026.acmmm.org/ |
 | ACM SIGGRAPH | A | 2026 | ACM SIGGRAPH.png | source contains latest conference year 2026 | https://s2026.siggraph.org/ |
 | ASPLOS | A | 2027 | ASPLOS.png | source contains latest conference year 2027 | https://www.asplos-conference.org/asplos2027/cfp/ |
 | CCS | A | 2026 | CCS.png | source contains latest conference year 2026 | https://www.sigsac.org/ccs/CCS2026/ |
@@ -25,7 +25,7 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | FOCS | A | 2026 | FOCS.gif | source contains latest conference year 2026 | https://sanjeevkhanna.org/FOCS2026_CFP.html |
 | ICCV | A | 2025 | ICCV.svg | source contains latest conference year 2025 | https://iccv.thecvf.com/Conferences/2025 |
 | ICDE | A | 2027 | ICDE.png | source contains latest conference year 2027 | https://icde2027.github.io/ |
-| ICLR | A | 2026 | iclr.svg | source contains latest conference year 2026 | https://iclr.cc/Conferences/2026 |
+| ICLR | A | 2026 | ICLR.svg | source contains latest conference year 2026 | https://iclr.cc/Conferences/2026 |
 | ICML | A | 2026 | ICML-logo.svg | source contains latest conference year 2026 | https://icml.cc/Conferences/2026 |
 | IEEE VIS | A | 2026 | IEEE VIS.svg | source contains latest conference year 2026 | https://ieeevis.org/year/2026/welcome |
 | IEEE VR | A | 2027 | IEEE VR.webp | source contains latest conference year 2027 | https://ieeevr.org/2027/ |
@@ -53,7 +53,7 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | COLT | B | 2026 | COLT.svg | source contains latest conference year 2026 | https://learningtheory.org/colt2026/ |
 | CONCUR | B | 2026 | CONCUR.webp | source contains latest conference year 2026 | https://confest-2026.github.io/concur/ |
 | CP | B | 2026 | CP.png | source contains latest conference year 2026 | https://cp2026.a4cp.org/ |
-| CogSci | B | 2026 | CogSci.svg | source contains latest conference year 2026 | https://cognitivesciencesociety.org/cogsci-2026/ |
+| CogSci | B | 2026 | CogSci.png | source contains latest conference year 2026 | https://cognitivesciencesociety.org/cogsci-2026/ |
 | DASFAA | B | 2026 | DASFAA.svg | source contains latest conference year 2026 | https://dasfaa2026.github.io/ |
 | DATE | B | 2027 | DATE.png | source contains latest conference year 2027 | https://www.date-conference.com/date-2027-call-papers |
 | DSN | B | 2026 | DSN.png | source contains latest conference year 2026 | https://dsn2026.github.io |
@@ -104,11 +104,10 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | SECON | B | 2026 | SECON.webp | source contains latest conference year 2026 | https://secon2026.ieee-secon.org/important-dates |
 | SIGMETRICS | B | 2027 | SIGMETRICS.jpg | source contains latest conference year 2027 | https://www.sigmetrics.org/sigmetrics2027/ |
 | SPM | B | 2025 | SPM.svg | source contains latest conference year 2025 | https://spmconf2025.github.io/SPM2025/ |
-| SoCC | B | 2026 | SoCC.png | source contains latest conference year 2026 | https://acmsocc.org/2026/ |
 | UAI | B | 2026 | UAI.png | source contains latest conference year 2026 | https://www.auai.org/uai2026/ |
 | VMCAI | B | 2026 | VMCAI.jpg | source contains latest conference year 2026 | https://conf.researchr.org/home/VMCAI-2026 |
 | WINE | B | 2026 | WINE.png | source contains latest conference year 2026 | https://wine2026conf.github.io/ |
-| WSDM | B | 2027 | WSDM.jpg | source contains latest conference year 2027 | https://wsdm-conference.org/2027/ |
+| WSDM | B | 2027 | WSDM.png | source contains latest conference year 2027 | https://wsdm-conference.org/2027/ |
 | 3DV | C | 2026 | 3DV.png | source contains latest conference year 2026 | https://3dvconf.github.io/2026/ |
 | ACCV | C | 2026 | ACCV.png | source contains latest conference year 2026 | https://accv2026.org/ |
 | ACISP | C | 2026 | ACISP.jpg | source contains latest conference year 2026 | https://acisp-conference.github.io/acisp2026/index.html |
@@ -117,7 +116,6 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | AISTATS | C | 2026 | AISTATS.svg | source contains latest conference year 2026 | https://virtual.aistats.org/Conferences/2026 |
 | ALT | C | 2026 | ALT.png | source contains latest conference year 2026 | https://algorithmiclearningtheory.org/alt2026/ |
 | APNet | C | 2026 | APNet.png | source contains latest conference year 2026 | https://conferences.sigcomm.org/events/apnet2026/ |
-| APSEC | C | 2025 | APSEC.png | source contains latest conference year 2025 | https://conf.researchr.org/home/apsec-2025 |
 | APWeb-WAIM | C | 2026 | APWeb-WAIM.png | source contains latest conference year 2026 | https://conferences.sigappfr.org/apweb2026/ |
 | ASAP | C | 2026 | ASAP.png | source contains latest conference year 2026 | https://2026.asap-conf.org/ |
 | ATS | C | 2026 | ATS.png | source contains latest conference year 2026 | https://www.ats2026.tw/ |
@@ -145,7 +143,6 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | ICANN | C | 2026 | ICANN.png | source contains latest conference year 2026 | https://e-nns.org/icann2026/ |
 | ICDAR | C | 2026 | ICDAR.png | source contains latest conference year 2026 | https://icdar2026.org/ |
 | ICDF2C | C | 2026 | ICDF2C.png | source contains latest conference year 2026 | https://icdf2c.eai-conferences.org/2026/ |
-| ICFEM | C | 2025 | ICFEM.jpg | source contains latest conference year 2025 | https://icfem2025.github.io/ |
 | ICICS | C | 2026 | ICICS.png | source contains latest conference year 2026 | https://sulab-sever.u-aizu.ac.jp/icics2026/cfp.html |
 | ICIP | C | 2026 | ICIP.png | source contains latest conference year 2026 | https://2026.ieeeicip.org/ |
 | ICMI | C | 2026 | ICMI.png | source contains latest conference year 2026 | https://icmi.acm.org/2026/ |
@@ -169,7 +166,6 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | PRICAI | C | 2026 | PRICAI.jpg | source contains latest conference year 2026 | https://2026.pricai.org/ |
 | PacificVis | C | 2026 | PacificVis.png | source contains latest conference year 2026 | https://pacificvis2026.github.io/ |
 | REFSQ | C | 2027 | REFSQ.jpg | source contains latest conference year 2027 | https://2027.refsq.org/ |
-| RV | C | 2026 | RV.svg | source contains latest conference year 2026 | https://rv2026.smithengineering.queensu.ca/ |
 | SCAM | C | 2026 | SCAM.png | source contains latest conference year 2026 | https://conf.researchr.org/home/scam-2026 |
 | SEC | C | 2026 | SEC.png | source contains latest conference year 2026 | https://acm-ieee-sec.org/2026/ |
 | SIGSPATIAL | C | 2026 | SIGSPATIAL.png | source contains latest conference year 2026 | https://sigspatial2026.sigspatial.org/ |
@@ -177,7 +173,7 @@ These logos or their source pages include a year marker, so rerun the fetcher wh
 | SYSTOR | C | 2025 | SYSTOR.png | source contains latest conference year 2025 | https://www.systor.org/2025/ |
 | SecureComm | C | 2026 | SecureComm.png | source contains latest conference year 2026 | https://securecomm.eai-conferences.org/2026/ |
 | TASE | C | 2025 | TASE.png | source contains latest conference year 2025 | https://cyprusconferences.org/tase2025/ |
-| WASA | C | 2026 | WASA.svg | source contains latest conference year 2026 | http://wasa-conference.org/WASA2026/ |
+| WASA | C | 2026 | WASA.png | source contains latest conference year 2026 | http://wasa-conference.org/WASA2026/ |
 | WCNC | C | 2026 | WCNC.webp | source contains latest conference year 2026 | https://wcnc2026.ieee-wcnc.org/group/21 |
 | WISA | C | 2026 | WISA.jpg | source contains latest conference year 2026 | https://conf.ccf.org.cn/WISA2026 |
 | WoWMoM | C | 2026 | WoWMoM.png | source contains latest conference year 2026 | https://www.cs.unibo.it/wowmom2026/ |
@@ -188,115 +184,119 @@ These entries did not produce a high-confidence logo candidate automatically.
 
 | Conference | CCF | Year | Status | Error | Official link |
 | --- | --- | --- | --- | --- | --- |
-| ASE | A | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/home/ase-2026 |
-| CAV | A | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conferences.i-cav.org/2026/ |
-| CRYPTO | A | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://crypto.iacr.org/2026/ |
+| ASE | A | 2026 | no_logo_candidate | Image is a Munich city/venue photo without ASE conference branding. | https://conf.researchr.org/home/ase-2026 |
+| CAV | A | 2026 | no_logo_candidate | Official asset is a city landmark photo, not CAV conference branding. | https://conferences.i-cav.org/2026/ |
+| CRYPTO | A | 2026 | no_logo_candidate | Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding. | https://crypto.iacr.org/2026/ |
 | FSE | A | 2027 | no_logo_candidate | No usable logo-like image candidates. | https://conf.researchr.org/home/fse-2027 |
 | HPCA | A | 2027 | no_logo_candidate | No usable logo-like image candidates. | https://conf.researchr.org/home/hpca-2027 |
-| HPDC | A | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://hpdc.sci.utah.edu/2026/ |
+| HPDC | A | 2026 | no_logo_candidate | Image is a campus photo, not HPDC conference branding. | https://hpdc.sci.utah.edu/2026/ |
 | ICSE | A | 2027 | no_logo_candidate | No usable logo-like image candidates. | https://conf.researchr.org/home/icse-2027 |
-| ISSTA | A | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/home/issta-2026 |
+| ISSTA | A | 2026 | no_logo_candidate | Image is an AWS sponsor logo, not ISSTA conference branding. | https://conf.researchr.org/home/issta-2026 |
 | MICRO | A | 2026 | no_logo_candidate | rejected https://microarch.org/micro59/images/micro-red.png | https://microarch.org/micro59/ |
-| OOPSLA | A | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/track/splash-2026/oopsla-2026 |
-| POPL | A | 2027 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://popl27.sigplan.org/ |
-| PPoPP | A | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://ppopp26.sigplan.org/ |
-| RTSS | A | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | http://2026.rtss.org/ |
+| OOPSLA | A | 2026 | no_logo_candidate | Image is a city skyline photo, not OOPSLA conference branding. | https://conf.researchr.org/track/splash-2026/oopsla-2026 |
+| POPL | A | 2027 | no_logo_candidate | Image is the ACM SIGPLAN organization logo, not POPL conference branding. | https://popl27.sigplan.org/ |
+| PPoPP | A | 2026 | no_logo_candidate | Image is a schedule screenshot, not PPoPP conference branding. | https://ppopp26.sigplan.org/ |
+| RTSS | A | 2026 | no_logo_candidate | Image is a city night photo, not RTSS conference branding. | http://2026.rtss.org/ |
 | SIGIR | A | 2026 | no_logo_candidate | rejected https://sigir2026.org/_next/static/chunks/webpack-f014160a759826e1.js?dpl=dpl_BcMMGB1MsGUwLNvum7qraK4qNzSX | https://sigir2026.org/en-AU |
 | SODA | A | 2027 | page_error | HTTP Error 403: Forbidden | https://www.siam.org/conferences-events/siam-conferences/soda27/ |
-| ASIACRYPT | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://asiacrypt.iacr.org/2026/ |
+| ASIACRYPT | B | 2026 | no_logo_candidate | Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding. | https://asiacrypt.iacr.org/2026/ |
 | BIBM | B | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://ieeebibm.org/BIBM2026/ |
-| CHES | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://ches.iacr.org/2026/ |
-| CLUSTER | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://clustercomp.org/2026 |
-| COCOON | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://event.ntu.edu.sg/cocoon2026 |
-| CSFW | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://csf2026.ieee-security.org/ |
+| CHES | B | 2026 | no_logo_candidate | Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding. | https://ches.iacr.org/2026/ |
+| CLUSTER | B | 2026 | no_logo_candidate | Image is the IEEE organization logo, not CLUSTER conference branding. | https://clustercomp.org/2026 |
+| COCOON | B | 2026 | no_logo_candidate | Official asset is a Singapore skyline photo, not COCOON conference branding. | https://event.ntu.edu.sg/cocoon2026 |
+| CSFW | B | 2026 | no_logo_candidate | Image is the IEEE Computer Society organization logo, not CSFW conference branding. | https://csf2026.ieee-security.org/ |
 | CoNEXT | B | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://conferences.sigcomm.org/co-next/2026/#!/home |
-| ESORICS | B | 2026 | page_error | <urlopen error [Errno 101] Network is unreachable> | https://sites.google.com/di.uniroma1.it/esorics2026/home |
-| EuroVis | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.eurovis.org.uk/ |
-| FPGA | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.isfpga.org/ |
-| FSE | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://fse.iacr.org/2026/ |
+| ESORICS | B | 2026 | no_logo_candidate | https://lh3.googleusercontent.com/sitesv/AA5AbUBKw0gRE2oDp85vWESOnMWscsQzcAfNRHoGwTKJEZguCfDt6Vt8ip3L9ZlqhXxThBP8o1pITf8hK9XEV8wOHWEu1LBk9vq9F-t8qI4R5UokqaXN6XU_aPMXQ4t6j3nVrd5UwcARMI9TWv81D_ZVw0Ym_60qBCfiA3k3F5FfscwD8G3_v2-6dnU6RCDiUslXWPVQUzeVNOQ6N0nxIcAhccSBCRdzjwxEc9hQjENT=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUBHDmFhHVyjvxzajCGDz3pJOFjtsTjWafm24LvE6-q5B9kNOWW_-IXHdKICKo0WhNaWdyKzJiL6EQqOUTIdLS5rKMyP9lgYU9UPFsZ5SNCgutnbbJZl47j46uQ00p0IUMlzEzeJH_Zl15ITpSbGicIMK4TpyO1GEkLgfQtbVEckcQQ_AX1Mju69DXydhTNYntkieF2c1ZiTpPyCq_IYyvMX5uAbt2SUEA_Pegu-NMQ=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUATzFXl-CUt3P_WUzDC-j6iLmqTdbMbzrKg5_xnIxX6SfwcpY-X2tF8XF6XRqLTHB-ONvnCC5LnU7VQ5rdgodeKOeXj6CSVSCwL1StFzYGlp-lvzSazB5QWdOyE95B3iNIAl1WVqdZbAO7GS84yaJXVoMsRjy4EMxx19Z68nu6XNcRRIWYo9t66aBp9CBNeMGZbzQyezq4bfSrVRH8O5sQ1WYigbGFFV1WuSAHnCHc=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUDBmnEhM4qn6thjEYNL5dVDREqz6fIviUo82QgQL1EB0GTTwS71gsC8Q0TRvSGL6WvmABTtYopHlYwdQhoWYQfHLdNZtci2MXfQ1S860_r-RkxXK5_dody7ZJYsIJULpSagt_8f6WLY_VeD-_blzIiIeMbY2NJUGpSSnCKXss7-v_yIiuKNala1yuVGmVhX2BKul7pVKHSbYtTtct7hesHgIZY_LpXx-OM-Qt8GscM=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUDX1dNy_AML7fTegB2i2735ZBCzQDAFUuf26MYHEVqsJDVb63pmv43ZFopqpimfo_QlzjeAviuInbzjfaJ4rUhQT0KP0eNAvZP_vFsyU7PsvxQSysMoRQo6FULI-anjJOcb8G25ZNWckwhWmCNfAr5Cdkm9KAbzKZk8y1swbivXxDpdmTaiZqQEKDvACqUG7xoBW4FepVP5B45FXw04OADxGpPT__qtYMkBqNIb=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out> | https://sites.google.com/di.uniroma1.it/esorics2026/home |
+| EuroVis | B | 2026 | no_logo_candidate | Image is a map/screenshot, not EuroVis conference branding. | https://www.eurovis.org.uk/ |
+| FPGA | B | 2026 | no_logo_candidate | Image is an award/group photo, not FPGA conference branding. | https://www.isfpga.org/ |
+| FSE | B | 2026 | no_logo_candidate | Image content is the IACR organization wordmark reused across multiple IACR conferences, not FSE conference-specific branding. | https://fse.iacr.org/2026/ |
 | GROUP | B | 2027 | page_error | HTTP Error 403: Forbidden | https://group.acm.org/conferences/group27/ |
-| HSCC | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.isis.vanderbilt.edu/events/hscciccps-2026 |
-| HotOS | B | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://sigops.org/s/conferences/hotos/2025/ |
-| ICDCS | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | http://icdcs2026.icdcs.org/ |
-| ICFP | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://icfp26.sigplan.org/ |
-| ICMR | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://icmr2026.org/calls.html |
+| HSCC | B | 2026 | no_logo_candidate | Image is Vanderbilt University branding, not HSCC conference branding. | https://www.isis.vanderbilt.edu/events/hscciccps-2026 |
+| HotOS | B | 2025 | no_logo_candidate | Image is the ACM organization logo, not HotOS conference branding. | https://sigops.org/s/conferences/hotos/2025/ |
+| ICDCS | B | 2026 | no_logo_candidate | Image is a palace/landmark photo, not ICDCS conference branding. | http://icdcs2026.icdcs.org/ |
+| ICFP | B | 2026 | no_logo_candidate | Image is a city photo, not ICFP conference branding. | https://icfp26.sigplan.org/ |
+| ICMR | B | 2026 | no_logo_candidate | Image is an ACM organization mark, not ICMR conference branding. | https://icmr2026.org/calls.html |
 | ICPC | B | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://conf.researchr.org/home/icpc-2026 |
-| ICPP | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://icpp2026.github.io/ |
-| ICSME | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/home/icsme-2026 |
+| ICPP | B | 2026 | no_logo_candidate | Image is a Singapore city photo, not ICPP conference branding. | https://icpp2026.github.io/ |
+| ICSME | B | 2026 | no_logo_candidate | Image is a landmark photo, not ICSME conference branding. | https://conf.researchr.org/home/icsme-2026 |
 | ICSOC | B | 2025 | page_error | <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)> | https://icsoc2025.hit.edu.cn/main.htm |
-| ICWS | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://services.conferences.computer.org/2026/icws-2026/ |
-| ICWSM | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.icwsm.org/2026/index.html |
+| ICWS | B | 2026 | no_logo_candidate | Image is an IEEE SERVICES umbrella mark, not ICWS-specific conference branding. | https://services.conferences.computer.org/2026/icws-2026/ |
+| ICWSM | B | 2026 | no_logo_candidate | Image is a city sunset photo, not ICWSM conference branding. | https://www.icwsm.org/2026/index.html |
 | IEEE/ACM CGO | B | 2027 | no_logo_candidate | No usable logo-like image candidates. | https://conf.researchr.org/home/cgo-2027 |
 | IJCAR | B | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://www.floc26.org/ijcar |
 | ISS | B | 2025 | no_logo_candidate | No usable logo-like image candidates. | https://iss.acm.org/2025/ |
-| IWQoS | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://iwqos2026.ieee-iwqos.org/ |
+| IWQoS | B | 2026 | no_logo_candidate | Image is a stock security/technology illustration, not IWQoS conference branding. | https://iwqos2026.ieee-iwqos.org/ |
 | InterSpeech | B | 2026 | no_logo_candidate | rejected https://interspeech2026.org/_next/static/chunks/webpack-4d3a773ae3ceb930.js?dpl=dpl_66yQARHn2xpXeXrqJ686m9QKCiw6 | https://interspeech2026.org/ |
-| LCTES | B | 2024 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://pldi24.sigplan.org/home/LCTES-2024 |
+| LCTES | B | 2024 | no_logo_candidate | Image is a city canal photo, not LCTES conference branding. | https://pldi24.sigplan.org/home/LCTES-2024 |
 | MSST | B | 2024 | page_error | HTTP Error 404: Not Found | https://storageconference.us/index.html |
 | MobiSys | B | 2026 | no_logo_candidate | https://commons.wikimedia.org/wiki/File:Sleeping_Beauty_Castle_(28926763390).jpg: <urlopen error _ssl.c:1015: The handshake operation timed out> | https://www.sigmobile.org/mobisys/2026/ |
-| PG | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://pacificgraphics2026.github.io/ |
-| PODC | B | 2024 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.podc.org/podc2024 |
+| PG | B | 2026 | no_logo_candidate | Image is a graphics-themed city/renderer hero image without PG conference branding. | https://pacificgraphics2026.github.io/ |
+| PODC | B | 2024 | no_logo_candidate | Remaining asset carries Nikon camera EXIF and appears to be a photo/header image rather than PODC conference branding. | https://www.podc.org/podc2024 |
 | PerCom | B | 2026 | page_error | HTTP Error 403: Forbidden | https://percom.org/ |
-| RTAS | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://2026.rtas.org/ |
+| RTAS | B | 2026 | no_logo_candidate | Image is the IEEE Computer Society organization logo, not RTAS conference branding. | https://2026.rtas.org/ |
 | SANER | B | 2027 | no_logo_candidate | No usable logo-like image candidates. | https://conf.researchr.org/home/saner-2027 |
-| SAS | B | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://2025.splashcon.org/home/sas-2025 |
-| SAT | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://satisfiability.org/SAT26/ |
+| SAS | B | 2025 | no_logo_candidate | Image is a Singapore night photo, not SAS conference branding. | https://2025.splashcon.org/home/sas-2025 |
+| SAT | B | 2026 | no_logo_candidate | Current asset is unrelated venue image; candidate only exposes AI Journal logo. | https://satisfiability.org/SAT26/ |
 | SCA | B | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://computeranimation.org/ |
 | SDM | B | 2025 | page_error | HTTP Error 403: Forbidden | https://www.siam.org/conferences-events/siam-conferences/sdm25 |
 | SOCG | B | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://cgweek26.computational-geometry.org/contribute/ |
-| SPAA | B | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://spaa.acm.org/ |
+| SPAA | B | 2026 | no_logo_candidate | Image is a building/campus photo, not SPAA conference branding. | https://spaa.acm.org/ |
 | SenSys | B | 2027 | no_logo_candidate | No usable logo-like image candidates. | https://sensys.acm.org/2027/ |
-| TCC | B | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://tcc.iacr.org/2025/ |
-| VEE | B | 2022 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/home/vee-2022 |
-| ADMA | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://adma2026.github.io/ |
-| AFT | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://aft.ifca.ai/aft26/index.html |
-| APBC | C | 2026 | no_logo_candidate | https://lh3.googleusercontent.com/sitesv/AA5AbUBc2aHvdPEGNIztvqc0B2WGLds8LysrNKYjJaPVvFUfBREFmdXT5NUQo2fPiCqkKDmygA5C0eW1Z1mul8GIERJWTuNgl9pOBvqpClsrLkSPFvCbfqyae19s957VJtL6RVwKohXPvWxTlrhkcVCAeqiDn1tNtSTADKQJuMJ12UKJCvLKV7AVdwq-RKFtSyGFTpbwMGwhWMo1nH9hFfNFMuDVLG6mD5ZdzrH3M2LUgOk=w1280: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUA3tPUfnCauJF5yxYBYYTht-0PhwqvHVnsoVBO1rxUe-6bDREyPCT0zIQ2XALAjF7NFxQqnmf72nwpTBaSyH4_e1ZbpQQQ3-KKJIhKUEvq8vrdKcJMK90HqblGmMdv570x1KS6EG5nFKMS5M6aUVqY0s0ZZuCK_YV0fm-sQhn43ixEbbxYZlYi2tamwqIu-MlsVH62PUrgtUALtEY-k2FzNQKn-UVE2YydimYaRW6Q=w1280: <urlopen error [Errno 101] Network is unreachable>; https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUC6NdeXxYgLdiN-bz-u6E2a4sonGP9MDxP5YRfdaz7bZ9GHb_8hCOR_SrOGNJvO6eJCCqlWoBtkTEZkmQAp7JKCz6VHjx4W8naPO8AwtJEw20BS3eFPezSxfFToTuHicivKw5Geh4eJC8CahkXAWAbITngiQSoVmi_f7mJ8lopTrJsWS3l4j_JmDNZ_SSg=w16383: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUBd-pASLfMuXAYuz8wVmq9VX2CJKED1xtc2f2uFyIPpeS6jOesexGOk0fmBtRIJsEggN8k8YdFvfYlGt_3jb-9oHGCBtmu2ZgTGmqW-o-WrjBYfuGabY2Mbgr4lyIfj6JAGvMrM6sueCb8KcHQDW0uHGyMzo9XbbWN_7KBnE7CQ8ASTkUKHHp4CwRYwsYU=w16383: <urlopen error [Errno 101] Network is unreachable> | https://www.apbc2026.com/home |
-| APLAS | C | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/home/aplas-2025 |
+| SoCC | B | 2026 | no_logo_candidate | Cross-conference acronym/theme reuse; Cloud.png is the IEEE CLOUD conference logo, not SoCC conference branding. | https://acmsocc.org/2026/ |
+| TCC | B | 2025 | no_logo_candidate | Image content is the IACR organization wordmark reused across multiple IACR conferences, not conference-specific branding. | https://tcc.iacr.org/2025/ |
+| VEE | B | 2022 | no_logo_candidate | Image is a Huawei vendor/sponsor logo, not VEE conference branding. | https://conf.researchr.org/home/vee-2022 |
+| ADMA | C | 2026 | no_logo_candidate | Official asset is a city night photo, not ADMA conference branding. | https://adma2026.github.io/ |
+| AFT | C | 2026 | no_logo_candidate | Official asset is a London/Big Ben photo, not AFT conference branding. | https://aft.ifca.ai/aft26/index.html |
+| APBC | C | 2026 | no_logo_candidate | https://lh3.googleusercontent.com/sitesv/AA5AbUDCPcKIMiJsmMjRPZOgTPCPbFHcfwNFGGA_4v35Foe1GR-9gqM5By6drvzcuxw1T352hMI-l5nuxhif4ssQ_fmpnBUIvu1cQ104rBi2kpRgyKbkW58G2VS8LcfPgDhUASXQT9aEdGJZCDACu2I1PLnp0JreT9wmN1hWbYFPpaHVenMfEGsJCxc60LHGJGcGQCwERh1HR3DcaMKBkp16lHcupMd13q7cWE4JhdHtgQc=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUCpqyh_M_7FZ0nL0wugVgsHB-f8uzpHTqb4qUEKOyXGxXW8yY4AKBSL1VUY0F_RHmAGXkQb2Je7tbwmeLLHtggsxKJMwNbTFYZ4G1CMYBfl7_ZCyhQVsyYk3KBgtC8k6suReTFATtIX1BHeAm_dA4rrgI04-u_gZ8GRgLUZ1eaI2dxr0fiTjhLu9O-fOr5dCJcdRxDFQnjr9mRJD3jyIQDlZ6GiRIbvuCNwHWoNSU4=w1280: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUCfbk4v1y1zbAiVgn0N9ly0mVGErv_BekP-vyxeJHsJJnnZD1nUjdHzOHi30D9ej7xiiYpbawle9NNagW6I-BiVIp0xJqYHYuAFB2OaoBl-0EBfbcqEHFIWizRZTQT2f8v_TOqb73kz87-ibb1k1GPtUkNcbYDoVzP3UjI-dWRIBbt9M00kVmjVe7mvGgk=w16383: <urlopen error _ssl.c:1015: The handshake operation timed out>; https://lh3.googleusercontent.com/sitesv/AA5AbUB1B6PyycLV8Gi8WfxD7Jd0RewpD5Q3_8VxM3tZPhzS5gYGFfy_FHoCCQ1LrU6Y6-ZQJsPS-YJSvTeqOE_C5FYAiDwZYOSkcsd3w6BM21kwWP7I4z9NeeNxMtSCBZLOF1kCnCkXiq6gGpLHU7hIRcWj_NBZwEXMqg93nDGZOhn5u6ik0SbiHxrlIEI9dg8=w16383: <urlopen error _ssl.c:1015: The handshake operation timed out> | https://www.apbc2026.com/home |
+| APLAS | C | 2025 | no_logo_candidate | Image is the Microsoft corporate logo, not APLAS conference branding. | https://conf.researchr.org/home/aplas-2025 |
 | APPT | C | 2026 | no_logo_candidate | rejected https://www.appt-conference.com/vite.svg | https://www.appt-conference.com/2026 |
+| APSEC | C | 2025 | no_logo_candidate | Manual correction provides only a conference URL; skip crawling and leave logo blank. | https://conf.researchr.org/home/apsec-2025 |
 | ASP-DAC | C | 2027 | no_logo_candidate | No usable logo-like image candidates. | https://www.aspdac.com/aspdac2027/ |
-| ATVA | C | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/home/atva-2025 |
-| AsiaCCS | C | 2027 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://asiaccs2027.cityu.edu.mo/index.html |
-| BlockSys | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://blocksys.info/2026/ |
+| ATVA | C | 2025 | no_logo_candidate | Image is IIT Bombay institutional branding, not ATVA conference branding. | https://conf.researchr.org/home/atva-2025 |
+| AsiaCCS | C | 2027 | no_logo_candidate | No distinct AsiaCCS logo asset was confirmed; existing file is ACM CCS logo or related asset. | https://asiaccs2027.cityu.edu.mo/index.html |
+| BlockSys | C | 2026 | no_logo_candidate | Highest-confidence candidate was an unrelated CCIS logo asset; no conference-specific logo confirmed. | https://blocksys.info/2026/ |
 | CF | C | 2026 | page_error | <urlopen error timed out> | https://www.computingfrontiers.org/2026/ |
-| CODASPY | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.codaspy.org/2026/ |
+| CODASPY | C | 2026 | no_logo_candidate | Official-site candidate is Secunet Security Networks sponsor logo, not CODASPY conference branding. | https://www.codaspy.org/2026/ |
 | CSCWD | C | 2025 | no_logo_candidate | rejected http://2025.cscwd.org/images/head-img-ieee.png; rejected http://2025.cscwd.org/images/CSCWD.gif; rejected http://2025.cscwd.org/images/carousal_img1.jpg; rejected http://2025.cscwd.org/images/carousal_img3.jpg; rejected http://2025.cscwd.org/images/carousal_img2.jpg | http://2025.cscwd.org |
 | CSCloud | C | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://www.cloud-conf.net/cscloud/2026/cscloud/ |
-| CVM | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | http://iccvm.org/2026/ |
-| CoNLL | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.conll.org/ |
-| DFRWS | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://dfrws.org/conferences/dfrws-eu-2026/ |
-| DFRWS APAC | C | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://dfrws.org/conferences/dfrws-apac-2025/ |
-| EASE | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/home/ease-2026 |
+| CVM | C | 2026 | no_logo_candidate | Image is a Computational Visual Media publisher/IEEE Xplore mark, not CVM conference branding. | http://iccvm.org/2026/ |
+| CoNLL | C | 2026 | no_logo_candidate | No official logo candidate found; current asset is conference portrait photo metadata. | https://www.conll.org/ |
+| DFRWS | C | 2026 | no_logo_candidate | Potentially region-specific APAC asset reused for DFRWS EU 2026. | https://dfrws.org/conferences/dfrws-eu-2026/ |
+| DFRWS APAC | C | 2025 | no_logo_candidate | Image is a city/sunset photo, not DFRWS APAC conference branding. | https://dfrws.org/conferences/dfrws-apac-2025/ |
+| EASE | C | 2026 | no_logo_candidate | Official candidate is a TCS sponsor logo, not EASE conference branding. | https://conf.researchr.org/home/ease-2026 |
 | ECIR | C | 2026 | page_error | <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)> | https://ecir2026.eu/ |
-| FC | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://fc26.ifca.ai/ |
-| FG | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://fg2026.ieee-biometrics.org/ |
-| GLSVLSI | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.glsvlsi.org/ |
-| ICA3PP | C | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://ieee-cybermatics.org/2025/ica3pp/ |
+| FC | C | 2026 | no_logo_candidate | Image is an IFCA/Foundation organization mark, not FC conference-specific branding. | https://fc26.ifca.ai/ |
+| FG | C | 2026 | no_logo_candidate | Image is the IEEE Computer Society organization logo, not FG conference branding. | https://fg2026.ieee-biometrics.org/ |
+| GLSVLSI | C | 2026 | no_logo_candidate | Image is a venue photo collage, not GLSVLSI conference branding. | https://www.glsvlsi.org/ |
+| ICA3PP | C | 2025 | no_logo_candidate | Image is a skyline photo, not ICA3PP conference branding. | https://ieee-cybermatics.org/2025/ica3pp/ |
 | ICC | C | 2026 | page_error | <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)> | https://icc2026.ieee-icc.org |
 | ICECCS | C | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://formal-analysis.com/iceccs/2026/ |
-| ICIC | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | http://www.ic-icc.cn/2026/ |
+| ICFEM | C | 2025 | no_logo_candidate | Manual correction provides only a conference URL; skip crawling and leave logo blank. | https://icfem2025.github.io/ |
+| ICIC | C | 2026 | no_logo_candidate | Cross-conference acronym reuse (ICIC vs ICICS) and no clean official logo candidate. | http://www.ic-icc.cn/2026/ |
 | ICONIP | C | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://www.iconip2026.org/ |
 | ICPADS | C | 2025 | page_error | <urlopen error timed out> | http://ieee-icpads.org.cn/ |
 | IFIP WG 11.9 | C | 2026 | page_error | <urlopen error [Errno -2] Name or service not known> | http://www.ifip119.org/Conferences/ |
 | IH&MMSec | C | 2026 | page_error | HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop. The last 30x error message was: Moved Temporarily | https://www.ihmmsec.org/cms/home/home2026.html |
-| IJCB | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://ijcb2026.ieee-biometrics.org/ |
-| INSCRYPT | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://inscrypt2026.comp.polyu.edu.hk |
-| ISAAC | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.algo-door.com/isaac2026/index.html |
-| ISPA | C | 2021 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | http://www.cloud-conf.net/ispa2021/ |
+| IJCB | C | 2026 | no_logo_candidate | Image is a Rome landmark photo, not IJCB conference branding. | https://ijcb2026.ieee-biometrics.org/ |
+| INSCRYPT | C | 2026 | no_logo_candidate | Image is a Hong Kong skyline photo, not INSCRYPT conference branding. | https://inscrypt2026.comp.polyu.edu.hk |
+| ISAAC | C | 2026 | no_logo_candidate | Image is a decorative landscape background without ISAAC conference branding. | https://www.algo-door.com/isaac2026/index.html |
+| ISPA | C | 2021 | no_logo_candidate | Official-site candidate is cropped-ny1.jpg, a New York/header photo rather than a conference logo. | http://www.cloud-conf.net/ispa2021/ |
 | ITC-Asia | C | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://www.castest.com.cn/itcasia_2026 |
-| Internetware | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://conf.researchr.org/home/internetware-2026 |
+| Internetware | C | 2026 | no_logo_candidate | Image is a coast/city photo, not Internetware conference branding. | https://conf.researchr.org/home/internetware-2026 |
 | JCC | C | 2026 | page_error | <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)> | https://jointcloud.cloud |
 | KSEM | C | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://ksem2026.rosc.org.cn/ |
-| LCN | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.ieeelcn.org/ |
+| LCN | C | 2026 | no_logo_candidate | Image is a campus/building photo, not LCN conference branding. | https://www.ieeelcn.org/ |
 | MSN | C | 2026 | no_logo_candidate | https://ieee-msn.org/images/resources/logo.png: HTTP Error 404: Not Found; https://ieee-msn.org/images/ningbo/ningbo.jpg: HTTP Error 404: Not Found; https://ieee-msn.org/images/mstile-144x144.png: HTTP Error 404: Not Found; https://conference.cs.cityu.edu.hk/msn2020/images/logo.png: HTTP Error 404: Not Found | https://ieee-msn.org/2026 |
 | MSR | C | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://2026.msrconf.org/ |
-| MSWiM | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://mswimconf.com/2026/ |
-| SACMAT | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://www.sacmat.org/2026/index.php |
+| MSWiM | C | 2026 | no_logo_candidate | Image is a bridge/night photo, not MSWiM conference branding. | https://mswimconf.com/2026/ |
+| RV | C | 2026 | no_logo_candidate | Manual correction provides only a conference URL; skip crawling and leave logo blank. | https://rv2026.smithengineering.queensu.ca/ |
+| SACMAT | C | 2026 | no_logo_candidate | Image is a LinkedIn icon, not SACMAT conference branding. | https://www.sacmat.org/2026/index.php |
 | SEKE | C | 2026 | no_logo_candidate | No usable logo-like image candidates. | https://ksiresearch.org/seke/seke26.html |
-| SETTA | C | 2025 | no_logo_candidate | rejected https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico; https://lh3.googleusercontent.com/sitesv/AA5AbUALMIPZEogzCjuwQqt2XI3ODrSTmh3Ldl2b3ZPMYz2xuMiHP5qJM7GF6bowCP_it13WaLW0FQolFcNXnOfg3Ai_fN7wFODxW8YS935nWElTZDnwJcL48hIQW9rXF2POTE4ANTUHc-Vn7Pc6oSmxeeTD30LPwyeeRQCWG5JPyxATxy-Mwlb_70XKmp3tOh4=w16383: <urlopen error [Errno 101] Network is unreachable> | https://www.setta2025.uk |
-| SLT | C | 2026 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://attend.ieee.org/slt-2026/ |
+| SETTA | C | 2025 | no_logo_candidate | https://www.gstatic.com/images/branding/productlogos/sites_2026/v2/ico/sites_2026_16dp.ico: <urlopen error [Errno 101] Network is unreachable>; https://lh3.googleusercontent.com/sitesv/AA5AbUB_8zG0FS7gYdbqFhkSewl-mYN6MM6obAcniFfrR473zlQhtahuXyJs0XY_b8Yy2GTOAgZ2WBZ8Nf3_8E-9BYBUgEm9H-8miPx9Fg7BZvav5COTwoXCDWcNLw18HSolyFsD7Rmh83-cGQkJTJ7ReTapF3YbifSOLfn56byBH7TLwDFh7EnkKLGUVdAa2bM=w16383: <urlopen error _ssl.c:1015: The handshake operation timed out> | https://www.setta2025.uk |
+| SLT | C | 2026 | no_logo_candidate | Image is the IEEE Signal Processing Society logo, not SLT conference branding. | https://attend.ieee.org/slt-2026/ |
 | SMC | C | 2026 | no_logo_candidate | https://img-for-hk.wds168.cn/comdata/110644/202605/202605121213400a6d2d.jpg: HTTP Error 403: Forbidden; https://img-for-hk.wds168.cn/images/imgbg.png: HTTP Error 403: Forbidden; https://img-for-hk.wds168.cn/comdata/110644/202510/20251002160802135b58.jpg: HTTP Error 403: Forbidden; https://img-for-hk.wds168.cn/comdata/110644/202509/20250930191559ff4bdf.jpg: HTTP Error 403: Forbidden; https://img-for-hk.wds168.cn/comdata/110644/202508/20250829145251e1d4f7.jpg: HTTP Error 403: Forbidden | https://www.ieeesmc2026.org/ |
-| SSE | C | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://services.conferences.computer.org/2025/sse/ |
-| TrustCom | C | 2025 | no_logo_candidate | Awaiting manual logo curation/official asset source update. | https://ieee-aiplus-2025.org/ |
+| SSE | C | 2025 | no_logo_candidate | Image is University of Helsinki institutional branding, not SSE conference branding. | https://services.conferences.computer.org/2025/sse/ |
+| TrustCom | C | 2025 | no_logo_candidate | Image is a QR-code/ticket screenshot, not TrustCom conference branding. | https://ieee-aiplus-2025.org/ |
 | UIC | C | 2025 | no_logo_candidate | No usable logo-like image candidates. | https://www.ieee-smart-world.org/2025/ |
 
 ## Stable Or Low-Frequency Review
@@ -307,13 +307,13 @@ These entries have an existing or downloaded logo with no year marker detected i
 | --- | --- | --- | --- | --- | --- |
 | AAAI | A | 2027 | AAAI.png | reused_existing | local_existing |
 | FAST | A | 2027 | FAST.png | reused_existing | local_existing |
-| LICS | A | 2026 | LICS.jpg | reused_existing | local_existing |
+| LICS | A | 2026 | LICS.png | downloaded | https://lics.siglog.org/licslogo.png |
 | NSDI | A | 2027 | NSDI.png | reused_existing | local_existing |
 | OSDI | A | 2026 | OSDI.png | reused_existing | local_existing |
 | PLDI | A | 2026 | PLDI.svg | reused_existing | local_existing |
 | SC | A | 2026 | SC.svg | reused_existing | local_existing |
 | USENIX Security | A | 2027 | USENIX Security.png | reused_existing | local_existing |
-| ACSAC | B | 2026 | ACSAC.png | downloaded | https://www.acsac.org/images/acsac-192.png |
+| ACSAC | B | 2026 | ACSAC.png | reused_existing | https://www.acsac.org/images/acsac-192.png |
 | CADE | B | 2025 | CADE.jpg | reused_existing | local_existing |
 | DCC | B | 2027 | DCC.png | reused_existing | local_existing |
 | ECCV | B | 2026 | ECCV.svg | reused_existing | local_existing |
@@ -325,7 +325,7 @@ These entries have an existing or downloaded logo with no year marker detected i
 | RecSys | B | 2026 | RecSys.png | reused_existing | local_existing |
 | SGP | B | 2026 | SGP.jpg | reused_existing | local_existing |
 | SRDS | B | 2026 | SRDS.png | reused_existing | local_existing |
-| ASSETS | C | 2025 | ASSETS.svg | downloaded | https://assets25.sigaccess.org/favicon.svg |
+| ASSETS | C | 2025 | ASSETS.svg | downloaded | https://assets25.sigaccess.org/imgs/logo_horizontal-light.svg |
 | CGI | C | 2026 | CGI.jpg | reused_existing | local_existing |
 | FCCM | C | 2025 | FCCM.jpg | reused_existing | local_existing |
 | HotSec | C | 2021 | HotSec.png | reused_existing | local_existing |
