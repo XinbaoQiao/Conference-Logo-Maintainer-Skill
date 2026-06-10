@@ -238,9 +238,13 @@ class Fetcher:
 
 
 def read_cached_text(
-    fetcher: Fetcher, url: str, cache_path: Path | None, max_bytes: int
+    fetcher: Fetcher,
+    url: str,
+    cache_path: Path | None,
+    max_bytes: int,
+    reuse_cache: bool,
 ) -> str:
-    if cache_path and cache_path.exists():
+    if reuse_cache and cache_path and cache_path.exists():
         return cache_path.read_text(encoding="utf-8")
     text = fetcher.read_text(url, max_bytes=max_bytes)
     if cache_path:
@@ -255,9 +259,10 @@ def load_ccfddl_conferences(
     limit: int,
     verbose: bool,
     cache_dir: Path | None,
+    reuse_cache: bool,
 ) -> list[dict[str, Any]]:
     tree_cache = cache_dir / "github-tree.json" if cache_dir else None
-    if tree_cache and tree_cache.exists():
+    if reuse_cache and tree_cache and tree_cache.exists():
         tree = json.loads(tree_cache.read_text(encoding="utf-8"))
     else:
         payload, _ = fetcher.read_url(CCFDDL_TREE_URL)
@@ -282,7 +287,11 @@ def load_ccfddl_conferences(
         try:
             cache_path = cache_dir / path if cache_dir else None
             text = read_cached_text(
-                fetcher, urljoin(RAW_BASE_URL, path), cache_path, max_bytes=500_000
+                fetcher,
+                urljoin(RAW_BASE_URL, path),
+                cache_path,
+                max_bytes=500_000,
+                reuse_cache=reuse_cache,
             )
             records = yaml.safe_load(text) or []
         except Exception as exc:
@@ -1258,6 +1267,7 @@ def process_conferences(args: argparse.Namespace) -> int:
             cache_dir=Path(args.ccfddl_cache_dir).expanduser().resolve()
             if args.ccfddl_cache_dir
             else None,
+            reuse_cache=args.reuse_ccfddl_cache,
         )
     title_counts: dict[str, int] = {}
     for record in conferences:
@@ -1469,7 +1479,12 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument(
         "--ccfddl-cache-dir",
         default="",
-        help="cache CCFDDL tree and YAML files for resumable GitHub metadata reads",
+        help="write refreshed CCFDDL tree and YAML files to this cache directory",
+    )
+    parser.add_argument(
+        "--reuse-ccfddl-cache",
+        action="store_true",
+        help="reuse existing CCFDDL metadata cache instead of fetching the latest upstream YAML",
     )
     parser.add_argument("--manifest-name", default="manifest.json", help="manifest file name")
     parser.add_argument("--update-list-name", default="update_list.md", help="update list file name")

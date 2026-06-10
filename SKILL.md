@@ -30,7 +30,7 @@ Use the existing crawler at `conference-logo-maintainer/scripts/fetch_ccf_logos.
      - every month on day 10, merge `scheduled-logo-maintenance` into `main` and delete the staging branch;
      - keep the branch model to `main` only outside the review window, and at most `main` plus `scheduled-logo-maintenance` between day 1 and day 10;
      - after each update run, regenerate integrity and focus reports before committing changed assets/reports.
-   - Prefer the resumable cache mode:
+   - Prefer writing a refreshed CCFDDL metadata cache for resumability. Do not pass `--reuse-ccfddl-cache` for scheduled or normal refreshes; the crawler must fetch current CCFDDL YAML so year-based official links and `annual_url_template` values advance from 2026 to 2027, 2028, and so on.
 
 ```bash
 python conference-logo-maintainer/scripts/fetch_ccf_logos.py \

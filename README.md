@@ -121,6 +121,7 @@ Requirements:
 3. Apply manual correction records:
    - Conferences absent from manual corrections must continue through the normal automated tracking flow.
    - Conferences marked as having an exact logo must use the configured official logo URL or yearly URL template first.
+   - Yearly URL templates must be rendered from the latest CCFDDL conference year, not from a previously downloaded logo URL.
    - Conferences marked as having only a website and no reliable logo must remain blank and must not be crawled.
 4. Detect and avoid false positives such as speaker portraits, venue photos, sponsor marks, society logos, UI icons, and unrelated acronym matches.
 5. Identify logos that should be prioritized for future yearly refresh because they contain year, city, or venue signals.
@@ -266,6 +267,7 @@ Requirements:
 3. Apply manual correction records:
    - Conferences absent from manual corrections must continue through the normal automated tracking flow.
    - Conferences marked as having an exact logo must use the configured official logo URL or yearly URL template first.
+   - Yearly URL templates must be rendered from the latest CCFDDL conference year, not from a previously downloaded logo URL.
    - Conferences marked as having only a website and no reliable logo must remain blank and must not be crawled.
 4. Detect and avoid false positives such as speaker portraits, venue photos, sponsor marks, society logos, UI icons, and unrelated acronym matches.
 5. Identify logos that should be prioritized for future yearly refresh because they contain year, city, or venue signals.
