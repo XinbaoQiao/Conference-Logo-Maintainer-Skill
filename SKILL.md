@@ -26,7 +26,9 @@ Use the existing crawler at `conference-logo-maintainer/scripts/fetch_ccf_logos.
    - Scheduled GitHub maintenance uses `.github/workflows/logo-maintenance.yml`:
      - every month on day 1, run `--only-annual-update --refresh-existing` and push changed assets/reports to `scheduled-logo-maintenance`;
      - in January, use the same day-1 branch flow but run a full `--refresh-existing` pass so every logo can be reconsidered once per year;
+     - if update changes are pushed and mail settings are configured, send a review reminder to `NOTIFY_EMAIL`;
      - every month on day 10, merge `scheduled-logo-maintenance` into `main` and delete the staging branch;
+     - keep the branch model to `main` only outside the review window, and at most `main` plus `scheduled-logo-maintenance` between day 1 and day 10;
      - after each update run, regenerate integrity and focus reports before committing changed assets/reports.
    - Prefer the resumable cache mode:
 

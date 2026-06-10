@@ -42,6 +42,20 @@ If you do not want to maintain the assets yourself, bookmark this repository and
 | Annual refresh tracking | Logos with year, city, or venue signals are surfaced for future updates. |
 | White-logo warning | White or transparent logos are flagged because they may disappear on white backgrounds. |
 
+### Update Workflow
+
+| Time | What happens | Result |
+|---|---|---|
+| Every month, day 1 | The scheduled workflow refreshes logos already marked as year/city/venue-sensitive. | Changes are committed to the `scheduled-logo-maintenance` staging branch, and an email review reminder is sent if notification secrets are configured. |
+| Every month, day 10 | If no manual action is taken, the staging branch is merged into `main` automatically. | The public asset set and reports receive the monthly refresh, and the staging branch is deleted. |
+| Every January | The day-1 update uses a full refresh instead of only the sensitive-logo subset. | All CCF A/B/C conference logos are reconsidered once per year. |
+| Any time | Manual correction records can pin exact logo URLs or mark conferences as intentionally blank. | Hard-to-resolve conferences stay stable and known false positives do not return. |
+
+Each update regenerates the manifest, maintenance checklist, yearly-refresh report, white-logo watchlist, and integrity audit report before publishing changes.
+The branch policy is intentionally simple: outside the review window there is only `main`; between day 1 and day 10 there may be one extra branch, `scheduled-logo-maintenance`.
+
+To enable email reminders, configure the repository variable `NOTIFY_EMAIL` and SMTP secrets `SMTP_HOST`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD`, and optionally `SMTP_FROM`.
+
 ### At A Glance
 
 | You provide | The agent prepares |
@@ -176,6 +190,20 @@ CS Conference Logo Maintainer 用于帮助 code agent 端到端维护 CCF 会议
 | 降低误匹配风险 | agent 会排除演讲者头像、会场照片、赞助商标识、泛组织 Logo、页面 UI 图标和无关缩写匹配。 |
 | 跟踪年度更新目标 | 带有年份、城市或地点信息的 Logo 会被标记，方便后续年度刷新。 |
 | 提醒白色 Logo 风险 | 白色或透明 Logo 会被单独提醒，因为它们在白底上可能不可见。 |
+
+### 更新流程
+
+| 时间 | 自动执行内容 | 结果 |
+|---|---|---|
+| 每月 1 号 | 定时任务刷新已经标记为年份、城市、地点敏感的 Logo。 | 变更会提交到 `scheduled-logo-maintenance` 暂存分支；如果配置了邮件通知密钥，会同时发送邮件提醒检查。 |
+| 每月 10 号 | 如果没有人工操作，自动把暂存分支合并到 `main`。 | 公开资产集和报告获得当月更新，并删除暂存分支。 |
+| 每年 1 月 | 1 号任务从重点刷新切换为全量刷新。 | 所有 CCF A/B/C 会议 Logo 每年至少重新检查一次。 |
+| 任意时间 | 手工修正记录可以固定精确 Logo URL，或把难以获取 Logo 的会议标记为留空。 | 难处理会议保持稳定，已知误匹配不会反复出现。 |
+
+每次更新都会在发布前重新生成 manifest、维护清单、年度更新报告、白色 Logo 提醒清单和完整性审计报告。
+分支策略会尽量保持简单：平时只有 `main`；每月 1 号到 10 号之间最多额外存在一个 `scheduled-logo-maintenance` 暂存分支。
+
+如需发送邮件提醒，请在 GitHub 仓库中配置变量 `NOTIFY_EMAIL`，以及 SMTP secrets：`SMTP_HOST`、`SMTP_PORT`、`SMTP_USERNAME`、`SMTP_PASSWORD`，可选配置 `SMTP_FROM`。
 
 ### 快速概览
 

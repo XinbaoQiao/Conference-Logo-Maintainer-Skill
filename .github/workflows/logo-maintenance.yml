@@ -111,6 +111,7 @@ jobs:
           python scripts/generate_logo_focus_report.py
 
       - name: Commit updated assets and reports to update branch
+        id: commit_update
         if: steps.plan.outputs.action == 'update-branch'
         shell: bash
         run: |
@@ -121,10 +122,26 @@ jobs:
           if git diff --cached --quiet; then
             echo "No logo maintenance changes to commit."
             git push origin --delete "$UPDATE_BRANCH" 2>/dev/null || true
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m "chore: scheduled logo maintenance (${{ steps.plan.outputs.scope }})"
           git push --force-with-lease origin "HEAD:$UPDATE_BRANCH"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Send review email notification
+        if: steps.plan.outputs.action == 'update-branch' && steps.commit_update.outputs.changed == 'true'
+        env:
+          NOTIFY_EMAIL: ${{ vars.NOTIFY_EMAIL }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          MAINTENANCE_SCOPE: ${{ steps.plan.outputs.scope }}
+          RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          BRANCH_URL: https://github.com/${{ github.repository }}/tree/scheduled-logo-maintenance
+        run: python scripts/send_update_notification.py
 
       - name: Merge update branch into main
         if: steps.plan.outputs.action == 'merge-branch'
